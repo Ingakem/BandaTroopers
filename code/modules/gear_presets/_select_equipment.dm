@@ -118,7 +118,7 @@
 				new_human.f_style = pick("Shaved", "Shaved", "Shaved", "Shaved", "Shaved", "Shaved", "3 O'clock Shadow", "3 O'clock Shadow", "3 O'clock Shadow", "3 O'clock Moustache", "5 O'clock Shadow", "5 O'clock Moustache", "7 O'clock Shadow", "7 O'clock Moustache",)
 			else
 				new_human.h_style = pick("Undercut, Top", "CIA", "Mulder", "Pixie Cut Left", "Pixie Cut Right", "Scully", "Pvt. Redding", "Bun", "Short Bangs")
-			new_human.change_real_name(new_human, random_name) // SS220 EDIT: localized personal-name banks now provide direct Cyrillic output
+			new_human.change_real_name(new_human, random_name)
 		if(JAPANESE_ETHNICITY)
 			new_human.skin_color = pick(50;"Pale 1",50;"Tan 1")
 			var/static/list/colors = list("BLACK" = list(15, 15, 10), "BLACK" = list(15, 15, 10))
@@ -136,16 +136,25 @@
 			new_human.b_eyes = colors[eye_color][3]
 			//gender checks
 			if(new_human.gender == MALE)
-				first_name = ss220_pick_japanese_first_name(MALE) // SS220 EDIT: personal names should come from direct localized Japanese banks
+				if(prob(90))
+					first_name = "[capitalize(randomly_generate_japanese_word(rand(1, 3)))]"
+				else
+					first_name = "[pick(GLOB.first_names_male_clf)]"
 				new_human.h_style = pick("CIA", "Mulder", "Pixie Cut Left", "Pixie Cut Right")
 				new_human.f_style = pick("Shaved", "Shaved", "Shaved", "Shaved", "Shaved", "Shaved", "3 O'clock Shadow", "5 O'clock Shadow", "7 O'clock Shadow",)
 			else
-				first_name = ss220_pick_japanese_first_name(FEMALE) // SS220 EDIT: personal names should come from direct localized Japanese banks
+				if(prob(90))
+					first_name = "[capitalize(randomly_generate_japanese_word(rand(1, 3)))]"
+				else
+					first_name = "[pick(GLOB.first_names_female_clf)]"
 				new_human.h_style = pick("CIA", "Mulder", "Pixie Cut Left", "Pixie Cut Right","Bun", "Short Bangs")
 			//surname
-			last_name = ss220_pick_japanese_last_name() // SS220 EDIT: retire runtime Japanese word synthesis for names
+			if(prob(90))
+				last_name = "[capitalize(randomly_generate_japanese_word(rand(1, 4)))]"
+			else
+				last_name = "[pick(GLOB.last_names_clf)]"
 			random_name = "[first_name] [last_name]"
-			new_human.change_real_name(new_human, random_name) // SS220 EDIT: direct localized banks already provide the runtime name
+			new_human.change_real_name(new_human, random_name)
 		if(AMERICAN_ETHNICITY)
 			random_name = capitalize(pick(new_human.gender == MALE ? GLOB.first_names_male : GLOB.first_names_female)) + " " + capitalize(pick(GLOB.last_names))
 			var/datum/preferences/A = new
@@ -168,21 +177,30 @@
 				new_human.f_style = pick("Shaved", "Shaved", "Shaved", "Shaved", "Shaved", "Shaved", "3 O'clock Shadow", "3 O'clock Shadow", "3 O'clock Shadow", "3 O'clock Moustache", "5 O'clock Shadow", "5 O'clock Moustache", "7 O'clock Shadow", "7 O'clock Moustache",)
 			else
 				new_human.h_style = pick("Undercut, Top", "CIA", "Mulder", "Pixie Cut Left", "Pixie Cut Right", "Scully", "Pvt. Redding", "Bun", "Short Bangs")
-			new_human.change_real_name(new_human, random_name) // SS220 EDIT: localized personal-name banks now provide direct Cyrillic output
+			new_human.change_real_name(new_human, random_name)
 		if(UPP_ETHNICITY)
 			var/datum/preferences/A = new()
 			A.randomize_appearance(new_human)
 			//gender checks
 			if(new_human.gender == MALE)
-				first_name = "[pick(GLOB.first_names_male_upp)]" // SS220 EDIT: direct localized UPP banks replace runtime Chinese word synthesis
+				if(prob(40))
+					first_name = "[capitalize(randomly_generate_chinese_word(1))]"
+				else
+					first_name = "[pick(GLOB.first_names_male_upp)]"
 				new_human.f_style = pick("3 O'clock Shadow", "3 O'clock Moustache", "5 O'clock Shadow", "5 O'clock Moustache")
 			else
-				first_name = "[pick(GLOB.first_names_female_upp)]" // SS220 EDIT: direct localized UPP banks replace runtime Chinese word synthesis
+				if(prob(40))
+					first_name = "[capitalize(randomly_generate_chinese_word(1))]"
+				else
+					first_name = "[pick(GLOB.first_names_female_upp)]"
 			//surname
-			last_name = "[pick(GLOB.last_names_upp)]" // SS220 EDIT: direct localized UPP banks replace runtime Chinese word synthesis
+			if(prob(35))
+				last_name = "[capitalize(randomly_generate_chinese_word(pick(20;1, 80;2)))]"
+			else
+				last_name = "[pick(GLOB.last_names_upp)]"
 			//put them together
 			random_name = "[first_name] [last_name]"
-			new_human.change_real_name(new_human, random_name) // SS220 EDIT: direct localized banks already provide the runtime name
+			new_human.change_real_name(new_human, random_name)
 			var/static/list/colors = list("BLACK" = list(15, 15, 10), "BROWN" = list(48, 38, 18), "BROWN" = list(48, 38, 18),"BLUE" = list(29, 51, 65), "GREEN" = list(40, 61, 39), "STEEL" = list(46, 59, 54))
 			var/static/list/hair_colors = list("BLACK" = list(15, 15, 10), "BROWN" = list(48, 38, 18), "AUBURN" = list(77, 48, 36), "BLONDE" = list(95, 76, 44))
 			var/hair_color = pick(hair_colors)
@@ -218,16 +236,16 @@
 			new_human.b_eyes = colors[eye_color][3]
 			//gender checks
 			if(new_human.gender == MALE)
-				first_name = ss220_pick_chinese_first_name(MALE) // SS220 EDIT: use explicit localized Chinese personal-name banks
+				first_name = "[capitalize(randomly_generate_chinese_word(rand(1, 3)))]"
 				new_human.h_style = pick("CIA", "Mulder", "Pixie Cut Left", "Pixie Cut Right")
 				new_human.f_style = pick("Shaved", "Shaved", "Shaved", "Shaved", "Shaved", "Shaved", "3 O'clock Shadow", "5 O'clock Shadow", "7 O'clock Shadow",)
 			else
-				first_name = ss220_pick_chinese_first_name(FEMALE) // SS220 EDIT: use explicit localized Chinese personal-name banks
+				first_name = "[capitalize(randomly_generate_chinese_word(rand(1, 3)))]"
 				new_human.h_style = pick("CIA", "Mulder", "Pixie Cut Left", "Pixie Cut Right","Bun", "Short Bangs")
 			//surname
-			last_name = ss220_pick_chinese_last_name() // SS220 EDIT: retire runtime Chinese word synthesis for names
+			last_name = "[capitalize(randomly_generate_chinese_word(rand(1, 4)))]"
 			random_name = "[first_name] [last_name]"
-			new_human.change_real_name(new_human, random_name) // SS220 EDIT: direct localized banks already provide the runtime name
+			new_human.change_real_name(new_human, random_name)
 		if(BRAZILIAN_ETHNICITY)
 			new_human.skin_color = pick(45;"Tan 3",10;"Tan 2",15;"Dark 1",10;"Dark 3",10;"Melanated",5;"Pale 3",5;"Pale 2")
 			random_name = capitalize(pick(new_human.gender == MALE ? GLOB.first_names_male_brazilian : GLOB.first_names_female_brazilian)) + " " + capitalize(pick(GLOB.last_names_brazilian))

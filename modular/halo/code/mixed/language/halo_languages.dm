@@ -1,6 +1,6 @@
 /datum/language/sangheili
 	name = LANGUAGE_SANGHEILI
-	desc = "Древний язык сангхейли, который в Ковенанте понимают и используют многие его члены."
+	desc = "An ancient language utilized by the Sangheili, though in common use by Covenant members."
 	speech_verb = "произносит"
 	ask_verb = "спрашивает"
 	exclaim_verb = list("восклицает", "рычит")
@@ -11,7 +11,7 @@
 
 /datum/language/unggoy
 	name = LANGUAGE_UNGGOY
-	desc = "Язык, которым унггои часто пользуются для своих разговоров и перебранок."
+	desc = "A language frequently utilized by Unggoy for private conversation."
 	speech_verb = "тараторит"
 	ask_verb = "пищит"
 	exclaim_verb = list("визжит", "верещит")

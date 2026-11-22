@@ -65,7 +65,6 @@
 
 /obj/structure/closet/secure_closet/marine_personal/odst/platoon_commander/spawn_gear()
 	new /obj/item/clothing/under/marine(src)
-	new /obj/item/clothing/under/marine/crew/command(src)
 	new /obj/item/clothing/under/marine/officer/boiler(src)
 	new /obj/item/clothing/head/cmcap/bridge(src)
 	new /obj/item/clothing/suit/storage/jacket/marine/service(src)
