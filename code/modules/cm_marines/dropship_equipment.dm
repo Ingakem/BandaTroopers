@@ -321,14 +321,13 @@
 	point_cost = 50
 	shorthand = "MG"
 	var/deployment_cooldown
-	var/mg_type = /obj/structure/machinery/m56d_hmg/mg_turret/dropship // SS220 EDIT: Allow minigun variant for Dog War
 	var/obj/structure/machinery/m56d_hmg/mg_turret/dropship/deployed_mg
 	combat_equipment = FALSE
 
 /obj/structure/dropship_equipment/mg_holder/Initialize()
 	. = ..()
 	if(!deployed_mg)
-		deployed_mg = new mg_type(src) // SS220 EDIT: Use mg_type var for Dog War minigun variant
+		deployed_mg = new(src)
 		deployed_mg.deployment_system = src
 
 /obj/structure/dropship_equipment/mg_holder/Destroy()
@@ -445,9 +444,6 @@
 		deployment_cooldown = world.time + 10
 		deployed_mg.forceMove(src)
 		icon_state = "mg_system_installed"
-
-/obj/structure/dropship_equipment/mg_holder/minigun // SS220 EDIT: Minigun variant for Dog War
-	mg_type = /obj/structure/machinery/m56d_hmg/mg_turret/dropship/minigun
 
 
 //================= FUEL EQUIPMENT =================//

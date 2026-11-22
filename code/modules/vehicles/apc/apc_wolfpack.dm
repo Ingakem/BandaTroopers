@@ -1,11 +1,7 @@
 
-// SS220 EDIT - START
-// name = "M577A3E2 Mobile Gun System"
-// desc = "An M577A3E2 Mobile Gun System complete with a tactical operations center. Entrance on the right."
 /obj/vehicle/multitile/apc/wolfpack
 	name = "мобильная огневая система M577A3E2"
 	desc = "Мобильная огневая система M577A3E2, оснащенная тактическим центром управления. Вход справа."
-// SS220 EDIT - END
 
 	icon = 'icons/obj/vehicles/apc_wolfpack.dmi'
 	icon_state = "apc_base_wolfpack"
@@ -92,7 +88,7 @@
 			/obj/vehicle/multitile/proc/activate_horn,
 		))
 	else if(seat == VEHICLE_GUNNER)
-		remove_verb(M.client, list( // SS220 EDIT: fixed upstream typo — removed stray comma before .client
+		remove_verb(M.client, list(
 			/obj/vehicle/multitile/proc/cycle_hardpoint,
 			/obj/vehicle/multitile/proc/toggle_gyrostabilizer,
 			/obj/vehicle/multitile/proc/switch_hardpoint,
@@ -126,7 +122,7 @@
 		return
 
 	if(health > 0)
-		to_chat(user, SPAN_XENO("Мы не сможем перепрыгнуть через [src], пока он не будет уничтожен!")) // SS220 EDIT: translated from "We can't jump over [src] until it is destroyed!"
+		to_chat(user, SPAN_XENO("Мы не сможем перепрыгнуть через [src], пока он не будет уничтожен!"))
 		return
 
 	var/turf/current_turf = get_turf(user)
@@ -137,11 +133,9 @@
 			break
 
 		if(current_turf.density)
-			to_chat(user, SPAN_XENO("Путь через [src] перекрыт!")) // SS220 EDIT: translated from "The path over [src] is obstructed!"
+			to_chat(user, SPAN_XENO("Путь через [src] перекрыт!"))
 			return
 
-// SS220 EDIT - START
-// upstream: "APC" and " interior" — translated to Russian
 /obj/vehicle/multitile/apc/wolfpack/initialize_cameras(change_tag = FALSE)
 	if(!camera)
 		camera = new /obj/structure/machinery/camera/vehicle(src)
@@ -153,7 +147,6 @@
 		camera.c_tag = "#[rand(1,100)] M577A3 БТР"
 		if(camera_int)
 			camera_int.c_tag = camera.c_tag + " интерьер"
-// SS220 EDIT - END
 
 /obj/vehicle/multitile/apc/wolfpack/set_muzzle_offsets(obj/item/hardpoint/HP)
 	//sets muzzle flash offsets for APC weapons as appropriate for the movie APC
@@ -182,7 +175,7 @@
 	return ..()
 
 /obj/effect/vehicle_spawner/apc_wolfpack
-	name = "спавнер БТР Wolfpack" // SS220 EDIT: translated from "Wolfpack APC Spawner"
+	name = "спавнер БТР Wolfpack"
 	icon = 'icons/obj/vehicles/apc_wolfpack.dmi'
 	icon_state = "apc_base_wolfpack"
 	pixel_x = -64
@@ -202,7 +195,7 @@
 	APC.update_icon()
 
 //PRESET: only wheels installed
-/obj/effect/vehicle_spawner/apc_wolfpack/plain/load_hardpoints(obj/vehicle/multitile/apc/wolfpack/V) // SS220 EDIT: fixed upstream bug — type was apc/movie, should be apc/wolfpack
+/obj/effect/vehicle_spawner/apc_wolfpack/plain/load_hardpoints(obj/vehicle/multitile/apc/wolfpack/V)
 	V.add_hardpoint(new /obj/item/hardpoint/holder/tank_turret/wolfpack)
 	V.add_hardpoint(new /obj/item/hardpoint/secondary/frontalcannon)
 	V.add_hardpoint(new /obj/item/hardpoint/locomotion/apc_wheels)

@@ -500,27 +500,19 @@
 	return ..()
 
 /obj/item/device/overwatch_camera/equipped(mob/living/carbon/human/mob, slot)
-	if(!ishuman(mob))
-		return ..()
 	if(mob.has_item_in_ears(src))
-		if(camera)
-			camera.c_tag = mob.name
-		if(hud_type)
-			for(var/type in hud_type)
-				var/datum/mob_hud/MH = GLOB.huds[type]
-				if(!MH) continue
-				MH.add_hud_to(mob, src)
+		camera.c_tag = mob.name
+		for(var/type in hud_type)
+			var/datum/mob_hud/MH = GLOB.huds[type]
+			MH.add_hud_to(mob, src)
 	..()
 
 /obj/item/device/overwatch_camera/dropped(mob/user)
-	if(!ishuman(user))
-		return ..()
 	if(camera)
 		camera.c_tag = "Unknown"
 	if(hud_type)
 		for(var/type in hud_type)
 			var/datum/mob_hud/MH = GLOB.huds[type]
-			if(!MH) continue
 			MH.remove_hud_from(user, src)
 	..()
 

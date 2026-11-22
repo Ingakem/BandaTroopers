@@ -59,9 +59,6 @@
 	desc = "A pair of grey slacks and a white button-down shirt with a dark-grey tie and golden epaulettes signifying rank; a standard uniform for a commercial grade Weyland-Yutani affiliated Pilot."
 	icon_state = "civilian_pilot_uniform"
 	worn_state = "civilian_pilot_uniform"
-	item_icons = list( // SS220 EDIT: split WY/Hybrisa uniforms out of uniform_0.dmi
-		WEAR_BODY = 'icons/mob/humans/onmob/clothing/uniforms/uniforms_by_faction/groundside_wy_misc.dmi',
-	)
 	armor_melee = CLOTHING_ARMOR_LOW
 	armor_bullet = CLOTHING_ARMOR_LOW
 	armor_laser = CLOTHING_ARMOR_NONE
@@ -162,9 +159,6 @@
 	desc = "A pair of dark-grey slacks and an orange button-down shirt; a standard uniform for the Weyland-Yutani branded supermarket 'Weymart'."
 	icon_state = "weymart_uniform"
 	worn_state = "weymart_uniform"
-	item_icons = list( // SS220 EDIT: split WY/Hybrisa uniforms out of uniform_0.dmi
-		WEAR_BODY = 'icons/mob/humans/onmob/clothing/uniforms/uniforms_by_faction/groundside_wy_misc.dmi',
-	)
 	armor_melee = CLOTHING_ARMOR_LOW
 	armor_bullet = CLOTHING_ARMOR_LOW
 	armor_laser = CLOTHING_ARMOR_NONE
@@ -236,9 +230,6 @@
 	desc = "A luxurious designer suit, beyond the reach of the average person. It's an exclusive choice for high-level executives and the affluent elite."
 	icon_state = "wy_exec_suit"
 	worn_state = "wy_exec_suit"
-	item_icons = list( // SS220 EDIT: split WY/Hybrisa uniforms out of uniform_0.dmi
-		WEAR_BODY = 'icons/mob/humans/onmob/clothing/uniforms/uniforms_by_faction/groundside_wy_misc.dmi',
-	)
 	armor_melee = CLOTHING_ARMOR_LOW
 	armor_bullet = CLOTHING_ARMOR_LOW
 	armor_laser = CLOTHING_ARMOR_NONE

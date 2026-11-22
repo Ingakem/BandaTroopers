@@ -340,8 +340,6 @@
 		if(headset_hud_on)
 			for(var/type in hud_type)
 				var/datum/mob_hud/H = GLOB.huds[type]
-				if(!H)
-					continue
 				H.add_hud_to(user, src)
 			//squad leader locator is no longer invisible on our player HUD.
 			if(user.mind && (user.assigned_squad || misc_tracking) && user.hud_used && user.hud_used.locate_leader)
@@ -362,8 +360,6 @@
 	if(istype(user) && user.has_item_in_ears(src)) //dropped() is called before the inventory reference is update.
 		for(var/type in hud_type)
 			var/datum/mob_hud/H = GLOB.huds[type]
-			if(!H)
-				continue
 			H.remove_hud_from(user, src)
 		//squad leader locator is invisible again
 		if(user.hud_used && user.hud_used.locate_leader)
@@ -389,8 +385,7 @@
 	else
 		for(var/type in hud_type)
 			var/datum/mob_hud/H = GLOB.huds[type]
-			if(H)
-				H.add_hud_to(usr, src)
+			H.add_hud_to(usr, src)
 
 /obj/item/device/radio/headset/proc/toggle_squadhud()
 	set name = "Toggle Headset HUD"
@@ -405,8 +400,6 @@
 		if(user.has_item_in_ears(src)) //worn
 			for(var/type in hud_type)
 				var/datum/mob_hud/H = GLOB.huds[type]
-				if(!H)
-					continue
 				if(headset_hud_on)
 					H.add_hud_to(usr, src)
 					if(user.mind && (misc_tracking || user.assigned_squad) && user.hud_used?.locate_leader)
@@ -483,12 +476,6 @@
 			marker_flags = MINIMAP_FLAG_CLF
 		else if(hud_type == MOB_HUD_FACTION_FIL)
 			marker_flags = MINIMAP_FLAG_CLF
-		// SS220 EDIT - START: HALO Minimap Fix - UNSC and Covenant minimap tracking
-		else if(hud_type == MOB_HUD_FACTION_UNSC)
-			marker_flags = MINIMAP_FLAG_UNSC
-		else if(hud_type == MOB_HUD_FACTION_COVENANT)
-			marker_flags = MINIMAP_FLAG_COVENANT
-		// SS220 EDIT - END
 
 	if(wearer.undefibbable)
 		set_undefibbable_on_minimap(z_level, marker_flags)

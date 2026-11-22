@@ -2,7 +2,7 @@
 	title = JOB_SQUAD_MARINE_ODST
 	gear_preset = /datum/equipment_preset/unsc/pfc/odst
 	gear_preset_secondary = /datum/equipment_preset/unsc/pfc/odst/lesser_rank
-	job_options = list(HALO_PFC_VARIANT = "PFC", HALO_LCPL_VARIANT = "LCPL")
+	job_options = list(HALO_PFC_VARIANT = "LCPL", HALO_PVT_VARIANT = "PFC")
 
 /datum/job/marine/standard/ai/rto/halo/odst
 	title = JOB_SQUAD_RTO_ODST

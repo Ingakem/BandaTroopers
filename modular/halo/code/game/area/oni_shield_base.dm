@@ -1,6 +1,6 @@
 /area/shield_base
 	name = "ShieldBase"
-	icon_state = "green"
+	icon_state = "lv-626"
 	can_build_special = TRUE
 	powernet_name = "shieldbase"
 	minimap_color = MINIMAP_AREA_COLONY

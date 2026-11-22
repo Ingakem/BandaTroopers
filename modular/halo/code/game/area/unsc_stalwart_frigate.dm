@@ -178,7 +178,7 @@
 
 /area/unsc_stalwart_frigate/auxiliary/bridge
 	name = "\improper Вспомогательная зона: мостик"
-	icon_state = "cic"
+	icon_state = "bridge"
 
 /area/unsc_stalwart_frigate/auxiliary/operations
 	name = "\improper Вспомогательная зона: операции"
