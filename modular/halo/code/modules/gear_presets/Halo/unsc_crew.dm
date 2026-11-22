@@ -32,18 +32,6 @@
 		new_human.h_style = pick("Side Undercut", "Side Hang Undercut (Reverse)", "Undercut, Top", "CIA", "Mulder", "Pvt. Redding", "Pixie Cut Left", "Pixie Cut Right", "Bun")
 	new_human.change_real_name(new_human, random_name)
 	new_human.age = rand(20,35)
-
-/datum/equipment_preset/unsc_crew/proc/get_shipboard_headset_type(command_role = FALSE)
-	var/headset_type = GLOB.RoleAuthority?.get_active_halo_shipboard_headset_type(assignment || rank)
-	if(headset_type)
-		return headset_type
-	return command_role ? /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/command : /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/crew
-
-/datum/equipment_preset/unsc_crew/proc/equip_shipboard_headset(mob/living/carbon/human/new_human, command_role = FALSE)
-	var/headset_type = get_shipboard_headset_type(command_role)
-	if(!headset_type)
-		return
-	new_human.equip_to_slot_or_del(new headset_type(new_human), WEAR_L_EAR)
 //*****************************************************************************************************/
 //    UNSC CREW PRESETS
 
@@ -65,7 +53,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/halo/m6c(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/halo/m6c(new_human), WEAR_IN_BACK)
 	//face
-	src.equip_shipboard_headset(new_human, FALSE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc(new_human), WEAR_L_EAR)
 	//uniform
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/crew(new_human), WEAR_BODY)
 	//limbs
@@ -93,7 +81,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/halo/m6c(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/halo/m6c(new_human), WEAR_IN_BACK)
 	//face
-	src.equip_shipboard_headset(new_human, FALSE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc(new_human), WEAR_L_EAR)
 	//uniform
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/crew/engi(new_human), WEAR_BODY)
 	//waist
@@ -122,7 +110,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/extinguisher/mini(new_human), WEAR_IN_BACK)
 	//face
-	src.equip_shipboard_headset(new_human, TRUE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc(new_human), WEAR_L_EAR)
 	//uniform
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/crew/engi/officer(new_human), WEAR_BODY)
 	//waist
@@ -138,7 +126,6 @@
 	name = "Техник полетной палубы UNSC"
 	assignment = JOB_UNSC_CREW_FLIGHT
 	rank = JOB_UNSC_CREW_FLIGHT
-	access = list(ACCESS_MARINE_DROPSHIP)
 	paygrades = list(PAY_SHORT_NE4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "CRMN FT"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -153,7 +140,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/halo/m6c(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/halo/m6c(new_human), WEAR_IN_BACK)
 	//face
-	src.equip_shipboard_headset(new_human, FALSE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc(new_human), WEAR_L_EAR)
 	//uniform
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/crew/flight(new_human), WEAR_BODY)
 	//waist
@@ -170,7 +157,6 @@
 	name = "Офицер полетной палубы UNSC"
 	assignment = JOB_UNSC_CREW_FLIGHT_CHIEF
 	rank = JOB_UNSC_CREW_FLIGHT_CHIEF
-	access = list(ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_LEADER)
 	paygrades = list(PAY_SHORT_NO2 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "CRMN FDO"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -183,7 +169,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/extinguisher/mini(new_human), WEAR_IN_BACK)
 	//face
-	src.equip_shipboard_headset(new_human, TRUE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc(new_human), WEAR_L_EAR)
 	//uniform
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/crew/flight/officer(new_human), WEAR_BODY)
 	//waist
@@ -212,7 +198,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/halo/m6c(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/halo/m6c(new_human), WEAR_IN_BACK)
 	//face
-	src.equip_shipboard_headset(new_human, FALSE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc(new_human), WEAR_L_EAR)
 	//uniform
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/crew/operations(new_human), WEAR_BODY)
 	//limbs
@@ -226,7 +212,6 @@
 	name = "Операционный офицер UNSC"
 	assignment = JOB_UNSC_CREW_OPS_CHIEF
 	rank = JOB_UNSC_CREW_OPS_CHIEF
-	access = list(ACCESS_MARINE_COMMAND, ACCESS_MARINE_LEADER)
 	paygrades = list(PAY_SHORT_NW1 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "CRMN OO"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -238,7 +223,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel/unsc(new_human), WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human), WEAR_IN_BACK)
 	//face
-	src.equip_shipboard_headset(new_human, TRUE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc(new_human), WEAR_L_EAR)
 	//uniform
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/crew/operations/officer(new_human), WEAR_BODY)
 	//waist
@@ -269,7 +254,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/halo/m6c(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/halo/m6c(new_human), WEAR_IN_BACK)
 	//face
-	src.equip_shipboard_headset(new_human, FALSE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc(new_human), WEAR_L_EAR)
 	//uniform
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/crew/med(new_human), WEAR_BODY)
 	//waist
@@ -300,7 +285,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/tool/surgery/surgical_line(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/surgery/synthgraft(new_human), WEAR_IN_BACK)
 	//face
-	src.equip_shipboard_headset(new_human, TRUE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc(new_human), WEAR_L_EAR)
 	//uniform
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/crew/med/officer(new_human), WEAR_BODY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/labcoat(new_human), WEAR_JACKET)
@@ -316,7 +301,6 @@
 	name = "Офицер мостика UNSC"
 	assignment = JOB_UNSC_CREW_COM
 	rank = JOB_UNSC_CREW_COM
-	access = list(ACCESS_MARINE_COMMAND, ACCESS_MARINE_LEADER)
 	paygrades = list(PAY_SHORT_NO3 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "BO"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -330,7 +314,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/halo/m6c(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/halo/m6c(new_human), WEAR_IN_BACK)
 	//face
-	src.equip_shipboard_headset(new_human, TRUE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc(new_human), WEAR_L_EAR)
 	//uniform
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/crew/command(new_human), WEAR_BODY)
 	//limbs
@@ -356,7 +340,6 @@
 	name = "Офицер мостика UNSC - старпом"
 	assignment = JOB_UNSC_CREW_COM_XO
 	rank = JOB_UNSC_CREW_COM_XO
-	access = list(ACCESS_MARINE_COMMAND, ACCESS_MARINE_LEADER, ACCESS_MARINE_DROPSHIP)
 	paygrades = list(PAY_SHORT_NO4 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/unsc_crew/command/xo/load_gear(mob/living/carbon/human/new_human)
@@ -367,7 +350,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/halo/m6g(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/halo/m6g(new_human), WEAR_IN_BACK)
 	//face
-	src.equip_shipboard_headset(new_human, TRUE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc(new_human), WEAR_L_EAR)
 	//uniform
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/crew/command(new_human), WEAR_BODY)
 	//waist
@@ -381,7 +364,6 @@
 	name = "Офицер мостика UNSC - капитан"
 	assignment = JOB_UNSC_CREW_COM_CPT
 	rank = JOB_UNSC_CREW_COM_CPT
-	access = list(ACCESS_MARINE_CO, ACCESS_MARINE_COMMAND, ACCESS_MARINE_LEADER, ACCESS_MARINE_DROPSHIP)
 	paygrades = list(PAY_SHORT_NO5 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/unsc_crew/rnd
@@ -401,7 +383,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/halo/m6c(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/halo/m6c(new_human), WEAR_IN_BACK)
 	//face
-	src.equip_shipboard_headset(new_human, FALSE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc(new_human), WEAR_L_EAR)
 	//uniform
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/crew/rnd(new_human), WEAR_BODY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/labcoat(new_human), WEAR_JACKET)
