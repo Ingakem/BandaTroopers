@@ -1,6 +1,6 @@
 /// Base payload used when an RTO deploys a visibility sector.
 /datum/fire_support/rto_visibility
-	name = "сигнал сектора RTO"
+	name = "RTO visibility payload"
 	fire_support_type = "rto_visibility_payload"
 	fire_support_firer = FIRESUPPORT_ARTY
 	cost = 0
@@ -18,7 +18,7 @@
 	start_sound = null
 
 /datum/fire_support/rto_visibility/illumination
-	name = "Подсветка"
+	name = "Illumination"
 	fire_support_type = "rto_visibility_illumination"
 	icon_state = "flare_mortar"
 	impact_start_visual = /obj/effect/temp_visual/falling_obj/flare

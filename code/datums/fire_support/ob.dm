@@ -1,14 +1,14 @@
 /datum/fire_support/ob
-	name = "Фугасный орбитальный удар"
+	name = "HE OB"
 	fire_support_firer = FIRESUPPORT_ORBITAL
 	fire_support_type = FIRESUPPORT_TYPE_OB
 	scatter_range = 1
 	cost = 5
 	icon_state = "cruise"
 	initiate_title = "CIC"
-	initiate_chat_message = "ЦЕЛЬ ПРИНЯТА. ОРБИТАЛЬНЫЙ УДАР В ПУТИ."
+	initiate_chat_message = "TARGET ACQUIRED OB INBOUND."
 	initiate_screen_message = list(
-		"Запрос на орбитальный удар принят, фугасный заряд уже в пути.",
+		"Orbital support request received, HE inbound.",
 		)
 	initiate_sound = 'sound/weapons/gun_orbital_travel.ogg'
 	start_visual = /obj/effect/temp_visual/falling_obj/ob

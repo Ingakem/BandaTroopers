@@ -1,5 +1,5 @@
 /datum/fire_support/mortar
-	name = "Фугасный миномёт"
+	name = "HE mortar"
 	fire_support_firer = FIRESUPPORT_ARTY
 	fire_support_type = FIRESUPPORT_TYPE_HE_MORTAR
 	cost = 2
@@ -9,12 +9,12 @@
 	impact_delay = 0.5 SECONDS
 	visual_impact_delay = 0.3 SECONDS
 	icon_state = "he_mortar"
-	initiate_chat_message = "КООРДИНАТЫ ПОДТВЕРЖДЕНЫ. МИНОМЁТНЫЙ ЗАЛП В ПУТИ."
+	initiate_chat_message = "COORDINATES CONFIRMED. MORTAR BARRAGE INCOMING."
 	initiate_screen_message = list(
-		"Артиллерия добавляет порядка туда, где иначе была бы мясорубка.",
-		"В мире есть два типа людей: артиллеристы и цели.",
-		"Огонь на поражение, приём.",
-		"Снаряды уже в пути!",
+		"Artillery brings dignity to what would otherwise be an ugly brawl.",
+		"The world consists of 2 types of people, artillery men and targets.",
+		"Firing for effect, over.",
+		"Shells, on the way!",
 	)
 	initiate_title = "Rhino-1"
 	initiate_sound = 'sound/weapons/gun_mortar_travel.ogg'
@@ -35,11 +35,11 @@
 	portrait_type = "beret_2_red"
 
 /datum/fire_support/mortar/incendiary
-	name = "Зажигательный миномёт"
+	name = "INC mortar"
 	fire_support_type = FIRESUPPORT_TYPE_INCENDIARY_MORTAR
 	icon_state = "incendiary_mortar"
-	initiate_chat_message = "КООРДИНАТЫ ПОДТВЕРЖДЕНЫ. ЗАЖИГАТЕЛЬНЫЙ ЗАЛП В ПУТИ."
-	initiate_screen_message = list("Координаты подтверждены, зажигательный залп уже в пути!")
+	initiate_chat_message = "COORDINATES CONFIRMED. MORTAR BARRAGE INCOMING."
+	initiate_screen_message = list("Coordinates confirmed, incendiary inbound!")
 	impact_start_visual = /obj/effect/temp_visual/falling_obj/incend
 	var/radius = 5
 	var/flame_level = BURN_TIME_TIER_5 + 5 //Type B standard, 50 base + 5 from chemfire code.
@@ -59,13 +59,13 @@
 	portrait_type = "beret_2_red"
 
 /datum/fire_support/mortar/flare
-	name = "Осветительный миномёт"
+	name = "FLR mortar"
 	fire_support_type = FIRESUPPORT_TYPE_FLARE_MORTAR
 	cost = 1
 	impact_quantity = 4
 	icon_state = "flare_mortar"
-	initiate_chat_message = "КООРДИНАТЫ ПОДТВЕРЖДЕНЫ. ОСВЕТИТЕЛЬНАЯ ПОДДЕРЖКА В ПУТИ."
-	initiate_screen_message = "Координаты подтверждены, осветительные мины уже в пути!"
+	initiate_chat_message = "COORDINATES CONFIRMED. FLARE SUPPORT INCOMING."
+	initiate_screen_message = "Coordinates confirmed, illumination inbound!"
 	impact_start_visual = /obj/effect/temp_visual/falling_obj/flare
 
 /datum/fire_support/mortar/flare/do_impact(turf/target_turf)
@@ -80,13 +80,13 @@
 	portrait_type = "beret_2_red"
 
 /datum/fire_support/mortar/smoke
-	name = "Дымовой миномёт"
+	name = "SMK mortar"
 	fire_support_type = FIRESUPPORT_TYPE_SMOKE_MORTAR
 	cost = 1
 	impact_quantity = 4
 	icon_state = "smoke_mortar"
-	initiate_chat_message = "КООРДИНАТЫ ПОДТВЕРЖДЕНЫ. ДЫМОВОЙ ЗАЛП В ПУТИ."
-	initiate_screen_message = "Координаты подтверждены, дымовой залп уже в пути!"
+	initiate_chat_message = "COORDINATES CONFIRMED. MORTAR BARRAGE INCOMING."
+	initiate_screen_message = "Coordinates confirmed, smoke inbound!"
 	impact_start_visual = /obj/effect/temp_visual/falling_obj/smoke
 	///smoke type created when the grenade is primed
 	var/datum/effect_system/smoke_spread/smoketype = /datum/effect_system/smoke_spread/bad
@@ -109,12 +109,12 @@
 	portrait_type = "beret_2_red"
 
 /datum/fire_support/mortar/smoke/cn
-	name = "Миномёт CN-20"
+	name = "CN-20 mortar"
 	fire_support_type = FIRESUPPORT_TYPE_NERVE_SMOKE_MORTAR
 	cost = 2
 	icon_state = "nerve_mortar"
-	initiate_chat_message = "КООРДИНАТЫ ПОДТВЕРЖДЕНЫ. ГАЗОВЫЙ ЗАЛП CN-20 В ПУТИ."
-	initiate_screen_message = list("Координаты подтверждены, заряд CN-20 уже в пути!")
+	initiate_chat_message = "COORDINATES CONFIRMED. MORTAR BARRAGE INCOMING."
+	initiate_screen_message = list("Coordinates confirmed, nerve gas inbound!")
 	smoketype = /datum/effect_system/smoke_spread/cn20
 	smoke_duration = 30
 
@@ -126,12 +126,12 @@
 	portrait_type = "beret_2_red"
 
 /datum/fire_support/mortar/smoke/lsd
-	name = "Миномёт LSD"
+	name = "LSD mortar"
 	fire_support_type = FIRESUPPORT_TYPE_LSD_SMOKE_MORTAR
 	cost = 1
 	icon_state = "lsd_mortar"
-	initiate_chat_message = "КООРДИНАТЫ ПОДТВЕРЖДЕНЫ. ГАЗОВЫЙ ЗАЛП LSD В ПУТИ."
-	initiate_screen_message = list("Координаты подтверждены, заряд LSD уже в пути!")
+	initiate_chat_message = "COORDINATES CONFIRMED. MORTAR BARRAGE INCOMING."
+	initiate_screen_message = list("Coordinates confirmed, LSD gas inbound!")
 	smoketype = /datum/effect_system/smoke_spread/LSD
 	smoke_duration = 30
 
@@ -143,7 +143,7 @@
 	portrait_type = "beret_2_red"
 
 /datum/fire_support/mortar/mlrs
-	name = "Фугасная РСЗО"
+	name = "HE MLRS"
 	fire_support_type = FIRESUPPORT_TYPE_HE_MLRS
 	cost = 3
 	scatter_range = 11
@@ -152,12 +152,12 @@
 	impact_delay = 0.2 SECONDS
 	visual_impact_delay = 1
 	icon_state = "mlrs"
-	initiate_chat_message = "КООРДИНАТЫ ПОДТВЕРЖДЕНЫ. ЗАЛП РСЗО В ПУТИ."
+	initiate_chat_message = "COORDINATES CONFIRMED. MLRS BARRAGE INCOMING."
 	initiate_screen_message = list(
-		"По моей команде, открыть адский огонь!",
-		"Огонь на поражение, приём.",
-		"Полный залп уже в пути!",
-		"Сейчас они запляшут под нашу музыку!",
+		"At my signal, unleash hell!",
+		"Firing for effect, over.",
+		"Full salvo, on the way!",
+		"Their gonna dance to our tune!",
 	)
 	initiate_title = "Rhino-1"
 	initiate_sound = 'sound/weapons/gun_mortar_travel.ogg'
@@ -175,7 +175,7 @@
 	portrait_type = "beret_2_red"
 
 /datum/fire_support/mortar/smoke/mlrs_cn
-	name = "РСЗО CN-20"
+	name = "CN-20 MLRS"
 	icon_state = "nerve_mlrs"
 	fire_support_type = FIRESUPPORT_TYPE_NERVE_MLRS
 	cost = 2
@@ -185,13 +185,13 @@
 	impact_delay = 0.2 SECONDS
 	visual_impact_delay = 1
 	icon_state = "mlrs"
-	initiate_chat_message = "КООРДИНАТЫ ПОДТВЕРЖДЕНЫ. ЗАЛП РСЗО CN-20 В ПУТИ."
+	initiate_chat_message = "COORDINATES CONFIRMED. MLRS CN-20 BARRAGE INCOMING."
 	initiate_title = "Rhino-1"
 	initiate_screen_message = list(
-		"По моей команде, открыть адский огонь!",
-		"Огонь на поражение, приём.",
-		"Полный залп уже в пути!",
-		"Сейчас они запляшут под нашу музыку!",
+		"At my signal, unleash hell!",
+		"Firing for effect, over.",
+		"Full salvo, on the way!",
+		"Their gonna dance to our tune!",
 	)
 	initiate_sound = 'sound/weapons/gun_mortar_travel.ogg'
 	impact_start_visual = /obj/effect/temp_visual/falling_obj/mlrs_smoke

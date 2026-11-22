@@ -1,5 +1,5 @@
 /datum/fire_support/rockets
-	name = "Фугасные ракеты"
+	name = "HE Rockets"
 	fire_support_firer = FIRESUPPORT_CAS
 	fire_support_type = FIRESUPPORT_TYPE_ROCKETS
 	cost = 3
@@ -7,12 +7,12 @@
 	impact_quantity = 16
 	icon_state = "rockets"
 	start_visual = /obj/effect/temp_visual/dropship_flyby
-	initiate_chat_message = "ЦЕЛЬ ПРИНЯТА. ФУГАСНЫЙ РАКЕТНЫЙ ЗАЛП В ПУТИ."
+	initiate_chat_message = "TARGET ACQUIRED HE ROCKET RUN INBOUND."
 	initiate_screen_message = list(
-		"Ракеты пошли, залп уже в пути!",
-		"Сейчас будет небольшой фейерверк.",
-		"Залп отправлен, следите за накрытием!",
-		"Захожу горячо, ракеты уже идут к цели!",
+		"Rockets hot, incoming!",
+		"Heres a little firework show for you all!",
+		"Salvo sent, watch the spread!",
+		"Flying in hot, rockets inbound!",
 		)
 
 /datum/fire_support/rockets/do_impact(turf/target_turf)
@@ -27,19 +27,19 @@
 	start_visual = /obj/effect/temp_visual/dropship_flyby/krokodil
 
 /datum/fire_support/incendiary_rockets
-	name = "Зажигательные ракеты"
+	name = "INC rockets"
 	fire_support_firer = FIRESUPPORT_CAS
 	fire_support_type = FIRESUPPORT_TYPE_INCEND_ROCKETS
 	cost = 3
 	icon_state = "incend_rockets"
 	scatter_range = 7
 	impact_quantity = 10
-	initiate_chat_message = "ЦЕЛЬ ПРИНЯТА. ЗАЖИГАТЕЛЬНЫЙ РАКЕТНЫЙ ЗАЛП В ПУТИ."
+	initiate_chat_message = "TARGET ACQUIRED INC ROCKET RUN INBOUND."
 	initiate_screen_message = list(
-		"Ракеты пошли, залп уже в пути!",
-		"Сейчас будет небольшой фейерверк.",
-		"Залп отправлен, следите за накрытием!",
-		"Захожу горячо, ракеты уже идут к цели!",
+		"Rockets hot, incoming!",
+		"Heres a little firework show for you all!",
+		"Salvo sent, watch the spread!",
+		"Flying in hot, rockets inbound!",
 		)
 	start_visual = /obj/effect/temp_visual/dropship_flyby
 

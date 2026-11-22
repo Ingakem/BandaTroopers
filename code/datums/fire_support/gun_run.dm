@@ -1,18 +1,18 @@
 /datum/fire_support/gau
-	name = "Пушечный заход"
+	name = "Gun run"
 	fire_support_firer = FIRESUPPORT_CAS
 	fire_support_type = FIRESUPPORT_TYPE_GUN
 	cost = 3
 	impact_quantity = 4
 	scatter_range = 3
 	icon_state = "gau"
-	initiate_chat_message = "ЦЕЛЬ ПРИНЯТА. ПУШЕЧНЫЙ ЗАХОД В ПУТИ."
+	initiate_chat_message = "TARGET ACQUIRED GUN RUN INBOUND."
 	initiate_screen_message = list(
-		"Цель принята, пушечный заход уже идёт.",
-		"Лазер вижу, захожу на цель с пушками.",
-		"Захожу, всем прижаться к земле!",
-		"Наконец-то цели, начинаю штурмовку.",
-		"Пора дать пушкам поработать, захожу на цель.",
+		"Target received, gun run inbound",
+		"Lase sighted, sending lead delivery hot and ready",
+		"Im coming in, keep your heads down!",
+		"Finally some targets! Strafe incomin'",
+		"Time to let these guns roar, we're inbound.",
 	)
 
 /datum/fire_support/gau/do_impact(turf/target_turf)
@@ -68,20 +68,20 @@
 	start_visual = /obj/effect/temp_visual/dropship_flyby/krokodil
 
 /datum/fire_support/laser
-	name = "Лазерный заход"
+	name = "Laser run"
 	fire_support_firer = FIRESUPPORT_CAS
 	fire_support_type = FIRESUPPORT_TYPE_LASER
 	cost = 2
 	impact_quantity = 7
 	scatter_range = 3
 	icon_state = "laser"
-	initiate_chat_message = "ЦЕЛЬ ПРИНЯТА. ЛАЗЕРНЫЙ ЗАХОД В ПУТИ."
+	initiate_chat_message = "TARGET ACQUIRED LASER RUN INBOUND."
 	initiate_screen_message = list(
-		"Цель принята, лазерный заход уже идёт.",
-		"Вспышка, вспышка! Не смотреть наверх!",
-		"Сейчас там станет очень жарко, осторожнее под ногами.",
-		"Закройте глаза или наденьте защиту, лазер пошёл!",
-		"Сейчас там всё прожарим.",
+		"Target received, laser inbound",
+		"Flash, flash! Don't look up!",
+		"Going to get real hot down there, watch your step.",
+		"Close your eyes or put some goggles on, laser pulsing!",
+		"Lets grill some motherfuckers!",
 	)
 
 /datum/fire_support/laser/do_impact(turf/target_turf)

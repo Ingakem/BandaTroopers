@@ -1,18 +1,18 @@
 /// Logistics support variants used by the modular RTO package.
 /datum/fire_support/supply_drop/mine_crate
-	name = "Сброс ящика мин"
+	name = "Mine crate drop"
 	fire_support_type = "rto_mine_crate_drop"
 	icon_state = "ammo"
 	delivered = /obj/structure/largecrate/supply/explosives/mines
 
 /datum/fire_support/sentry_drop/full
-	name = "Сброс полноразмерной турели"
+	name = "Full sentry drop"
 	fire_support_type = "rto_full_sentry_drop"
 	icon_state = "sentry"
 	sentry_type = /obj/structure/machinery/defenses/sentry/launchable
 
 /datum/fire_support/sentry_drop/mini
-	name = "Сброс мини-турели"
+	name = "Mini-sentry drop"
 	fire_support_type = "rto_mini_sentry_drop"
 	icon_state = "sentry"
 	sentry_type = /obj/structure/machinery/defenses/sentry/launchable/mini
