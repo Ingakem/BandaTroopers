@@ -461,6 +461,7 @@
 				JOB_SQUAD_LEADER = /datum/equipment_preset/unsc/leader/odst,
 				JOB_SQUAD_SPECIALIST = /datum/equipment_preset/unsc/spec/odst,
 			)
+
 	return null
 
 /datum/authority/branch/role/proc/get_halo_main_ship_profile(platoon_type = MAIN_SHIP_PLATOON)

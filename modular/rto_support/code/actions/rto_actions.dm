@@ -55,15 +55,18 @@
 	return length(parts) ? "[base_name] ([jointext(parts, "; ")])" : base_name
 
 /datum/action/human_action/rto/select_preset
-	name = "Выбрать пакеты поддержки"
+	name = "Выбрать пакет поддержки"
 	action_icon_state = "designator_swap_mortar"
 
 /datum/action/human_action/rto/select_preset/action_activate()
 	. = ..()
 	if(!can_use_action())
 		return
-	if(!controller?.can_open_template_menu())
-		to_chat(owner, SPAN_WARNING("Настройка пакетов сейчас недоступна."))
+	if(!controller?.is_support_enabled_by_rules())
+		to_chat(owner, SPAN_WARNING("Disabled by Game Rule Panel"))
+		return
+	if(!controller?.can_select_template())
+		to_chat(owner, SPAN_WARNING("Пакет поддержки уже выбран."))
 		return
 	new /datum/rto_support_preset_menu(owner, controller)
 
@@ -72,47 +75,39 @@
 	var/disabled_by_rules = !controller?.is_support_enabled_by_rules()
 	var/has_binocular = controller?.has_rto_binocular_in_hand()
 	var/label = disabled_by_rules ? "Disabled by Game Rule Panel" : (has_binocular ? RTO_SUPPORT_STATUS_READY : RTO_SUPPORT_STATUS_NO_BINOCULAR)
-	set_name(build_action_name("Выбрать пакеты поддержки", label, secondary))
+	set_name(build_action_name("Выбрать пакет поддержки", label, secondary))
 	set_button_state(RTO_SUPPORT_BUTTON_STATE_READY, disabled_by_rules || !has_binocular)
 	set_button_countdown(disabled_by_rules ? "GM" : (has_binocular ? null : "B"), "#c6c6c6")
 
 /datum/action/human_action/rto/visibility_zone
 	name = "Развернуть сектор наведения"
-	var/template_id
 
-/datum/action/human_action/rto/visibility_zone/New(datum/rto_support_controller/new_controller, new_template_id)
-	template_id = new_template_id
-	var/datum/rto_support_template/template = new_controller?.get_selected_template(template_id)
-	if(template)
-		name = template.visibility_zone_name
-		icon_file = template.visibility_action_icon_file
-		action_icon_state = template.visibility_action_icon_state
+/datum/action/human_action/rto/visibility_zone/New(datum/rto_support_controller/new_controller)
+	if(new_controller?.active_template)
+		name = new_controller.active_template.visibility_zone_name
+		icon_file = new_controller.active_template.visibility_action_icon_file
+		action_icon_state = new_controller.active_template.visibility_action_icon_state
 	..()
-
-/datum/action/human_action/rto/visibility_zone/Destroy()
-	template_id = null
-	return ..()
 
 /datum/action/human_action/rto/visibility_zone/action_activate()
 	. = ..()
 	if(!can_use_action())
 		return
-	if(controller?.is_action_armed(RTO_SUPPORT_ARM_VISIBILITY_ZONE, template_id))
+	if(controller?.is_action_armed(RTO_SUPPORT_ARM_VISIBILITY_ZONE))
 		controller.disarm_action()
 		return
-	controller?.arm_action(RTO_SUPPORT_ARM_VISIBILITY_ZONE, template_id)
+	controller?.arm_action(RTO_SUPPORT_ARM_VISIBILITY_ZONE)
 
 /datum/action/human_action/rto/visibility_zone/refresh_from_controller()
-	var/datum/rto_support_template/template = controller?.get_selected_template(template_id)
-	if(!template || !controller?.template_requires_zone(template_id))
+	if(!controller?.active_template || !controller.template_requires_zone())
 		set_button_state(RTO_SUPPORT_BUTTON_STATE_DISABLED, TRUE)
 		set_button_countdown(null)
 		return
 
-	var/list/state = controller.build_visibility_action_state(template_id)
+	var/list/state = controller.build_visibility_action_state()
 	var/button_state = state["is_armed"] ? RTO_SUPPORT_BUTTON_STATE_ARMED : RTO_SUPPORT_BUTTON_STATE_READY
 	var/disabled = state["is_disabled"]
-	var/button_name = build_action_name(template.visibility_zone_name, state["primary_label"], null)
+	var/button_name = build_action_name(controller.active_template.visibility_zone_name, state["primary_label"], null)
 
 	set_name(button_name)
 	set_button_state(button_state, disabled)
@@ -166,11 +161,9 @@
 
 /datum/action/human_action/rto/support
 	unique = FALSE
-	var/template_id
 	var/datum/rto_support_action_template/action_template
 
-/datum/action/human_action/rto/support/New(datum/rto_support_controller/new_controller, new_template_id, datum/rto_support_action_template/new_action_template)
-	template_id = new_template_id
+/datum/action/human_action/rto/support/New(datum/rto_support_controller/new_controller, datum/rto_support_action_template/new_action_template)
 	action_template = new_action_template
 	if(action_template)
 		name = action_template.name
@@ -179,7 +172,6 @@
 	..(new_controller)
 
 /datum/action/human_action/rto/support/Destroy()
-	template_id = null
 	action_template = null
 	return ..()
 
@@ -187,19 +179,18 @@
 	. = ..()
 	if(!can_use_action())
 		return
-	if(controller?.is_action_armed(action_template?.action_id, template_id))
+	if(controller?.is_action_armed(action_template?.action_id))
 		controller.disarm_action()
 		return
-	controller?.arm_action(action_template?.action_id, template_id)
+	controller?.arm_action(action_template?.action_id)
 
 /datum/action/human_action/rto/support/refresh_from_controller()
-	var/datum/rto_support_template/template = controller?.get_selected_template(template_id)
-	if(!template || !action_template)
+	if(!controller?.active_template || !action_template)
 		set_button_state(RTO_SUPPORT_BUTTON_STATE_DISABLED, TRUE)
 		set_button_countdown(null)
 		return
 
-	var/list/state = controller.build_support_action_state(action_template.action_id, template_id)
+	var/list/state = controller.build_support_action_state(action_template.action_id)
 	var/button_state = state["is_armed"] ? RTO_SUPPORT_BUTTON_STATE_ARMED : RTO_SUPPORT_BUTTON_STATE_READY
 	var/disabled = state["is_disabled"]
 	var/button_name = build_action_name(action_template.name, state["primary_label"], null)
