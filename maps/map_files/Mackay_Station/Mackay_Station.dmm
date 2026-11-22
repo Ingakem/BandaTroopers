@@ -1,372 +1,10 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"aaa" = (
-/obj/docking_port/stationary/marine_dropship/pelican_lz{
-	name = "ODP Hangar Bay #1"
-	},
-/turf/open/floor/plating,
-/area/mackay_station/romeo/redhangars)
-"aab" = (
-/obj/docking_port/stationary/marine_dropship/pelican_lz{
-	name = "ODP Hangar Bay #3"
-	},
-/turf/open/floor/plating,
-/area/mackay_station/romeo/redhangars)
-"aac" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W"
-	},
-/obj/structure/barricade/handrail{
-	dir = 8
-	},
-/turf/open/floor/almayer/research,
-/area/mackay_station/romeo/redtram1)
-"aad" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
-	},
-/obj/structure/barricade/handrail{
-	dir = 4
-	},
-/turf/open/floor/almayer/research,
-/area/mackay_station/romeo/redtram1)
-"aae" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
-	},
-/obj/structure/barricade/handrail{
-	dir = 4
-	},
-/turf/open/floor/almayer/research,
-/area/mackay_station/romeo/redtram2)
-"aaf" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
-	},
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/barricade/handrail{
-	dir = 4
-	},
-/turf/open/floor/almayer/research,
-/area/mackay_station/romeo/redtram1)
-"aag" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W"
-	},
-/obj/structure/barricade/handrail{
-	dir = 8
-	},
-/turf/open/floor/almayer/research,
-/area/mackay_station/romeo/redtram2)
-"aah" = (
-/obj/structure/platform{
-	dir = 4
-	},
-/turf/open/shuttle/escapepod,
-/area/mackay_station/pathways)
-"aai" = (
-/obj/structure/platform{
-	dir = 8
-	},
-/turf/open/shuttle/escapepod/north,
-/area/mackay_station/pathways)
-"aaj" = (
-/turf/open/floor/kutjevo/tan/multi_tiles/east,
-/area/mackay_station/pathways)
-"aak" = (
-/turf/open/floor/kutjevo/tan/multi_tiles/southeast,
-/area/mackay_station/pathways)
-"aal" = (
-/obj/structure/machinery/light/double/blue{
-	dir = 4
-	},
-/turf/open/floor/kutjevo/tan/multi_tiles/east,
-/area/mackay_station/pathways)
-"aam" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	dir = 1
-	},
-/turf/open/floor/kutjevo/tan/multi_tiles/southeast,
-/area/mackay_station/pathways)
-"aan" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "door_warning"
-	},
-/turf/open/floor/almayer/research,
-/area/mackay_station/pathways)
-"aao" = (
-/obj/structure/barricade/handrail/strata{
-	dir = 4
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "door_warning"
-	},
-/turf/open/floor/almayer/edge/smooth/east,
-/area/mackay_station/pathways)
-"aap" = (
-/obj/structure/window/framed/almayer/aicore/white/hull{
-	color = "#a1a1a1"
-	},
-/turf/open/floor/almayer/research,
-/area/mackay_station/pathways)
-"aaq" = (
-/obj/structure/platform{
-	dir = 8;
-	layer = 3.3
-	},
-/obj/structure/platform{
-	dir = 1
-	},
-/turf/open/shuttle/escapepod/north,
-/area/mackay_station/pathways)
-"aar" = (
-/obj/item/trash/cigbutt,
-/obj/item/trash/cigbutt{
-	pixel_y = 15;
-	pixel_x = -4
-	},
-/obj/item/trash/cigbutt{
-	pixel_y = 10;
-	pixel_x = 6;
-	randpixel = 0
-	},
-/obj/item/trash/cigbutt{
-	pixel_y = 8
-	},
-/obj/item/trash/cigbutt{
-	pixel_y = 10;
-	pixel_x = -7
-	},
-/turf/open/floor/almayer/edge/smooth/southwest,
-/area/mackay_station/pathways)
 "aas" = (
 /obj/structure/platform{
 	dir = 4
 	},
 /turf/open/floor/almayer/silver/southeast,
 /area/mackay_station/romeo/redcommons2)
-"aat" = (
-/obj/structure/bed/chair/bolted,
-/turf/open/floor/almayer/edge/smooth,
-/area/mackay_station/pathways)
-"aau" = (
-/obj/structure/barricade/handrail/strata,
-/turf/open/floor/almayer/edge/smooth,
-/area/mackay_station/pathways)
-"aav" = (
-/obj/structure/barricade/handrail/strata,
-/turf/open/floor/almayer/edge/smooth/southeast,
-/area/mackay_station/pathways)
-"aaw" = (
-/obj/structure/machinery/vending/cigarette,
-/turf/open/floor/almayer/edge/smooth/southwest,
-/area/mackay_station/pathways)
-"aax" = (
-/turf/open/floor/almayer/research,
-/area/mackay_station/pathways)
-"aay" = (
-/obj/structure/machinery/light/double/blue{
-	dir = 8
-	},
-/turf/open/floor/almayer/edge/smooth/west,
-/area/mackay_station/pathways)
-"aaz" = (
-/turf/open/floor/almayer/edge/smooth/north,
-/area/mackay_station/pathways)
-"aaA" = (
-/obj/structure/machinery/camera/autoname,
-/turf/open/floor/almayer/edge/smooth/north,
-/area/mackay_station/pathways)
-"aaB" = (
-/obj/structure/machinery/door/poddoor/two_tile/four_tile/halo{
-	id = "spacewalk2";
-	name = "Blast Door"
-	},
-/turf/open/floor/almayer/pod_landing_floor,
-/area/mackay_station/pathways)
-"aaC" = (
-/obj/structure/machinery/door/airlock/unsc{
-	dir = 1;
-	name = "Checkpoint Entry"
-	},
-/turf/open/floor/almayer/research,
-/area/mackay_station/pathways)
-"aaD" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "door_warning"
-	},
-/turf/open/floor/almayer/edge/smooth/corner,
-/area/mackay_station/pathways)
-"aaE" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "door_warning"
-	},
-/turf/open/floor/almayer/edge/smooth/corner/east,
-/area/mackay_station/pathways)
-"aaF" = (
-/obj/structure/surface/table/almayer{
-	color = "#96918c"
-	},
-/obj/item/paper_bin/uscm{
-	pixel_x = 7;
-	pixel_y = 5
-	},
-/obj/item/tool/pen{
-	pixel_x = 7;
-	pixel_y = 2
-	},
-/obj/item/tool/stamp/denied{
-	pixel_x = -5;
-	pixel_y = 6
-	},
-/obj/item/tool/stamp/approved{
-	pixel_x = -5;
-	pixel_y = -2
-	},
-/turf/open/floor/almayer/edge/smooth/southwest,
-/area/mackay_station/pathways)
-"aaG" = (
-/obj/structure/bed/chair/comfy/ares,
-/turf/open/floor/almayer/edge/smooth,
-/area/mackay_station/pathways)
-"aaH" = (
-/obj/structure/machinery/photocopier,
-/turf/open/floor/almayer/edge/smooth,
-/area/mackay_station/pathways)
-"aaI" = (
-/obj/structure/machinery/light/double/blue,
-/turf/open/floor/almayer/edge/smooth/southeast,
-/area/mackay_station/pathways)
-"aaJ" = (
-/turf/open/floor/almayer/edge/smooth/east,
-/area/mackay_station/pathways)
-"aaK" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	icon_state = "shutterc1";
-	dir = 8;
-	id = "spacewalk1"
-	},
-/turf/open/floor/almayer/research,
-/area/mackay_station/pathways)
-"aaL" = (
-/turf/open/floor/almayer/edge/smooth/west,
-/area/mackay_station/pathways)
-"aaM" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 8;
-	id = "spacewalk1"
-	},
-/turf/open/floor/almayer/pod_landing_floor,
-/area/mackay_station/pathways)
-"aaN" = (
-/obj/structure/closet/secure_closet/guncabinet{
-	req_access = null
-	},
-/obj/item/weapon/gun/smg/halo/m7,
-/obj/item/weapon/gun/smg/halo/m7,
-/obj/item/weapon/gun/smg/halo/m7,
-/obj/item/weapon/gun/smg/halo/m7,
-/obj/item/ammo_magazine/smg/halo/m7,
-/obj/item/ammo_magazine/smg/halo/m7,
-/obj/item/ammo_magazine/smg/halo/m7,
-/obj/item/ammo_magazine/smg/halo/m7,
-/obj/item/ammo_magazine/smg/halo/m7,
-/obj/item/ammo_magazine/smg/halo/m7,
-/obj/item/ammo_magazine/smg/halo/m7,
-/obj/item/ammo_magazine/smg/halo/m7,
-/turf/open/floor/almayer/pod_landing_floor,
-/area/mackay_station/pathways)
-"aaO" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	dir = 8
-	},
-/turf/open/floor/almayer/edge/smooth/corner/west,
-/area/mackay_station/pathways)
-"aaP" = (
-/obj/structure/bed/chair/comfy/ares{
-	dir = 8
-	},
-/turf/open/floor/almayer/edge/smooth/west,
-/area/mackay_station/pathways)
-"aaQ" = (
-/obj/structure/bed/chair/comfy/ares{
-	dir = 1
-	},
-/turf/open/floor/almayer/research,
-/area/mackay_station/pathways)
-"aaR" = (
-/obj/structure/surface/table/almayer{
-	color = "#96918c"
-	},
-/obj/item/paper_bin/uscm{
-	pixel_x = -8;
-	pixel_y = 5
-	},
-/obj/item/tool/pen{
-	pixel_x = -10;
-	pixel_y = 2
-	},
-/obj/item/tool/stamp/denied{
-	pixel_x = 5;
-	pixel_y = 6
-	},
-/obj/item/tool/stamp/approved{
-	pixel_x = 5;
-	pixel_y = -2
-	},
-/obj/structure/machinery/light/double/blue{
-	dir = 1
-	},
-/turf/open/floor/almayer/edge/smooth/northwest,
-/area/mackay_station/pathways)
-"aaS" = (
-/obj/structure/machinery/disposal,
-/turf/open/floor/almayer/edge/smooth/north,
-/area/mackay_station/pathways)
-"aaT" = (
-/obj/structure/surface/table/almayer{
-	color = "#96918c"
-	},
-/obj/structure/window/reinforced/toughened{
-	dir = 8
-	},
-/obj/structure/machinery/door_control/brbutton/alt{
-	id = "spacewalk2"
-	},
-/turf/open/floor/almayer/edge/smooth/north,
-/area/mackay_station/pathways)
-"aaU" = (
-/obj/structure/surface/table/almayer{
-	color = "#96918c"
-	},
-/obj/structure/machinery/computer/cameras,
-/turf/open/floor/almayer/edge/smooth/north,
-/area/mackay_station/pathways)
-"aaV" = (
-/obj/structure/surface/table/almayer{
-	color = "#96918c"
-	},
-/obj/structure/window/reinforced/toughened{
-	dir = 4
-	},
-/obj/structure/machinery/door_control{
-	pixel_y = -1;
-	id = "spacewalk1";
-	name = "Lockdown Controls"
-	},
-/turf/open/floor/almayer/edge/smooth/north,
-/area/mackay_station/pathways)
-"aaW" = (
-/obj/structure/closet/crate/unsc,
-/turf/open/floor/almayer/research,
-/area/mackay_station/golf/greenarmory)
 "aaZ" = (
 /obj/structure/cargo_container/unsc/vertical/south_3/endcap_2,
 /turf/open/shuttle/escapepod,
@@ -629,6 +267,23 @@
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/mackay_station/golf/greentram)
+"akD" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/obj/structure/barricade/handrail,
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "akL" = (
 /obj/structure/machinery/landinglight/ds1/delaytwo,
 /obj/structure/machinery/floodlight/landing/floor{
@@ -832,12 +487,17 @@
 /turf/open/floor/almayer/greenfull,
 /area/mackay_station/golf/greenrec)
 "aqx" = (
-/obj/structure/platform{
-	dir = 8;
-	layer = 3.3
+/obj/structure/platform/strata/metal{
+	dir = 4
 	},
-/turf/open/shuttle/escapepod/north,
-/area/mackay_station/pathways)
+/obj/structure/platform_decoration/strata/metal{
+	dir = 1
+	},
+/obj/structure/platform_decoration/strata/metal{
+	dir = 4
+	},
+/turf/open/space/basic,
+/area/space)
 "arj" = (
 /turf/open/floor/almayer/edge/smooth/northwest,
 /area/mackay_station/golf/greenquarters2)
@@ -1210,10 +870,10 @@
 /turf/open/floor/almayer/silver/northeast,
 /area/mackay_station/golf/greenmedical)
 "aEF" = (
-/obj/structure/machinery/light/double/blue{
+/obj/structure/stairs{
 	dir = 1
 	},
-/turf/open/floor/almayer/edge/smooth/north,
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "aEZ" = (
 /obj/effect/decal/cleanable/dirt{
@@ -1271,6 +931,22 @@
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/mackay_station/romeo/redcommons2)
+"aGa" = (
+/obj/structure/stairs{
+	dir = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "aGy" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 4
@@ -1537,6 +1213,17 @@
 "aPj" = (
 /turf/open/floor/almayer/edge/smooth/west,
 /area/mackay_station/firecontrol)
+"aQs" = (
+/obj/structure/stairs,
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "aQu" = (
 /obj/effect/step_trigger/clone_cleaner,
 /turf/closed/wall/almayer/aicore/white/hull{
@@ -2150,6 +1837,17 @@
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/mackay_station/romeo/redcommons2)
+"bih" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NE-out";
+	pixel_y = 1;
+	pixel_x = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "bir" = (
 /obj/item/clothing/gloves/boxing/blue,
 /turf/open/floor/plating/plating_catwalk,
@@ -2281,9 +1979,6 @@
 	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
-	},
-/obj/structure/barricade/handrail{
-	dir = 8
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redtram1)
@@ -2438,6 +2133,12 @@
 	},
 /turf/open/floor/almayer/silver/north,
 /area/mackay_station/romeo/redtram1)
+"btD" = (
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "btW" = (
 /obj/structure/platform_decoration/strata/metal,
 /turf/open/floor/almayer/redcorner,
@@ -2515,7 +2216,17 @@
 /turf/open/shuttle/escapepod,
 /area/mackay_station/firecontrol)
 "bwT" = (
-/turf/open/floor/almayer/edge/smooth/corner/east,
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "bxj" = (
 /obj/structure/orbital_cannon{
@@ -3349,6 +3060,20 @@
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/romeo/redhangars)
+"ccH" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/obj/structure/barricade/handrail,
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "ccP" = (
 /obj/item/prop/unsc_status_display,
 /turf/closed/wall/almayer/aicore/white/hull{
@@ -3972,6 +3697,15 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/mackay_station/romeo/redcommons1)
+"csD" = (
+/obj/structure/stairs{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "csP" = (
 /turf/open/floor/plating/plating_catwalk,
 /area/mackay_station/romeo/redtram2)
@@ -4046,13 +3780,14 @@
 /turf/open/floor/prison/rampbottom/west,
 /area/mackay_station/romeo/redcommons2)
 "cwt" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/structure/machinery/door/poddoor/shutters/almayer/open{
-	icon_state = "shutterc1";
-	dir = 2;
-	id = "spacewalk1"
+/obj/effect/decal/warning_stripes{
+	icon_state = "SE-out";
+	pixel_x = 1
 	},
-/turf/open/floor/almayer/research,
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "cwB" = (
 /obj/effect/decal/warning_stripes{
@@ -4115,10 +3850,10 @@
 /turf/open/floor/almayer/silver,
 /area/mackay_station/romeo/redcommons2)
 "czS" = (
-/obj/structure/machinery/light/double/blue{
-	dir = 8
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
 	},
-/turf/open/floor/kutjevo/tan/multi_tiles/east,
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "cAa" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc{
@@ -4149,6 +3884,9 @@
 /obj/item/ammo_box/magazine/misc/unsc/grenade/launchable{
 	pixel_x = 11;
 	pixel_y = 12
+	},
+/obj/item/weapon/gun/shotgun/pump/halo/m90/unloaded{
+	pixel_y = 3
 	},
 /obj/item/storage/pouch/shotgun/large{
 	pixel_x = 8;
@@ -4245,7 +3983,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
 	},
-/obj/structure/barricade/handrail,
 /turf/open/floor/almayer/silver,
 /area/mackay_station/romeo/redtram1)
 "cGq" = (
@@ -4590,6 +4327,15 @@
 	},
 /turf/open/floor/almayer/silver,
 /area/mackay_station/romeo/redhangars)
+"cSt" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "cSx" = (
 /obj/structure/barricade/handrail{
 	dir = 8
@@ -4605,6 +4351,18 @@
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/bravo/blueengi)
+"cUh" = (
+/obj/structure/platform/strata/metal{
+	dir = 1
+	},
+/obj/structure/platform/strata/metal{
+	dir = 8
+	},
+/obj/structure/platform/strata/metal{
+	dir = 4
+	},
+/turf/open/space/basic,
+/area/space)
 "cUA" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -4681,10 +4439,13 @@
 /turf/open/floor/plating,
 /area/mackay_station/pathways)
 "cVK" = (
+/obj/effect/decal/unsc/airlock{
+	pixel_x = 15
+	},
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning"
 	},
-/turf/open/floor/kutjevo/tan/multi_tiles/east,
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "cVL" = (
 /turf/open/floor/almayer/redcorner,
@@ -4866,7 +4627,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
 	},
-/obj/structure/barricade/handrail,
 /turf/open/floor/almayer/silver/southwest,
 /area/mackay_station/romeo/redtram2)
 "dbG" = (
@@ -5503,6 +5263,16 @@
 	},
 /turf/open/shuttle/escapepod,
 /area/mackay_station/romeo/redtram2)
+"dCK" = (
+/obj/structure/platform/strata/metal,
+/obj/structure/platform/strata/metal{
+	dir = 8
+	},
+/obj/structure/platform_decoration/strata/metal{
+	dir = 8
+	},
+/turf/open/space/basic,
+/area/space)
 "dDj" = (
 /obj/structure/closet/secure_closet/guncabinet{
 	req_access = null
@@ -6230,10 +6000,10 @@
 /area/mackay_station/golf/greenrec)
 "egp" = (
 /obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	dir = 1
+	icon_state = "NW-out";
+	pixel_y = 1
 	},
-/turf/open/floor/kutjevo/tan/multi_tiles/east,
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "ehn" = (
 /obj/structure/machinery/light/double/blue{
@@ -6278,6 +6048,15 @@
 	},
 /turf/open/floor/almayer/orange/southeast,
 /area/mackay_station/bravo/blueengi)
+"ejO" = (
+/obj/structure/stairs{
+	dir = 8
+	},
+/obj/structure/barricade/handrail{
+	dir = 1
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "ekx" = (
 /obj/structure/surface/table/almayer,
 /obj/item/tool/hand_labeler,
@@ -6345,7 +6124,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
 	},
-/obj/structure/barricade/handrail,
 /turf/open/floor/almayer/silver/southeast,
 /area/mackay_station/golf/greentram)
 "enO" = (
@@ -6575,7 +6353,14 @@
 /turf/open/floor/almayer/silvercorner/east,
 /area/mackay_station/golf/greenmedical)
 "ewN" = (
-/turf/open/floor/almayer/edge/smooth/northwest,
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/barricade/handrail,
+/obj/structure/machinery/light/double/blue{
+	dir = 1
+	},
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "ewT" = (
 /obj/structure/machinery/door/airlock/unsc/glass{
@@ -6807,7 +6592,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
 	},
-/obj/structure/barricade/handrail,
 /turf/open/floor/almayer/silver/southwest,
 /area/mackay_station/bravo/bluetram)
 "eHx" = (
@@ -7208,6 +6992,22 @@
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/bravo/bluebridge)
+"eWz" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "eWF" = (
 /obj/structure/machinery/camera/autoname,
 /turf/open/floor/prison,
@@ -7229,14 +7029,14 @@
 /turf/open/shuttle/escapepod/floor0,
 /area/mackay_station/golf/greentram)
 "eYc" = (
-/obj/structure/platform{
-	dir = 1
+/obj/structure/platform/strata/metal{
+	dir = 8
 	},
-/obj/structure/platform{
+/obj/structure/platform/strata/metal{
 	dir = 4
 	},
-/turf/open/shuttle/escapepod,
-/area/mackay_station/pathways)
+/turf/open/space/basic,
+/area/space)
 "eYq" = (
 /obj/structure/closet/secure_closet/medical_doctor,
 /obj/structure/machinery/light/double/blue{
@@ -7265,6 +7065,19 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
+/area/mackay_station/pathways)
+"fap" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "fay" = (
 /obj/structure/cargo_container/unsc/main_3/c{
@@ -7357,10 +7170,10 @@
 /turf/open/floor/almayer/green/east,
 /area/mackay_station/golf/greenrec)
 "fci" = (
-/obj/structure/machinery/camera/autoname{
-	dir = 4
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
 	},
-/turf/open/floor/almayer/edge/smooth/southwest,
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "fcP" = (
 /turf/open/floor/almayer/silver/north,
@@ -7373,6 +7186,16 @@
 	layer = 2.52
 	},
 /turf/open/floor/plating,
+/area/mackay_station/pathways)
+"fdh" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/machinery/light/double/blue,
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "fdk" = (
 /obj/structure/pipes/vents/pump,
@@ -7437,6 +7260,15 @@
 "feV" = (
 /turf/open/floor/almayer/sterile_green_side,
 /area/mackay_station/romeo/redcommons2)
+"feX" = (
+/obj/structure/stairs{
+	dir = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "ffp" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -7517,9 +7349,6 @@
 	icon_state = "N";
 	pixel_y = 1
 	},
-/obj/structure/barricade/handrail{
-	dir = 1
-	},
 /turf/open/floor/almayer/silver/northeast,
 /area/mackay_station/golf/greentram)
 "fhN" = (
@@ -7542,6 +7371,22 @@
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/floor/almayer/orange/northwest,
 /area/mackay_station/bravo/blueengi)
+"fit" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "fiR" = (
 /obj/structure/flora/pottedplant,
 /turf/open/floor/almayer/silver/southwest,
@@ -7980,6 +7825,16 @@
 "fwI" = (
 /turf/open/shuttle/escapepod/floor0/north/west,
 /area/mackay_station/bravo/blueengi)
+"fwM" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "fxj" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -8044,6 +7899,19 @@
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/bravo/bluetram)
+"fAN" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "fAU" = (
 /obj/structure/barricade/handrail{
 	dir = 8
@@ -8058,6 +7926,13 @@
 	},
 /turf/open/floor/almayer/sterile_green_side/west,
 /area/mackay_station/golf/greenmedical)
+"fBE" = (
+/obj/structure/platform/strata/metal,
+/obj/structure/platform/strata/metal{
+	dir = 4
+	},
+/turf/open/space/basic,
+/area/space)
 "fBK" = (
 /obj/structure/prop/unsc_crate/standard/medical{
 	pixel_x = 3;
@@ -8098,6 +7973,19 @@
 	},
 /turf/open/floor/almayer/edge/smooth/west,
 /area/mackay_station/bravo/blueengi)
+"fEs" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/obj/structure/barricade/handrail,
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "fEy" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -8265,6 +8153,13 @@
 /obj/structure/closet/athletic_mixed,
 /turf/open/floor/almayer/green/southwest,
 /area/mackay_station/golf/greenrec)
+"fKQ" = (
+/obj/structure/platform,
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "fKW" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 8
@@ -8308,13 +8203,6 @@
 "fMq" = (
 /obj/structure/machinery/disposal,
 /obj/structure/machinery/light/double/blue,
-/obj/item/clothing/accessory/limb/skeleton/head{
-	pixel_y = -12;
-	name = "Thunderstorm";
-	desc = "You get the feeling that, if this object had power over you, it would ensure you face only the strongest foes.";
-	pixel_x = 12;
-	layer = 2
-	},
 /turf/open/floor/almayer/red/southeast,
 /area/mackay_station/romeo/redcommons1)
 "fMx" = (
@@ -8512,6 +8400,13 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/mackay_station/romeo/redhangars)
+"fUr" = (
+/obj/structure/platform/strata/metal,
+/obj/structure/platform/strata/metal{
+	dir = 1
+	},
+/turf/open/space/basic,
+/area/space)
 "fUw" = (
 /obj/structure/closet/crate,
 /obj/item/stack/folding_barricade/three,
@@ -8536,6 +8431,22 @@
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/bravo/bluebridge)
+"fXe" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "fXp" = (
 /obj/structure/platform{
 	dir = 1
@@ -8643,9 +8554,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
 	},
-/obj/structure/barricade/handrail{
-	dir = 8
-	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/bravo/bluetram)
 "gcN" = (
@@ -8692,6 +8600,14 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/mackay_station/romeo/redcommons1)
+"geS" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NE-out";
+	pixel_y = 1;
+	pixel_x = 1
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "geU" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
@@ -9039,6 +8955,33 @@
 "gpE" = (
 /turf/open/floor/plating,
 /area/mackay_station/elevator/fire_control/exit)
+"gpG" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
+"gpJ" = (
+/obj/structure/platform/strata/metal{
+	dir = 4
+	},
+/obj/structure/platform/strata/metal,
+/obj/structure/platform/strata/metal{
+	dir = 8
+	},
+/turf/open/space/basic,
+/area/space)
 "gpK" = (
 /obj/structure/window/reinforced/toughened{
 	dir = 4
@@ -9133,6 +9076,17 @@
 	},
 /turf/open/floor/almayer/silver/west,
 /area/mackay_station/romeo/redtram1)
+"gsh" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/barricade/handrail,
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "gsi" = (
 /obj/structure/surface/rack,
 /obj/item/cell/high,
@@ -9274,6 +9228,21 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/mackay_station/romeo/redcommons1)
+"gvT" = (
+/obj/structure/stairs{
+	dir = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "gwC" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 8
@@ -9406,6 +9375,22 @@
 	color = "#a1a1a1"
 	},
 /area/mackay_station/romeo/redtram1)
+"gCG" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "gDa" = (
 /turf/open/floor/plating/icefloor/warnplate/north,
 /area/mackay_station/elevator/fire_control/entry)
@@ -9530,6 +9515,23 @@
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redtram1)
+"gGZ" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "gHc" = (
 /obj/structure/prop/unsc_crate/stack,
 /obj/structure/prop/unsc_crate/stack{
@@ -9597,9 +9599,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
 	pixel_y = 1
-	},
-/obj/structure/barricade/handrail{
-	dir = 1
 	},
 /turf/open/floor/almayer/silver/northwest,
 /area/mackay_station/romeo/redtram2)
@@ -9675,9 +9674,6 @@
 	icon_state = "N";
 	pixel_y = 1
 	},
-/obj/structure/barricade/handrail{
-	dir = 1
-	},
 /turf/open/floor/almayer/silver/north,
 /area/mackay_station/golf/greentram)
 "gNI" = (
@@ -9693,6 +9689,18 @@
 "gNJ" = (
 /turf/open/floor/almayer/silver/east,
 /area/mackay_station/golf/greenarmory)
+"gOo" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "gOs" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -9710,9 +9718,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
 	pixel_y = 1
-	},
-/obj/structure/barricade/handrail{
-	dir = 1
 	},
 /turf/open/floor/almayer/silver/north,
 /area/mackay_station/romeo/redtram2)
@@ -10120,7 +10125,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
 	},
-/obj/structure/barricade/handrail,
 /turf/open/floor/almayer/silver,
 /area/mackay_station/golf/greentram)
 "hcp" = (
@@ -11258,9 +11262,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
 	},
-/obj/structure/barricade/handrail{
-	dir = 8
-	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/bravo/bluetram)
 "hWe" = (
@@ -11421,6 +11422,15 @@
 	},
 /turf/open/shuttle/escapepod/west,
 /area/mackay_station/firecontrol)
+"iaF" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "iaT" = (
 /obj/structure/bed/sofa/south{
 	icon_state = "couch_hori1"
@@ -11483,6 +11493,16 @@
 	},
 /turf/open/floor/prison,
 /area/mackay_station/romeo/redcommons1)
+"idm" = (
+/obj/structure/platform/strata/metal{
+	dir = 8
+	},
+/obj/structure/platform_decoration/strata/metal,
+/obj/structure/platform_decoration/strata/metal{
+	dir = 8
+	},
+/turf/open/space/basic,
+/area/space)
 "idr" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 8
@@ -11550,6 +11570,16 @@
 	},
 /turf/open/floor/almayer/red/southeast,
 /area/mackay_station/romeo/redcommons2)
+"ieW" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "ifb" = (
 /obj/structure/barricade/handrail{
 	dir = 1
@@ -12060,6 +12090,17 @@
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redtram1)
+"isx" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "isz" = (
 /obj/item/tool/soap,
 /obj/effect/decal/cleanable/dirt{
@@ -12093,9 +12134,33 @@
 	},
 /turf/open/floor/almayer/silver/east,
 /area/mackay_station/romeo/redhangars)
+"itN" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "itV" = (
 /turf/open/floor/almayer/red/north,
 /area/mackay_station/romeo/redcommons2)
+"iui" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NW-out";
+	pixel_y = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "ium" = (
 /obj/structure/platform{
 	dir = 1
@@ -12435,6 +12500,19 @@
 	},
 /turf/open/floor/almayer/orange/northwest,
 /area/mackay_station/bravo/blueengi)
+"iEN" = (
+/obj/structure/stairs,
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "iEU" = (
 /obj/structure/closet/secure_closet{
 	pixel_x = 8
@@ -12624,6 +12702,22 @@
 	},
 /turf/open/shuttle/escapepod/north,
 /area/mackay_station/romeo/redtram2)
+"iMN" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "iMP" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -12773,9 +12867,18 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
 	},
-/obj/structure/barricade/handrail,
 /turf/open/floor/almayer/silver,
 /area/mackay_station/romeo/redtram2)
+"iSW" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SE-out";
+	pixel_x = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "iUa" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -13230,9 +13333,6 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/barricade/handrail{
-	dir = 8
-	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redtram2)
 "jkW" = (
@@ -13351,6 +13451,20 @@
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenmedical)
+"joT" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 1
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "joV" = (
 /obj/structure/platform,
 /turf/open/floor/almayer/blue,
@@ -13580,7 +13694,7 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning"
 	},
-/turf/open/floor/kutjevo/tan/multi_tiles/southeast,
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "jvK" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc/prop{
@@ -13723,6 +13837,18 @@
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
+"jza" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "jzi" = (
 /turf/open/floor/almayer/edge/smooth/corner/west,
 /area/mackay_station/romeo/redhangars)
@@ -13765,9 +13891,6 @@
 	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
-	},
-/obj/structure/barricade/handrail{
-	dir = 4
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redtram2)
@@ -13981,6 +14104,15 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/mackay_station/bravo/blueengi)
+"jJR" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "jJW" = (
 /obj/structure/machinery/power/apc/almayer/west{
 	cell_type = /obj/item/cell/hyper;
@@ -14326,10 +14458,10 @@
 /area/mackay_station/firecontrol)
 "jZw" = (
 /obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	dir = 1
+	icon_state = "S"
 	},
-/turf/open/floor/almayer/edge/smooth/corner/west,
+/obj/structure/barricade/handrail,
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "jZy" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc,
@@ -14423,8 +14555,16 @@
 /turf/open/floor/plating,
 /area/mackay_station/pathways)
 "kdo" = (
-/obj/structure/pipes/vents/pump,
-/turf/open/floor/almayer/research,
+/obj/structure/stairs{
+	dir = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "kds" = (
 /obj/structure/platform_decoration{
@@ -14445,7 +14585,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
 	},
-/obj/structure/barricade/handrail,
 /turf/open/floor/almayer/silver,
 /area/mackay_station/bravo/bluetram)
 "ket" = (
@@ -14751,7 +14890,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
 	},
-/obj/structure/barricade/handrail,
 /turf/open/floor/almayer/silver/southeast,
 /area/mackay_station/romeo/redtram1)
 "kqb" = (
@@ -14954,9 +15092,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
 	pixel_y = 1
-	},
-/obj/structure/barricade/handrail{
-	dir = 1
 	},
 /turf/open/floor/almayer/silver/north,
 /area/mackay_station/romeo/redtram1)
@@ -15535,7 +15670,20 @@
 /turf/open/floor/almayer/research,
 /area/mackay_station/bravo/bluetram)
 "kRr" = (
-/turf/open/floor/almayer/edge/smooth,
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "kRW" = (
 /turf/open/floor/plating/icefloor/warnplate/west,
@@ -15553,6 +15701,16 @@
 	},
 /turf/open/floor/almayer/silver/east,
 /area/mackay_station/romeo/redhangars)
+"kSI" = (
+/obj/structure/platform/strata/metal,
+/obj/structure/platform/strata/metal{
+	dir = 4
+	},
+/obj/structure/platform_decoration/strata/metal{
+	dir = 4
+	},
+/turf/open/space/basic,
+/area/space)
 "kSL" = (
 /obj/structure/platform{
 	dir = 4
@@ -15713,7 +15871,18 @@
 /turf/open/floor/almayer/plate,
 /area/mackay_station/romeo/redhangars)
 "kZh" = (
-/turf/open/floor/almayer/edge/smooth/corner,
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "kZi" = (
 /obj/structure/pipes/vents/pump,
@@ -16976,11 +17145,14 @@
 /turf/open/shuttle/escapepod/east,
 /area/mackay_station/romeo/redtram1)
 "lSi" = (
+/obj/effect/decal/unsc/firecontrol{
+	dir = 8
+	},
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
 	dir = 8
 	},
-/turf/open/floor/almayer/edge/smooth/corner,
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "lTj" = (
 /obj/structure/surface/table/reinforced/prison,
@@ -17077,6 +17249,20 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
+/area/mackay_station/pathways)
+"lXb" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "lXc" = (
 /obj/structure/platform/strata/metal{
@@ -17226,7 +17412,14 @@
 /turf/open/floor/almayer/edge/smooth/corner/east,
 /area/mackay_station/firecontrol)
 "mct" = (
-/turf/open/floor/almayer/pod_landing_floor,
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 1
+	},
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "mcw" = (
 /obj/structure/barricade/handrail{
@@ -17383,6 +17576,14 @@
 /obj/structure/machinery/disposal,
 /turf/open/floor/prison,
 /area/mackay_station/romeo/redcommons1)
+"miT" = (
+/obj/structure/platform,
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "miX" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -17422,6 +17623,15 @@
 "mjo" = (
 /turf/open/floor/almayer/red/west,
 /area/mackay_station/romeo/redcommons2)
+"mjw" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "mjT" = (
 /obj/structure/platform,
 /obj/structure/platform{
@@ -17633,7 +17843,12 @@
 /turf/open/floor/almayer/research,
 /area/mackay_station/golf/greenarmory)
 "mqn" = (
-/turf/open/floor/plating/plating_catwalk,
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/structure/barricade/handrail,
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "mqs" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc/glass,
@@ -18019,10 +18234,9 @@
 /area/mackay_station/bravo/bluetram)
 "mDQ" = (
 /obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	dir = 1
+	icon_state = "SW-out"
 	},
-/turf/open/floor/almayer/research,
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "mDU" = (
 /obj/effect/decal/unsc/bridge{
@@ -18294,9 +18508,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
 	pixel_y = 1
-	},
-/obj/structure/barricade/handrail{
-	dir = 1
 	},
 /turf/open/floor/almayer/silver/northeast,
 /area/mackay_station/romeo/redtram2)
@@ -18787,6 +18998,16 @@
 	},
 /turf/open/shuttle/escapepod/west,
 /area/mackay_station/romeo/redhangars)
+"mXW" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/barricade/handrail,
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "mXX" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/structure/machinery/computer/med_data/laptop{
@@ -18812,6 +19033,19 @@
 	},
 /turf/open/floor/prison,
 /area/mackay_station/romeo/redcommons1)
+"mYs" = (
+/obj/structure/stairs{
+	dir = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "mYv" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -18996,6 +19230,12 @@
 	},
 /turf/open/floor/almayer/green/northeast,
 /area/mackay_station/golf/greenquarters2)
+"nfz" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "nfF" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 4
@@ -19189,6 +19429,7 @@
 "nnR" = (
 /obj/structure/closet/secure_closet/halo/job_locker/squad_leader,
 /obj/item/device/binoculars/range/designator/sergeant,
+/obj/item/attachable/attached_gun/grenade/ma5c,
 /obj/item/weapon/gun/rifle/halo/br55/unloaded,
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
@@ -19201,6 +19442,16 @@
 "nol" = (
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenrec)
+"nop" = (
+/obj/structure/platform/strata/metal{
+	dir = 8
+	},
+/obj/structure/platform/strata/metal,
+/obj/structure/platform/strata/metal{
+	dir = 4
+	},
+/turf/open/space/basic,
+/area/space)
 "not" = (
 /obj/structure/window/framed/almayer/aicore/white/hull{
 	color = "#a1a1a1"
@@ -19233,6 +19484,18 @@
 "nqR" = (
 /turf/open/floor/almayer/silvercorner/north,
 /area/mackay_station/golf/greentram)
+"nrs" = (
+/obj/structure/platform/strata/metal{
+	dir = 1
+	},
+/obj/structure/platform/strata/metal{
+	dir = 4
+	},
+/obj/structure/platform/strata/metal{
+	dir = 8
+	},
+/turf/open/space/basic,
+/area/space)
 "nrv" = (
 /obj/structure/surface/table/almayer,
 /obj/item/storage/toolbox/traxus,
@@ -19396,6 +19659,15 @@
 /obj/structure/machinery/camera/autoname,
 /turf/open/shuttle/escapepod/west,
 /area/mackay_station/romeo/redhangars)
+"nxZ" = (
+/obj/structure/stairs{
+	dir = 4
+	},
+/obj/structure/barricade/handrail{
+	dir = 1
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "nyc" = (
 /obj/structure/machinery/disposal,
 /turf/open/floor/almayer/research,
@@ -19554,7 +19826,18 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/mackay_station/romeo/redhangars)
 "nDa" = (
-/turf/open/floor/almayer/edge/smooth/southeast,
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/obj/structure/barricade/handrail,
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "nDL" = (
 /obj/structure/platform,
@@ -20205,6 +20488,16 @@
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/golf/greenquarters1)
+"ocK" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/structure/barricade/handrail,
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "ocL" = (
 /obj/structure/barricade/handrail{
 	dir = 1
@@ -20636,6 +20929,21 @@
 "ovM" = (
 /turf/open/floor/almayer/edge/smooth/northeast,
 /area/mackay_station/golf/greenquarters2)
+"ovQ" = (
+/obj/structure/platform/strata/metal{
+	dir = 1
+	},
+/obj/structure/platform/strata/metal{
+	dir = 8
+	},
+/obj/structure/platform/strata/metal{
+	dir = 4
+	},
+/obj/structure/machinery/light/double/blue{
+	dir = 1
+	},
+/turf/open/space/basic,
+/area/space)
 "ovV" = (
 /obj/structure/platform/stair_cut{
 	icon_state = "platform_stair_alt"
@@ -21412,9 +21720,6 @@
 	icon_state = "N";
 	pixel_y = 1
 	},
-/obj/structure/barricade/handrail{
-	dir = 1
-	},
 /turf/open/floor/almayer/silver/north,
 /area/mackay_station/bravo/bluetram)
 "oYf" = (
@@ -21479,6 +21784,16 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/mackay_station/bravo/bluebridge)
+"oZO" = (
+/obj/structure/stairs,
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "oZV" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -22377,6 +22692,13 @@
 	},
 /turf/open/floor/almayer/silvercorner/east,
 /area/mackay_station/romeo/redhangars)
+"pFb" = (
+/obj/structure/stairs{
+	dir = 8
+	},
+/obj/structure/barricade/handrail,
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "pFi" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
@@ -22414,7 +22736,14 @@
 /turf/open/floor/almayer/sterile_green_corner,
 /area/mackay_station/golf/greenmedical)
 "pFF" = (
-/turf/open/floor/almayer/edge/smooth/northeast,
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "pFK" = (
 /obj/effect/decal/cleanable/dirt{
@@ -22650,6 +22979,15 @@
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenmedical)
+"pNl" = (
+/obj/structure/platform/strata/metal{
+	dir = 4
+	},
+/obj/structure/platform/strata/metal{
+	dir = 8
+	},
+/turf/open/space/basic,
+/area/space)
 "pNt" = (
 /obj/structure/machinery/cm_vending/sorted/medical/blood,
 /turf/open/floor/almayer/sterile_green_side/north,
@@ -23070,6 +23408,19 @@
 "qcE" = (
 /turf/open/floor/almayer/edge/smooth/southeast,
 /area/mackay_station/golf/greenmedical)
+"qcJ" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/obj/structure/machinery/light/double/blue{
+	dir = 8
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "qcL" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
@@ -23093,10 +23444,10 @@
 /area/mackay_station/golf/greenrec)
 "qdV" = (
 /obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	dir = 1
+	icon_state = "E";
+	pixel_x = 1
 	},
-/turf/open/floor/almayer/edge/smooth/corner/north,
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "qee" = (
 /obj/structure/surface/table/almayer,
@@ -23478,6 +23829,19 @@
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/golf/greentram)
+"qtG" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/structure/barricade/handrail{
+	dir = 1
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "qtQ" = (
 /obj/structure/surface/table/almayer,
 /obj/item/reagent_container/food/snacks/popcorn{
@@ -23878,9 +24242,6 @@
 	icon_state = "N";
 	pixel_y = 1
 	},
-/obj/structure/barricade/handrail{
-	dir = 1
-	},
 /turf/open/floor/almayer/silver/northwest,
 /area/mackay_station/bravo/bluetram)
 "qFC" = (
@@ -23897,6 +24258,13 @@
 "qGk" = (
 /turf/open/floor/almayer/edge/smooth/east,
 /area/mackay_station/firecontrol)
+"qGm" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SE-out";
+	pixel_x = 1
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "qGy" = (
 /obj/structure/desertdam/decals/road_edge{
 	pixel_x = -12
@@ -24512,7 +24880,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
 	},
-/obj/structure/barricade/handrail,
 /turf/open/floor/almayer/silver,
 /area/mackay_station/bravo/bluetram)
 "raE" = (
@@ -24561,9 +24928,26 @@
 	},
 /turf/open/shuttle/escapepod/floor0,
 /area/mackay_station/romeo/redhangars)
+"rdr" = (
+/obj/structure/stairs{
+	dir = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "rdE" = (
-/obj/structure/machinery/vending/coffee,
-/turf/open/floor/almayer/edge/smooth/southeast,
+/obj/structure/stairs{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "rdN" = (
 /obj/structure/prop/unsc_crate/big{
@@ -24684,6 +25068,20 @@
 	},
 /turf/open/shuttle/escapepod/west,
 /area/mackay_station/romeo/redtram1)
+"rgV" = (
+/obj/structure/stairs,
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "rhk" = (
 /obj/structure/bed/chair/comfy/ares{
 	dir = 4
@@ -24709,6 +25107,12 @@
 	},
 /turf/open/floor/almayer/silver/north,
 /area/mackay_station/golf/greentram)
+"riq" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "rix" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 8
@@ -24800,7 +25204,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
 	},
-/obj/structure/barricade/handrail,
 /turf/open/floor/almayer/silver/southeast,
 /area/mackay_station/romeo/redtram2)
 "rka" = (
@@ -24991,9 +25394,6 @@
 	icon_state = "E";
 	pixel_x = 1
 	},
-/obj/structure/barricade/handrail{
-	dir = 4
-	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/golf/greentram)
 "rqt" = (
@@ -25112,6 +25512,19 @@
 	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/mackay_station/romeo/redtram1)
+"rtF" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/barricade/handrail{
+	dir = 1
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "rtJ" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -25155,6 +25568,19 @@
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/golf/greenarmory)
+"rvY" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "rwm" = (
 /obj/structure/closet/firecloset/full,
 /obj/structure/machinery/light/double/blue{
@@ -25997,10 +26423,23 @@
 /turf/open/floor/almayer/research,
 /area/mackay_station/golf/greenarmory)
 "rWC" = (
-/obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door{
-	name = "Spacewalk"
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
 	},
-/turf/open/floor/almayer/pod_landing_floor,
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/barricade/handrail{
+	dir = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "rWK" = (
 /obj/structure/pipes/vents/pump,
@@ -26358,7 +26797,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
 	},
-/obj/structure/barricade/handrail,
 /turf/open/floor/almayer/silver,
 /area/mackay_station/romeo/redtram2)
 "shl" = (
@@ -26682,6 +27120,15 @@
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redcommons1)
+"swH" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "sxc" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo_arrow";
@@ -27103,6 +27550,19 @@
 "sMH" = (
 /turf/open/floor/prison/rampbottom/east,
 /area/mackay_station/pathways)
+"sNq" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/obj/structure/barricade/handrail,
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "sNB" = (
 /obj/structure/reagent_dispensers/watertank/unsc{
 	pixel_x = -3;
@@ -27178,6 +27638,13 @@
 	},
 /turf/open/floor/almayer/edge/smooth,
 /area/mackay_station/golf/greenquarters2)
+"sRQ" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/machinery/light/double/blue,
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "sSg" = (
 /obj/structure/monorail{
 	dir = 6
@@ -27522,6 +27989,13 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/mackay_station/golf/greenquarters2)
+"tcJ" = (
+/obj/structure/platform/strata/metal{
+	dir = 8
+	},
+/obj/structure/platform/strata/metal,
+/turf/open/space/basic,
+/area/space)
 "tcW" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "SE-out";
@@ -28001,12 +28475,26 @@
 /obj/structure/cargo_container/unsc/vertical/south_3/endcap_1,
 /turf/open/floor/plating,
 /area/mackay_station/romeo/redhangars)
+"twy" = (
+/obj/structure/platform/strata/metal,
+/obj/structure/platform/strata/metal{
+	dir = 8
+	},
+/turf/open/space/basic,
+/area/space)
 "twU" = (
 /obj/structure/barricade/handrail{
 	dir = 1
 	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/mackay_station/firecontrol)
+"twY" = (
+/obj/structure/platform_decoration,
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "txr" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -28176,6 +28664,13 @@
 	},
 /turf/open/floor/prison,
 /area/mackay_station/romeo/redcommons1)
+"tEN" = (
+/obj/structure/stairs{
+	dir = 4
+	},
+/obj/structure/barricade/handrail,
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "tEY" = (
 /turf/open/floor/almayer/edge/smooth/east,
 /area/mackay_station/golf/greenquarters1)
@@ -28197,6 +28692,16 @@
 	},
 /turf/open/floor/plating,
 /area/mackay_station/romeo/redhangars)
+"tFK" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "tFP" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -28421,14 +28926,12 @@
 /turf/open/floor/almayer/silver/west,
 /area/mackay_station/romeo/redtram2)
 "tOG" = (
-/obj/structure/barricade/handrail/strata{
-	dir = 8
+/obj/structure/platform/strata/metal{
+	dir = 1
 	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "door_warning"
-	},
-/turf/open/floor/almayer/edge/smooth/west,
-/area/mackay_station/pathways)
+/obj/structure/platform/strata/metal,
+/turf/open/space/basic,
+/area/space)
 "tOI" = (
 /obj/structure/machinery/camera/autoname{
 	dir = 1
@@ -29342,6 +29845,16 @@
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/mackay_station/bravo/blueengi)
+"uri" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "uru" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/reagent_container/spray/cleaner,
@@ -29397,6 +29910,19 @@
 	},
 /turf/open/floor/almayer/orange,
 /area/mackay_station/bravo/blueengi)
+"uul" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/effect/decal/unsc/firecontrol{
+	dir = 1;
+	pixel_x = 15
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "uup" = (
 /obj/structure/window/reinforced/toughened{
 	dir = 8
@@ -29761,6 +30287,23 @@
 /obj/structure/bed/chair/comfy/bench/mid,
 /turf/open/floor/almayer/edge/smooth/west,
 /area/mackay_station/golf/greenquarters2)
+"uGV" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "uHf" = (
 /obj/structure/platform{
 	dir = 8
@@ -29899,9 +30442,6 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/barricade/handrail{
-	dir = 8
-	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/bravo/bluetram)
 "uLH" = (
@@ -29910,6 +30450,19 @@
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/golf/greenquarters1)
+"uMk" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "uMp" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -30295,6 +30848,18 @@
 "uYO" = (
 /turf/open/floor/plating/plating_catwalk,
 /area/mackay_station/golf/greenrec)
+"uYQ" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/obj/structure/machinery/light/double/blue{
+	dir = 4
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "uYX" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/tool/hand_labeler{
@@ -30339,6 +30904,13 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/mackay_station/firecontrol)
+"vbm" = (
+/obj/structure/platform/strata/metal{
+	dir = 4
+	},
+/obj/structure/platform/strata/metal,
+/turf/open/space/basic,
+/area/space)
 "vcf" = (
 /obj/structure/reagent_dispensers/water_cooler/stacks,
 /turf/open/floor/almayer/silver/east,
@@ -30687,9 +31259,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
 	pixel_y = 1
-	},
-/obj/structure/barricade/handrail{
-	dir = 1
 	},
 /turf/open/floor/almayer/silver/north,
 /area/mackay_station/romeo/redtram2)
@@ -31460,9 +32029,6 @@
 	icon_state = "N";
 	pixel_y = 1
 	},
-/obj/structure/barricade/handrail{
-	dir = 1
-	},
 /turf/open/floor/almayer/silver/north,
 /area/mackay_station/romeo/redtram1)
 "vTc" = (
@@ -31955,15 +32521,21 @@
 	icon_state = "N";
 	pixel_y = 1
 	},
-/obj/structure/barricade/handrail{
-	dir = 1
-	},
 /turf/open/floor/almayer/silver/north,
 /area/mackay_station/bravo/bluetram)
 "whe" = (
 /obj/structure/machinery/light/double/blue,
 /turf/open/floor/almayer/silver,
 /area/mackay_station/romeo/redtram1)
+"who" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SW-out"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "whq" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
@@ -31976,6 +32548,16 @@
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/mackay_station/romeo/redcommons2)
+"whF" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/barricade/handrail,
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "wib" = (
 /obj/structure/bed/chair/comfy/bench/mid,
 /turf/open/floor/strata/white_cyan2/west,
@@ -32010,6 +32592,18 @@
 	},
 /turf/open/floor/almayer/red/west,
 /area/mackay_station/romeo/redcommons1)
+"wjo" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SW-out"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/effect/decal/unsc/firecontrol{
+	dir = 8
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "wjA" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -32200,6 +32794,15 @@
 	},
 /turf/open/floor/almayer/silver,
 /area/mackay_station/golf/greentram)
+"wql" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning"
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "wqn" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -32272,9 +32875,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
 	pixel_y = 1
-	},
-/obj/structure/barricade/handrail{
-	dir = 1
 	},
 /turf/open/floor/almayer/silver/northeast,
 /area/mackay_station/romeo/redtram1)
@@ -32847,6 +33447,10 @@
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redtram2)
+"wNz" = (
+/obj/structure/platform/strata/metal,
+/turf/open/space/basic,
+/area/space)
 "wNS" = (
 /obj/structure/machinery/camera/autoname{
 	dir = 4
@@ -32932,7 +33536,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
 	},
-/obj/structure/barricade/handrail,
 /turf/open/floor/almayer/silver,
 /area/mackay_station/romeo/redtram1)
 "wQX" = (
@@ -33470,10 +34073,19 @@
 /turf/open/floor/almayer/research,
 /area/mackay_station/golf/greenquarters1)
 "xiI" = (
-/obj/structure/barricade/handrail/strata{
+/obj/effect/decal/warning_stripes{
+	icon_state = "NE-out";
+	pixel_y = 1;
+	pixel_x = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/barricade/handrail{
 	dir = 8
 	},
-/turf/open/floor/almayer/edge/smooth/west,
+/obj/structure/barricade/handrail,
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "xjb" = (
 /obj/effect/decal/cleanable/dirt{
@@ -33695,6 +34307,26 @@
 	},
 /turf/open/floor/almayer/greenfull,
 /area/mackay_station/golf/greenrec)
+"xsg" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/barricade/handrail{
+	dir = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "xsj" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -34237,7 +34869,7 @@
 	pixel_x = 3;
 	pixel_y = 34
 	},
-/turf/open/floor/almayer/edge/smooth/northwest,
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "xPB" = (
 /obj/effect/decal/cleanable/dirt{
@@ -34253,6 +34885,15 @@
 	},
 /turf/open/shuttle/escapepod,
 /area/mackay_station/golf/greenarmory)
+"xQb" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "xQd" = (
 /obj/structure/pipes/vents/pump,
 /turf/open/floor/almayer/orange,
@@ -34465,9 +35106,6 @@
 	icon_state = "N";
 	pixel_y = 1
 	},
-/obj/structure/barricade/handrail{
-	dir = 1
-	},
 /turf/open/floor/almayer/silver/north,
 /area/mackay_station/romeo/redtram1)
 "xVr" = (
@@ -34586,6 +35224,18 @@
 /obj/effect/step_trigger/clone_cleaner,
 /turf/open/floor/almayer/blue/southwest,
 /area/mackay_station/bravo/bluebridge)
+"xYF" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/kutjevo/tan,
+/area/mackay_station/pathways)
 "xYQ" = (
 /obj/structure/machinery/light/double/blue,
 /turf/open/floor/almayer/edge/smooth/southwest,
@@ -34647,9 +35297,13 @@
 /turf/open/floor/almayer/red/southeast,
 /area/mackay_station/romeo/redcommons2)
 "yaA" = (
-/obj/structure/window/framed/almayer/aicore/white/hull{
-	color = "#a1a1a1"
+/obj/structure/platform{
+	dir = 4
 	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/machinery/light/double/blue,
 /turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "yaF" = (
@@ -34673,10 +35327,15 @@
 /turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redhangars)
 "ybn" = (
-/obj/structure/barricade/handrail/strata{
+/obj/effect/decal/warning_stripes{
+	icon_state = "NW-out";
+	pixel_y = 1
+	},
+/obj/structure/barricade/handrail{
 	dir = 4
 	},
-/turf/open/floor/almayer/edge/smooth/east,
+/obj/structure/barricade/handrail,
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "ybo" = (
 /obj/structure/closet/secure_closet/engineering_welding{
@@ -34861,9 +35520,6 @@
 	icon_state = "N";
 	pixel_y = 1
 	},
-/obj/structure/barricade/handrail{
-	dir = 1
-	},
 /turf/open/floor/almayer/silver/northwest,
 /area/mackay_station/romeo/redtram1)
 "yfP" = (
@@ -34939,7 +35595,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
 	},
-/obj/structure/barricade/handrail,
 /turf/open/floor/almayer/silver/southwest,
 /area/mackay_station/romeo/redtram1)
 "yiF" = (
@@ -35000,8 +35655,21 @@
 /turf/open/floor/almayer/silver,
 /area/mackay_station/romeo/redhangars)
 "yln" = (
-/obj/structure/machinery/light/double/blue,
-/turf/open/floor/almayer/edge/smooth,
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/turf/open/floor/kutjevo/tan,
 /area/mackay_station/pathways)
 "ylt" = (
 /turf/open/floor/almayer/silver/west,
@@ -57589,7 +58257,7 @@ oNw
 oNw
 oNw
 pAo
-aaW
+ovx
 ovx
 udL
 udL
@@ -90376,10 +91044,10 @@ kIa
 hAB
 aXA
 dsy
-aac
-aac
+qEt
+qEt
 boG
-aac
+qEt
 tBZ
 siX
 siX
@@ -90693,10 +91361,10 @@ kIa
 hAB
 aXA
 xpF
-aad
-aaf
-aaf
-aad
+suS
+gGW
+gGW
+suS
 iNB
 siX
 siX
@@ -105321,7 +105989,7 @@ vTk
 vTk
 vTk
 vTk
-aaa
+vTk
 vTk
 vTk
 vTk
@@ -118180,12 +118848,12 @@ oYy
 xdq
 xdq
 xPb
-aaO
+sui
 lSi
 fci
-fkq
-kIa
-kIa
+mjw
+ocK
+hFg
 kIa
 kIa
 kIa
@@ -118496,15 +119164,15 @@ dTg
 oYy
 xdq
 fkq
-aEF
-mqn
-mqn
-yln
-fkq
-fkq
-fkq
-fkq
-fkq
+fdp
+qLS
+fdp
+fdp
+fdp
+jZw
+hFg
+kIa
+kIa
 kIa
 kIa
 kIa
@@ -118812,17 +119480,17 @@ nQH
 lTF
 oYy
 xdq
+nPO
+fdp
+fdp
+wFR
 fkq
-aaz
-mqn
-mqn
-kRr
 fkq
 ewN
-aay
-aaw
-fkq
-fkq
+hFg
+kIa
+kIa
+kIa
 kIa
 kIa
 kIa
@@ -119130,16 +119798,14 @@ rhT
 oYy
 xdq
 fkq
-aaz
-mqn
-mqn
-aaD
-aaB
+qLS
+fdp
+fdp
+qLS
+fdp
 jZw
-aax
-kZh
-aar
-aap
+adj
+aJF
 kIa
 kIa
 kIa
@@ -119161,9 +119827,11 @@ kIa
 kIa
 kIa
 kIa
-kIa
-kIa
-kIa
+vUK
+kiI
+kiI
+kiI
+kiI
 aJF
 kIa
 kIa
@@ -119446,41 +120114,41 @@ mco
 mII
 oYy
 xdq
-nPO
-aaz
-mqn
-mqn
-aan
-mct
+fkq
+wFR
+fkq
+fkq
+gNj
+fdp
 mDQ
-mqn
-aax
-aat
-aap
+fEs
+adj
+kiI
+kiI
+kiI
+kiI
+kiI
+kiI
+kiI
+kiI
+kiI
+kiI
+kiI
+kiI
+kiI
+kiI
+kiI
+kiI
+aJF
 kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
+vUK
+kiI
+kiI
+fBE
+fit
+cSt
+cSt
+xYF
 xdq
 sbk
 sbk
@@ -119764,40 +120432,40 @@ oYy
 oYy
 xdq
 fkq
-aaz
-mqn
-mqn
-aan
-mct
-mDQ
-mqn
-aax
+fdp
+fdp
+fdp
+fdp
+fdp
+qLS
+xQb
+feX
 kRr
-aap
+oZO
+oZO
+oZO
+iMN
+cSt
+cSt
+cSt
+jza
+cSt
+gOo
+feX
+feX
+feX
+eWz
+sNq
+hFg
 kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
+wNz
+fit
+uYQ
+cSt
+egp
+qLS
+iSW
+uri
 xdq
 tlY
 xdq
@@ -120081,38 +120749,38 @@ xdq
 xdq
 xdq
 fkq
-aEF
-aax
-aax
-aaE
-mct
+fdp
+fdp
+fdp
+fdp
+qGm
 qdV
-mqn
-aax
+tFK
+rdr
 yln
+rgV
+rgV
+aQs
+lXb
+rvY
+geS
+qLS
+fdq
+fdp
+czS
+mYs
+mYs
+aGa
+isx
+gsh
+hFg
+kIa
+wNz
+rtF
 fkq
-fkq
-fkq
-fkq
-fkq
-yaA
-yaA
-yaA
-fkq
-yaA
-yaA
-yaA
-fkq
-yaA
-yaA
-yaA
-fkq
-yaA
-yaA
-yaA
-fkq
-yaA
-yaA
+fdp
+twY
+nfz
 yaA
 xdq
 xdq
@@ -120398,39 +121066,39 @@ tFy
 xdq
 mhZ
 fkq
-pFF
-aaJ
-aaJ
-nDa
 fkq
-aaz
-mqn
-aax
-aau
+fkq
+fkq
+gNj
+sRQ
+fkq
+fkq
+ovQ
 eYc
-aah
-aah
-aah
+eYc
+eYc
+eYc
+idm
+nop
+mct
+fdp
 fkq
-aah
-aah
-aah
+fdp
+mXW
+cUh
+eYc
+dCK
+nxZ
+tEN
+adj
+kiI
+vbm
+mct
 fkq
-aah
-aah
-aah
-fkq
-aah
-aah
-aah
-fkq
-aah
-aah
-aah
-fkq
-aah
-aah
-aah
+qGm
+miT
+qLS
+fdp
 xdq
 xdq
 ofb
@@ -120715,38 +121383,38 @@ tFy
 xdq
 mhZ
 fkq
-fkq
-aaK
-aaK
-fkq
-fkq
+fdp
+qLS
+fdp
+qLS
+wjo
 aEF
-mqn
+fwM
 kdo
 kZh
-xiI
-xiI
+ieW
+ieW
 xiI
 tOG
 rWC
 egp
-aaj
-aaj
+fdp
+fkq
+fdp
+who
+cSt
+fEs
+fUr
+qtG
+uul
+jza
+cSt
+cSt
+iui
+iSO
 czS
-aaj
-aaj
-aaj
-czS
-aaj
-aaj
-aaj
-czS
-aaj
-aaj
-aaj
-czS
-aaj
-aaj
+aEF
+fdp
 cVK
 xrb
 rew
@@ -121032,38 +121700,38 @@ tYe
 xdq
 mhZ
 fkq
-aaR
-aaP
-aaL
-aaF
-fkq
-aaA
+fdp
+qLS
+fdp
+fdp
+czS
+aEF
+fwM
+csD
+fdp
+qLS
+fdp
 mqn
-mqn
-mqn
-mqn
-mqn
-mqn
-aan
+tOG
 mct
-aam
-aak
-aak
-aak
-aak
-aak
-aak
-aak
-aak
-aak
-aak
-aak
-aak
-aak
-aak
-aak
-aak
-aak
+wFR
+fkq
+fkq
+fkq
+gNj
+fdp
+jZw
+fUr
+mct
+fdp
+fdp
+fdp
+fdp
+fdp
+fdp
+czS
+csD
+fdp
 jvf
 mOm
 eWP
@@ -121349,39 +122017,39 @@ tFy
 xdq
 mhZ
 fkq
-aaS
-aax
-aax
-aaG
+fdp
+fdp
+fdp
+fdp
 cwt
-aaz
-aax
-aax
+aEF
+fwM
+aGa
 bwT
+jJR
+jJR
 ybn
-ybn
-ybn
-aao
-mct
-egp
-aaj
-aaj
-aal
-aaj
-aaj
-aaj
-aal
-aaj
-aaj
-aaj
-aal
-aaj
-aaj
-aaj
-aal
-aaj
-aaj
-cVK
+tOG
+uGV
+bih
+fdp
+fkq
+fdp
+qGm
+pFF
+akD
+fUr
+joT
+qdV
+pFF
+pFF
+rvY
+geS
+fdq
+czS
+aEF
+fdp
+wql
 mOm
 pUD
 dNw
@@ -121666,39 +122334,39 @@ tFy
 xdq
 mhZ
 fkq
-aaT
-aax
-kdo
-kRr
-cwt
-aaz
-aax
-bwT
-aav
-aaq
+fkq
+fkq
+fkq
+gNj
+sRQ
+fkq
+fkq
+ovQ
+eYc
+eYc
+eYc
+eYc
 aqx
-aqx
-aqx
+gpJ
+rtF
+fdp
 fkq
-aai
-aai
-aai
+fdp
+mXW
+nrs
+pNl
+kSI
+ejO
+pFb
+vig
+rYM
+tcJ
+mct
 fkq
-aai
-aai
-aai
-fkq
-aai
-aai
-aai
-fkq
-aai
-aai
-aai
-fkq
-aai
-aai
-aai
+mDQ
+fKQ
+fdp
+fdp
 xdq
 xdq
 tkb
@@ -121983,39 +122651,39 @@ tFy
 xdq
 mhZ
 fkq
-aaU
-aaQ
-aax
-aaH
+qLS
+fdp
+fdp
+fdp
+who
+mjw
+iaF
+feX
+gCG
+oZO
+iEN
+iEN
+uMk
+cSt
+egp
+fdp
+iSO
+qLS
+czS
+kdo
+kdo
+gvT
+fap
+whF
+hFg
+kIa
+wNz
+rtF
 fkq
-aaz
-aax
-yln
-fkq
-fkq
-fkq
-fkq
-fkq
-fkq
-yaA
-yaA
-yaA
-fkq
-yaA
-yaA
-yaA
-fkq
-yaA
-yaA
-yaA
-fkq
-yaA
-yaA
-yaA
-fkq
-yaA
-yaA
-yaA
+qLS
+btD
+riq
+fdh
 xdq
 xdq
 uUt
@@ -122300,40 +122968,40 @@ khe
 xdq
 mhZ
 fkq
-aaV
-aax
-aax
-aan
-aaC
-mDQ
-bwT
+fdp
+fdp
+fdp
+fdp
+fdp
+fdp
+czS
 rdE
-fkq
+gpG
+aQs
+aQs
+aQs
+lXb
+pFF
+pFF
+pFF
+pFF
+pFF
+fAN
+rdE
+rdr
+rdr
+itN
+ccH
+hFg
 kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
+wNz
+xsg
+qcJ
+pFF
+geS
+qLS
+mDQ
+swH
 xdq
 xdq
 xdq
@@ -122617,40 +123285,40 @@ bcQ
 xdq
 mhZ
 fkq
+fdp
+fdp
+iSW
 pFF
-aaJ
-aaJ
-aaI
-fkq
+pFF
 pFF
 nDa
-fkq
-fkq
+vig
+rYM
+rYM
+rYM
+rYM
+rYM
+rYM
+rYM
+rYM
+rYM
+rYM
+rYM
+rYM
+rYM
+rYM
+rYM
+rYM
+uAm
 kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
-kIa
+eqX
+rYM
+rYM
+twy
+gGZ
+pFF
+pFF
+fXe
 xdq
 sbk
 sbk
@@ -122934,14 +123602,14 @@ xdq
 xdq
 mhZ
 fkq
-fkq
-aaM
-aaM
-fkq
-fkq
-fkq
-fkq
-fkq
+rvY
+pFF
+nDa
+vig
+rYM
+rYM
+rYM
+uAm
 kIa
 kIa
 kIa
@@ -122963,11 +123631,11 @@ kIa
 kIa
 kIa
 kIa
-kIa
-kIa
-kIa
-kIa
-kIa
+eqX
+rYM
+rYM
+rYM
+rYM
 uAm
 kIa
 kIa
@@ -123251,11 +123919,11 @@ xdq
 xdq
 mhZ
 fkq
-fkq
-aaN
-aaN
-fkq
-fkq
+rYM
+rYM
+rYM
+uAm
+kIa
 kIa
 kIa
 kIa
@@ -123568,10 +124236,10 @@ mhZ
 mhZ
 mhZ
 mhZ
-fkq
-fkq
-fkq
-fkq
+kIa
+kIa
+kIa
+kIa
 kIa
 kIa
 kIa
@@ -128145,7 +128813,7 @@ vTk
 vTk
 vTk
 vTk
-aab
+vTk
 vTk
 vTk
 vTk
@@ -151557,9 +152225,9 @@ kIa
 pnV
 mXt
 tHf
-aag
-aag
-aag
+rVs
+rVs
+rVs
 jkM
 aLY
 fwu
@@ -151876,8 +152544,8 @@ mXt
 tcW
 jAp
 jAp
-aae
-aae
+uzP
+uzP
 kXx
 fwu
 fwu

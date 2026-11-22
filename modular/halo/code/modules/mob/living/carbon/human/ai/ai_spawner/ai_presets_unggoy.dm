@@ -1,102 +1,67 @@
 /datum/human_ai_equipment_preset/covenant/unggoy
-	faction = FACTION_UNGGOY
-
-/datum/human_ai_equipment_preset/covenant/unggoy/minor
-	name = "Unggoy Minor"
-	desc = "Upstream-compatible alias for a fully equipped AI-safe plasma pistol Unggoy minor."
-	path = /datum/equipment_preset/covenant/unggoy/ai/minor_plasma
+	faction = FACTION_COVENANT
 
 /datum/human_ai_equipment_preset/covenant/unggoy/minor_plasma
-	name = "Unggoy Minor (Plasma Pistol)"
-	desc = "BT AI-safe plasma pistol Unggoy minor."
+	name = "Унггой-минор (плазма)"
+	desc = "Базовый унггой линии, вооруженный плазменным пистолетом и автоинъектором бикаридина."
 	path = /datum/equipment_preset/covenant/unggoy/ai/minor_plasma
 
 /datum/human_ai_equipment_preset/covenant/unggoy/minor_needler
-	name = "Unggoy Minor (Needler)"
-	desc = "BT AI-safe needler Unggoy minor."
+	name = "Унггой-минор (игольник)"
+	desc = "Базовый унггой линии, вооруженный игольником, запасными кристаллами и автоинъектором бикаридина."
 	path = /datum/equipment_preset/covenant/unggoy/ai/minor_needler
 
-/datum/human_ai_equipment_preset/covenant/unggoy/major
-	name = "Unggoy Major"
-	desc = "Upstream-compatible alias for a fully equipped AI-safe plasma pistol Unggoy major."
-	path = /datum/equipment_preset/covenant/unggoy/ai/major_plasma
-
 /datum/human_ai_equipment_preset/covenant/unggoy/major_plasma
-	name = "Unggoy Major (Plasma Pistol)"
-	desc = "BT AI-safe plasma pistol Unggoy major."
+	name = "Унггой-мажор (плазма)"
+	desc = "Ветеран-унггой, вооруженный плазменным пистолетом, инъекторами бикаридина и оксикодона."
 	path = /datum/equipment_preset/covenant/unggoy/ai/major_plasma
 
 /datum/human_ai_equipment_preset/covenant/unggoy/major_needler
-	name = "Unggoy Major (Needler)"
-	desc = "BT AI-safe needler Unggoy major."
-	path = /datum/equipment_preset/covenant/unggoy/ai/major_needler
-
-/datum/human_ai_equipment_preset/covenant/unggoy/major/needler
-	name = "Unggoy Major (Needler)"
-	desc = "Upstream-compatible alias for a fully equipped AI-safe needler Unggoy major."
+	name = "Унггой-мажор (игольник)"
+	desc = "Ветеран-унггой, вооруженный игольником, запасными кристаллами и боевыми инъекторами."
 	path = /datum/equipment_preset/covenant/unggoy/ai/major_needler
 
 /datum/human_ai_equipment_preset/covenant/unggoy/heavy_plasma
-	name = "Unggoy Heavy (Plasma Rifle)"
-	desc = "BT AI-safe plasma rifle Unggoy heavy."
-	path = /datum/equipment_preset/covenant/unggoy/ai/heavy_plasma
-
-/datum/human_ai_equipment_preset/covenant/unggoy/heavy/plasma_rifle
-	name = "Unggoy Heavy (Plasma Rifle)"
-	desc = "Upstream-compatible alias for a fully equipped AI-safe plasma rifle Unggoy heavy."
+	name = "Унггой-тяжелый (плазменная винтовка)"
+	desc = "Тяжелая боевая оснастка, плазменная винтовка и инъекторы для лечения травм и ожогов."
 	path = /datum/equipment_preset/covenant/unggoy/ai/heavy_plasma
 
 /datum/human_ai_equipment_preset/covenant/unggoy/heavy_needler
-	name = "Unggoy Heavy (Needler)"
-	desc = "BT AI-safe needler Unggoy heavy."
-	path = /datum/equipment_preset/covenant/unggoy/ai/heavy_needler
-
-/datum/human_ai_equipment_preset/covenant/unggoy/heavy/needler
-	name = "Unggoy Heavy (Needler)"
-	desc = "Upstream-compatible alias for a fully equipped AI-safe needler Unggoy heavy."
+	name = "Унггой-тяжелый (игольник)"
+	desc = "Тяжелая боевая оснастка, игольник с запасными кристаллами и инъекторы от боли и ожогов."
 	path = /datum/equipment_preset/covenant/unggoy/ai/heavy_needler
 
 /datum/human_ai_equipment_preset/covenant/unggoy/ultra
-	name = "Unggoy Ultra"
-	desc = "BT AI-safe plasma rifle Unggoy ultra."
-	path = /datum/equipment_preset/covenant/unggoy/ai/ultra
-
-/datum/human_ai_equipment_preset/covenant/unggoy/ultra/plasma_rifle
-	name = "Unggoy Ultra (Plasma Rifle)"
-	desc = "Upstream-compatible alias for a fully equipped AI-safe plasma rifle Unggoy ultra."
+	name = "Унггой-ультра"
+	desc = "Ветеранская оснастка ультры, плазменная винтовка и боевые инъекторы командного класса."
 	path = /datum/equipment_preset/covenant/unggoy/ai/ultra
 
 /datum/human_ai_equipment_preset/covenant/unggoy/support_medical
-	name = "Unggoy Support (Medical)"
-	desc = "BT AI-safe medical support Unggoy."
+	name = "Унггой поддержки (медик)"
+	desc = "Унггой поддержки с плазменным оружием и инъекторами бикаридина и келотана для самопомощи."
 	path = /datum/equipment_preset/covenant/unggoy/ai/support_medical
 
 /datum/human_ai_equipment_preset/covenant/unggoy/specops_plasma
-	name = "Unggoy SpecOps (Plasma Rifle)"
-	desc = "BT AI-safe plasma rifle SpecOps Unggoy."
+	name = "Унггой SpecOps (плазма)"
+	desc = "Унггой SpecOps со скрытной оснасткой, вооруженный плазменной винтовкой и боевыми инъекторами."
 	path = /datum/equipment_preset/covenant/unggoy/ai/specops_plasma
 
 /datum/human_ai_equipment_preset/covenant/unggoy/specops_needler
-	name = "Unggoy SpecOps (Needler)"
-	desc = "BT AI-safe needler SpecOps Unggoy."
+	name = "Унггой SpecOps (игольник)"
+	desc = "Унггой SpecOps со скрытной оснасткой, вооруженный игольником, запасными кристаллами и боевыми инъекторами."
 	path = /datum/equipment_preset/covenant/unggoy/ai/specops_needler
 
 /datum/human_ai_equipment_preset/covenant/unggoy/specops_ultra
-	name = "Unggoy SpecOps Ultra"
-	desc = "BT AI-safe SpecOps Ultra Unggoy."
+	name = "Унггой-ультра SpecOps"
+	desc = "Элитный унггой SpecOps с улучшенной броней, плазменной винтовкой и инъекторами командного класса."
 	path = /datum/equipment_preset/covenant/unggoy/ai/specops_ultra
 
 /datum/human_ai_equipment_preset/covenant/unggoy/deacon_command
-	name = "Unggoy Deacon (Command)"
-	desc = "BT AI-safe command deacon."
-	path = /datum/equipment_preset/covenant/unggoy/ai/deacon_command
-
-/datum/human_ai_equipment_preset/covenant/unggoy/deacon/needler
-	name = "Unggoy Deacon (Needler)"
-	desc = "Upstream-compatible deacon alias retaining BT's AI-safe command behavior."
+	name = "Унггой-дьякон (командный)"
+	desc = "Командный унггой с оснасткой дьякона, плазменным оружием и боевыми инъекторами."
 	path = /datum/equipment_preset/covenant/unggoy/ai/deacon_command
 
 /datum/human_ai_equipment_preset/covenant/unggoy/suicide_bomber
-	name = "Unggoy Suicide Bomber"
-	desc = "BT AI-safe suicide bomber Unggoy."
+	name = "Унггой-смертник"
+	desc = "Унггой-камикадзе, который активирует парные плазменные гранаты, игнорирует добычу и бросается на враждебные цели."
 	path = /datum/equipment_preset/covenant/unggoy/ai/suicide_bomber
