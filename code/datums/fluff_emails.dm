@@ -3,10 +3,8 @@
 	var/title //email title
 	var/entry_text //email content
 
-
 //emails for the Almayer computers
 /datum/fluff_email/almayer
-
 
 /datum/fluff_email/almayer/iwantout
 	title = "RE: I want out."
@@ -191,3 +189,4 @@
 				I'll catch him back at base once we've docked because I need that money to pay off my tab at the bar.
 				</html>
 				"}
+

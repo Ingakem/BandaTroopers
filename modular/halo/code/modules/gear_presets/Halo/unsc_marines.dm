@@ -258,7 +258,7 @@
 	assignment = JOB_SQUAD_MEDIC_ODST
 	rank = JOB_SQUAD_MEDIC_ODST
 	role_comm_title = "ODST-HC"
-	skills = /datum/skills/combat_medic/odst
+	skills = /datum/skills/combat_medic
 
 /datum/equipment_preset/unsc/medic/odst/lesser_rank
 	name = parent_type::name + " (пониженный ранг)"
