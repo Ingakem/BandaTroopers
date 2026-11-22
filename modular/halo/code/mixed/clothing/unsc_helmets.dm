@@ -1,6 +1,6 @@
 /obj/item/clothing/head/helmet/marine/unsc
-	name = "\improper шлем CH252"
-	desc = "Штатный шлем корпуса морской пехоты ККОН. Различные точки крепления позволяют устанавливать на него дополнительное оборудование."
+	name = "\improper CH252 helmet"
+	desc = "Standard-issue helmet to the UNSC Marine Corps. Various attachment points on the helmet allow for various equipment to be fitted to the helmet."
 	icon = 'icons/halo/obj/items/clothing/hats/hats_by_faction/hat_unsc.dmi'
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
 	built_in_visors = null
@@ -10,15 +10,15 @@
 	)
 
 /obj/item/clothing/head/helmet/marine/unsc/pilot
-	name = "\improper шлем FH252"
-	desc = "Типичный шлем большинства пилотов ККОН благодаря полностью закрытой конструкции. Особенно ценится в боевых условиях, когда кабина может оказаться разгерметизированной."
+	name = "\improper FH252 helmet"
+	desc = "The typical helmet found used by most UNSC pilots due to its fully enclosed nature, particularly preferred by pilots in combat situations where their cockpit may end up breached."
 	icon_state = "pilot"
 	item_state = "pilot"
 	flags_atom = ALLOWINTERNALS|NO_SNOW_TYPE|NO_NAME_OVERRIDE|BLOCKGASEFFECT|ALLOWREBREATH|ALLOWCPR
 
 /obj/item/clothing/head/helmet/marine/unsc/police
-	name = "\improper полицейский шлем CH252"
-	desc = "Штатный шлем корпуса морской пехоты ККОН, этот вариант выдаётся местной полиции и силам безопасности по колониям."
+	name = "\improper police CH252 helmet"
+	desc = "Standard-issue helmet to the UNSC Marine Corps, this one given to local police and security forces across the colonies."
 	icon_state = "police"
 	item_state = "police"
 
@@ -27,14 +27,14 @@
 	item_state = "insurgent"
 
 /obj/item/clothing/head/helmet/marine/unsc/oni
-	name = "\improper шлем ONI CH252"
-	desc = "Штатный шлем корпуса морской пехоты ККОН. Этот вариант используется силами безопасности ONI."
+	name = "\improper ONI CH252 helmet"
+	desc = "Standard-issue helmet to the UNSC Marine Corps. This variant is used by ONI Security Forces."
 	icon_state = "oni"
 	item_state = "oni"
 
 /obj/item/clothing/head/helmet/marine/unsc/odst
-	name = "\improper шлем CH381 ODST"
-	desc = "Культовый шлем, разработанный для бойцов Orbital Drop Shock Troopers корпуса морской пехоты ККОН."
+	name = "\improper CH381 ODST helmet"
+	desc = "An iconic helmet, designed for use by Orbital-Drop-Shock-Troopers of the UNSC Marine Corps."
 	icon_state = "odst"
 	item_state = "odst"
 	flags_inventory = COVEREYES|COVERMOUTH|BLOCKSHARPOBJ|BLOCKGASEFFECT

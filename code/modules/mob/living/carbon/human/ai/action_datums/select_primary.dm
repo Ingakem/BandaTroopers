@@ -21,7 +21,6 @@
 
 /datum/ai_action/select_primary/proc/decide_primary_weapon()
 	var/mob/living/carbon/human/tied_human = brain.tied_human
-	var/static/datum/firearm_appraisal/default_appraisal = new() // SS220 EDIT - HALO GUN FIX
 
 	var/obj/item/weapon/gun/best_secondary
 	var/datum/firearm_appraisal/best_secondary_appraisal
@@ -31,10 +30,10 @@
 
 		if(!best_secondary)
 			best_secondary = secondary
-			best_secondary_appraisal = get_firearm_appraisal(best_secondary) || default_appraisal // SS220 EDIT - HALO GUN FIX
+			best_secondary_appraisal = get_firearm_appraisal(best_secondary)
 			continue
 
-		var/datum/firearm_appraisal/this_appraisal = get_firearm_appraisal(secondary) || default_appraisal // SS220 EDIT - HALO GUN FIX
+		var/datum/firearm_appraisal/this_appraisal = get_firearm_appraisal(secondary)
 		if(this_appraisal.primary_weight > best_secondary_appraisal.primary_weight)
 			best_secondary = secondary
 			best_secondary_appraisal = this_appraisal

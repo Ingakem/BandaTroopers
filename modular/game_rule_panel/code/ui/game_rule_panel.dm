@@ -1,6 +1,6 @@
 /client/proc/toggle_game_rule_panel()
 	set name = "Game Rule Panel"
-	set category = "Game Master"
+	set category = "Game Master.Extras"
 
 	if(!check_rights(R_ADMIN))
 		return

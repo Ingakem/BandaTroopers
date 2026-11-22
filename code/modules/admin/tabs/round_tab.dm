@@ -95,13 +95,12 @@
 	var/roles[] = new
 	var/datum/job/J
 
-	var/datum/authority/branch/role/role_authority = GLOB.RoleAuthority
-	var/active_role_names = role_authority?.get_gamemode_role_titles() || GLOB.gamemode_roles[GLOB.master_mode] // SS220 EDIT: resolve active ship-mode roster through modular helpers
+	var/active_role_names = GLOB.gamemode_roles[GLOB.master_mode]
 	if(!active_role_names)
 		active_role_names = GLOB.ROLES_DISTRESS_SIGNAL
 
 	for(var/role_name as anything in active_role_names)
-		var/datum/job/job = role_authority?.roles_by_name[role_name]
+		var/datum/job/job = GLOB.RoleAuthority.roles_by_name[role_name]
 		if(!job)
 			continue
 		roles += role_name

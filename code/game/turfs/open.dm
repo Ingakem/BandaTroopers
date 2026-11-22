@@ -1420,15 +1420,6 @@
 /turf/open/shuttle/escapepod/floor0/north
 	dir = NORTH
 
-/turf/open/shuttle/escapepod/floor0/north/east
-	dir = EAST
-
-/turf/open/shuttle/escapepod/floor0/north/south
-	dir = SOUTH
-
-/turf/open/shuttle/escapepod/floor0/east
-	dir = EAST
-
 /turf/open/shuttle/escapepod/floor0/west
 	dir = WEST
 

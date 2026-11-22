@@ -1,20 +1,20 @@
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/halo
-	name = "тяжёлая взрывозащитная дверь"
-	desc = "Тяжёлая взрывозащитная дверь, предназначенная для герметизации зон или обеспечения широкого прохода через один вход."
+	name = "heavy blast door"
+	desc = "A heavy blast door meant to secure areas or provide wide access through a singular entrance."
 	icon = 'icons/halo/obj/structures/doors/podlocks/4x1_blast_hor.dmi'
 	icon_state = "blast1"
 	base_icon_state = "blast"
 
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/vertical/halo
-	name = "тяжёлая взрывозащитная дверь"
-	desc = "Тяжёлая взрывозащитная дверь, предназначенная для герметизации зон или обеспечения широкого прохода через один вход."
+	name = "heavy blast door"
+	desc = "A heavy blast door meant to secure areas or provide wide access through a singular entrance."
 	icon = 'icons/halo/obj/structures/doors/podlocks/4x1_blast_vert.dmi'
 	icon_state = "blast1"
 	base_icon_state = "blast"
 
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/five_tile
-	name = "тяжёлая взрывозащитная дверь"
-	desc = "Тяжёлая взрывозащитная дверь, предназначенная для герметизации зон или обеспечения широкого прохода через один вход."
+	name = "heavy blast door"
+	desc = "A heavy blast door meant to secure areas or provide wide access through a singular entrance."
 	icon = 'icons/halo/obj/structures/doors/podlocks/5x1_blast_hor.dmi'
 	icon_state = "blast1"
 	base_icon_state = "blast"

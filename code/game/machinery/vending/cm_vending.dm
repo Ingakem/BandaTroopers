@@ -146,18 +146,6 @@ GLOBAL_LIST_EMPTY(vending_products)
 			return relative_turf
 	return turf
 
-/obj/structure/machinery/cm_vending/proc/vendor_role_matches(role_title)
-	// SS220 EDIT - START: vendor role checks use canonical squad-role contracts for modular variants
-	if(!LAZYLEN(vendor_role))
-		return FALSE
-
-	var/default_role = GET_DEFAULT_ROLE(role_title)
-	for(var/allowed_role in vendor_role)
-		if(GET_DEFAULT_ROLE(allowed_role) == default_role)
-			return TRUE
-	return FALSE
-	// SS220 EDIT - END
-
 /obj/structure/machinery/cm_vending/get_examine_text(mob/living/carbon/human/user)
 	. = ..()
 
@@ -568,9 +556,9 @@ GLOBAL_LIST_EMPTY(vending_products)
 				var/can_buy_flags = itemspec[4]
 				if(can_buy_flags)
 					if(can_buy_flags == MARINE_CAN_BUY_ESSENTIALS)
-						if(vendor_role_matches(JOB_SQUAD_SPECIALIST)) // SS220 EDIT: specialist essentials are keyed off canonical squad roles
+						if(vendor_role.Find(JOB_SQUAD_SPECIALIST))
 							// handle specalist essential gear assignment
-							if(GET_DEFAULT_ROLE(user.job) != JOB_SQUAD_SPECIALIST) // SS220 EDIT: modular specialist variants still consume the specialist essential path
+							if(user.job != JOB_SQUAD_SPECIALIST)
 								to_chat(user, SPAN_WARNING("Only specialists can take specialist sets."))
 								vend_fail()
 								return FALSE
@@ -596,7 +584,7 @@ GLOBAL_LIST_EMPTY(vending_products)
 
 							GLOB.specialist_set_name_dict[p_name].redeem_set(human_user)
 
-						else if(vendor_role_matches(JOB_SYNTH))
+						else if(vendor_role.Find(JOB_SYNTH))
 							if(user.job != JOB_SYNTH)
 								to_chat(user, SPAN_WARNING("Only USCM Synthetics may vend experimental tool tokens."))
 								vend_fail()
@@ -809,7 +797,7 @@ GLOBAL_LIST_EMPTY(vending_products)
 				vend_fail()
 			return FALSE
 
-		if(LAZYLEN(vendor_role) && !vendor_role_matches(user.job)) // SS220 EDIT: vendor gating uses canonical squad-role matching
+		if(LAZYLEN(vendor_role) && !vendor_role.Find(user.job))
 			if(display)
 				to_chat(user, SPAN_WARNING("This machine isn't for you."))
 				vend_fail()

@@ -1,7 +1,6 @@
 
 /datum/authority/branch/role/setup_candidates_and_roles(list/overwritten_roles_for_mode)
 	. = ..()
-	var/active_ship_platoon = get_active_ship_platoon_type()
 
 	// Подсчитываем игроков
 	var/players_ready = 0
@@ -20,7 +19,7 @@
 		if(sq.ready_players_usable && players_ready < sq.ready_players_usable)
 			continue
 		if(sq.platoon_associated_type)
-			if(sq.platoon_associated_type != active_ship_platoon) //!istype(MAIN_SHIP_PLATOON, sq.platoon_associated_type))
+			if(sq.platoon_associated_type != MAIN_SHIP_PLATOON) //!istype(MAIN_SHIP_PLATOON, sq.platoon_associated_type))
 				continue
 			associated_squad_job_positions(sq.platoon_associated_type)
 
@@ -36,8 +35,9 @@
 		var/datum/job/job = GLOB.RoleAuthority.roles_by_path[role]
 		if(!job)
 			continue
+		// var/datum/job/job_mapped = GET_MAPPED_ROLE(job_path)
 		var/additional_positions = 0
-		switch(GET_DEFAULT_ROLE(job.title))
+		switch(job.title)
 			if(JOB_SQUAD_MARINE)
 				additional_positions = associated_squad.max_riflemen
 			if(JOB_SQUAD_ENGI)
@@ -61,13 +61,9 @@
 
 /datum/authority/branch/role/check_squad_capacity(mob/living/carbon/human/transfer_marine, datum/squad/new_squad)
 	. = ..()
-	if(.)
-		return
-
-	var/default_role = GET_DEFAULT_ROLE(transfer_marine.job)
-	if(default_role == JOB_SQUAD_RTO)
+	if(transfer_marine.job == JOB_SQUAD_RTO)
 		if(new_squad.num_rto >= new_squad.max_rto)
 			return TRUE
-	if(default_role == JOB_SQUAD_MARINE)
+	if(transfer_marine.job == JOB_SQUAD_MARINE)
 		if(new_squad.num_riflemen >= new_squad.max_riflemen)
 			return TRUE

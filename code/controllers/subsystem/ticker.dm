@@ -21,13 +21,11 @@ SUBSYSTEM_DEF(ticker)
 	var/list/login_music = null //Music played in pregame lobby
 
 	var/delay_end = FALSE //If set true, the round will not restart on it's own
-	// SS220 EDIT - START: delay_start is runtime-controlled so UNIT_TESTS builds do not autostart without run_tests
-	//#if defined(UNIT_TESTS) //must be FALSE for unit tests else they hang indefinitely
-	//	var/delay_start = FALSE
-	//#else
+#if defined(UNIT_TESTS) //must be FALSE for unit tests else they hang indefinitely
+	var/delay_start = FALSE
+#else
 	var/delay_start = TRUE
-	//#endif
-	// SS220 EDIT - END
+#endif
 	var/admin_delay_notice = "" //A message to display to anyone who tries to restart the world after a delay
 
 	var/time_left //Pre-game timer
@@ -61,12 +59,6 @@ SUBSYSTEM_DEF(ticker)
 	var/intro_sequence = TRUE
 
 /datum/controller/subsystem/ticker/Initialize(timeofday)
-	// SS220 EDIT - START: explicit test runs still bypass delayed start
-	#ifdef UNIT_TESTS
-	if(world.params && world.params["run_tests"])
-		delay_start = FALSE
-	#endif
-	// SS220 EDIT - END
 	load_mode()
 
 	var/all_music = CONFIG_GET(keyed_list/lobby_music)
