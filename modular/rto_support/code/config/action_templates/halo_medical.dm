@@ -11,23 +11,19 @@
 	parent_type = /datum/rto_support_action_template/halo/medical
 	action_id = "halo_medical_packets_drop"
 	name = "Медицинские пакеты"
-	icon_state = "medic"
-	description = "Сбрасывает запас травмпакетов для стабилизации раненых на передовой."
-	support_pool_cost = 2
+	description = "Сбрасывает запас травмпакетов и морфия для стабилизации раненых на передовой."
 	fire_support_path = /datum/fire_support/supply_drop/halo/medical_packets
 
 /datum/rto_support_action_template/halo_corpsman_kit_drop
 	parent_type = /datum/rto_support_action_template/halo/medical
 	action_id = "halo_corpsman_kit_drop"
-	name = "Набор корпсмана"
-	icon_state = "corpsman"
-	description = "Сбрасывает ящик корпсмана с полным комплектом поясов и подсумков с медициной."
+	name = "Набор корпусмана"
+	description = "Сбрасывает ящик корпусмана с полностью укомплектованным медснаряжением."
 	fire_support_path = /datum/fire_support/supply_drop/halo/corpsman_kit
 
 /datum/rto_support_action_template/halo_biofoam_reserve_drop
 	parent_type = /datum/rto_support_action_template/halo/medical
 	action_id = "halo_biofoam_reserve_drop"
 	name = "Резерв биопены"
-	icon_state = "biofoam"
-	description = "Сбрасывает ящик с биопеной и средствами от ожогов."
+	description = "Сбрасывает инъекторы биопены и запас средств для лечения ожогов при долгой полевой работе."
 	fire_support_path = /datum/fire_support/supply_drop/halo/biofoam_reserve

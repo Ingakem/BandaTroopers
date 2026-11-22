@@ -17,45 +17,43 @@
 /datum/rto_support_action_template/halo_rifle_ammo_drop
 	parent_type = /datum/rto_support_action_template/halo/logistics
 	action_id = "halo_rifle_ammo_drop"
-	name = "Боеприпасы винтовочного калибра"
-	description = "Сбрасывает смешанный винтовочный ящик для MA5C и MA5B."
+	name = "Винтовочные боеприпасы"
+	description = "Сбрасывает смешанный винтовочный ящик для MA5C, MA5B и M6C."
 	fire_support_path = /datum/fire_support/supply_drop/halo/rifle
 
 /datum/rto_support_action_template/halo_marksman_ammo_drop
 	parent_type = /datum/rto_support_action_template/halo/logistics
 	action_id = "halo_marksman_ammo_drop"
 	name = "Боеприпасы марксмана"
-	description = "Сбрасывает магазины для винтовок M392 DMR и BR55."
+	description = "Сбрасывает коробки боеприпасов для BR55 и M392 DMR для марксманов и командиров отделений."
 	fire_support_path = /datum/fire_support/supply_drop/halo/marksman
 
 /datum/rto_support_action_template/halo_pdw_ammo_drop
 	parent_type = /datum/rto_support_action_template/halo/logistics
 	action_id = "halo_pdw_ammo_drop"
-	name = "Боеприпасы пистолетного калибра и средств самообороны"
-	description = "Сбрасывает магазины для M7 и пистолетов."
+	name = "Боеприпасы вторичного оружия"
+	description = "Сбрасывает магазины M7 и патроны для пистолетов под оружие ближнего боя и резервные стволы."
 	fire_support_path = /datum/fire_support/supply_drop/halo/pdw
 
 /datum/rto_support_action_template/halo_shotgun_ammo_drop
 	parent_type = /datum/rto_support_action_template/halo/logistics
 	action_id = "halo_shotgun_ammo_drop"
 	name = "Дробовые патроны"
-	description = "Сбрасывает ящики с дробью и пулями для дробовиков 8-го калибра."
+	description = "Сбрасывает компактный пулевой запас для одного бричера вместо громоздкого командного ящика."
 	fire_support_path = /datum/fire_support/supply_drop/halo/shotgun
 
 /datum/rto_support_action_template/halo_sniper_ammo_drop
 	parent_type = /datum/rto_support_action_template/halo/logistics
 	action_id = "halo_sniper_ammo_drop"
 	name = "Снайперские боеприпасы"
-	icon_state = "srs"
-	description = "Сбрасывает магазины SRS99 для антиматериальной винтовки."
+	description = "Сбрасывает магазины SRS99 для выделенных дальнобойных специалистов."
 	fire_support_path = /datum/fire_support/supply_drop/halo/sniper
 
 /datum/rto_support_action_template/halo_spnkr_ammo_drop
 	parent_type = /datum/rto_support_action_template/halo/logistics
 	action_id = "halo_spnkr_ammo_drop"
 	name = "Боеприпасы SPNKr"
-	icon_state = "spnkr"
-	description = "Сбрасывает сменные ракетные тубусы для M41 SPNKr."
+	description = "Сбрасывает перезарядочные тубусы SPNKr для специалистов по тяжёлому вооружению."
 	fire_support_path = /datum/fire_support/supply_drop/halo/spnkr
 
 /datum/rto_support_action_template/halo_grenadier_ammo_drop
@@ -65,11 +63,3 @@
 	name = "Боеприпасы гренадера"
 	description = "Сбрасывает ящик гренадера с 40-мм выстрелами и осколочными гранатами."
 	fire_support_path = /datum/fire_support/supply_drop/halo/grenadier
-
-/datum/rto_support_action_template/halo_frontline_ammo_drop
-	parent_type = /datum/rto_support_action_template/halo/logistics
-	support_pool_cost = 2
-	action_id = "halo_frontline_ammo_drop"
-	name = "Большой ящик с боеприпасами"
-	description = "Сбрасывает большой ящик содержащий все основные магазины и боеприпасы для оружия ККОН."
-	fire_support_path = /datum/fire_support/supply_drop/halo/frontline
