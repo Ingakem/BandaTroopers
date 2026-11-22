@@ -281,7 +281,6 @@ const rankList = [
   'Combat Technician',
   'Smartgunner',
   'Weapons Specialist',
-  'Group Leader',
   'Fireteam Leader',
   'Squad Leader',
 ];

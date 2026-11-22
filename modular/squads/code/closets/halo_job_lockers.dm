@@ -70,13 +70,13 @@
 	req_access = list(ACCESS_MARINE_SPECPREP, ACCESS_SQUAD_TWO)
 
 /obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader
-	name = "Group Leader locker"
+	name = "Fireteam Leader locker"
 	req_access = list(ACCESS_MARINE_TL_PREP)
 
 /obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft1
-	name = "group one Group Leader locker"
+	name = "fireteam one Fireteam Leader locker"
 	req_access = list(ACCESS_MARINE_TL_PREP, ACCESS_SQUAD_ONE)
 
 /obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft2
-	name = "group two Group Leader locker"
+	name = "fireteam two Fireteam Leader locker"
 	req_access = list(ACCESS_MARINE_TL_PREP, ACCESS_SQUAD_TWO)

@@ -19,7 +19,6 @@ interface SquadMarineEntry {
   refer?: string;
   paygrade: string;
   rank: string;
-  role_bucket?: string;
 }
 
 interface FireTeamEntry {
@@ -46,9 +45,6 @@ interface SquadProps {
   partial_squad_ref: string;
   squad_color: string;
   is_lead: 'sctsgt' | 'SQ1' | 'SQ2' | 'SQ3' | 'SQ4' | 0;
-  lead_label: string;
-  sublead_label: string;
-  sub_squad_label: string;
   objective: { primary?: string; secondary?: string };
 }
 
@@ -58,7 +54,7 @@ const FireTeamLeadLabel = (props: { readonly ftl: SquadMarineEntry }) => {
   return (
     <>
       <Stack.Item>
-        <span>{data.sublead_label}:</span>
+        <span>Squad Leader:</span>
       </Stack.Item>
       <Stack.Item>
         <span
@@ -97,7 +93,7 @@ const FireTeamLead = (props: {
         <Stack>
           {isNotAssigned && (
             <Stack.Item>
-              <span>{data.sublead_label}: Unassigned</span>
+              <span>Squad Leader: Unassigned</span>
             </Stack.Item>
           )}
           {!isNotAssigned && <FireTeamLeadLabel ftl={assignedFireteamLead} />}
@@ -140,28 +136,13 @@ const FireTeam = (props: { readonly sqldr: string }) => {
       fireteam?.sqldr?.name === 'Not assigned' ||
       fireteam?.sqldr?.name === 'Unassigned' ||
       fireteam?.sqldr?.name === undefined);
-  const roleOrder = [
-    'Rifleman',
-    'Combat Engineer',
-    'Corpsman',
-    'Radio Operator',
-    'Smartgunner',
-    'Weapons Specialist',
-    'Group Leader',
-    'Squad Leader',
-  ];
+  const rankList = ['Mar', 'ass', 'Med', 'Eng', 'SG', 'Spc', 'SqLdr', 'PltSgt'];
   const rankSort = (a: SquadMarineEntry, b: SquadMarineEntry) => {
     if (a.rank === 'Mar' && b.rank === 'Mar') {
       return a.paygrade === 'PFC' ? -1 : 1;
     }
-    const a_index = roleOrder.findIndex((str) => a.role_bucket === str);
-    const b_index = roleOrder.findIndex((str) => b.role_bucket === str);
-    if (a_index === -1 || b_index === -1) {
-      return a.name.localeCompare(b.name);
-    }
-    if (a_index === b_index) {
-      return a.name.localeCompare(b.name);
-    }
+    const a_index = rankList.findIndex((str) => a.rank === str);
+    const b_index = rankList.findIndex((str) => b.rank === str);
     return a_index > b_index ? -1 : 1;
   };
 
@@ -187,9 +168,7 @@ const FireTeam = (props: { readonly sqldr: string }) => {
                   <TableCell className="MemberCell">Member</TableCell>
                   {data.is_lead === 'sctsgt' && (
                     <TableCell className="ActionCell">
-                      {props.sqldr === 'Unassigned'
-                        ? `Assign ${data.sub_squad_label}`
-                        : 'Actions'}
+                      {props.sqldr === 'Unassigned' ? 'Assign FT' : 'Actions'}
                     </TableCell>
                   )}
                 </TableRow>
@@ -310,7 +289,7 @@ const SquadObjectives = (props) => {
 };
 
 export const SquadInfo = () => {
-  const { data } = useBackend<SquadProps>();
+  const { config, data } = useBackend<SquadProps>();
   const fireteams = ['SQ1', 'SQ2', 'SQ3', 'SQ4', 'Unassigned'];
 
   return (
@@ -319,13 +298,15 @@ export const SquadInfo = () => {
         <Flex fill={1} justify="space-around" direction="column">
           <Flex.Item>
             <Section
-              title={`${data.squad} ${data.lead_label}: ${data.sctsgt?.name ?? 'None'}`}
+              title={`${data.squad} Section Sergeant: ${
+                data.sctsgt?.name ?? 'None'
+              }`}
             >
               <SquadObjectives />
             </Section>
           </Flex.Item>
           <Flex.Item>
-            <Section title={`${data.sub_squad_label}s`}>
+            <Section title="Squads">
               <Box width="100%" className="ftlFlex" fillPositionedParent>
                 {fireteams.map((x) => (
                   <FireTeam sqldr={x} key={x} />

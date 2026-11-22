@@ -69,7 +69,7 @@ United States Colonial Marines
 	)
 
 /datum/skills/tl
-	name = JOB_SQUAD_TEAM_LEADER // SS220 EDIT: TL presentation reuses the canonical job title instead of a duplicated string
+	name = "Fireteam Leader"
 	skills = list(
 		SKILL_JTAC = SKILL_JTAC_TRAINED,
 		SKILL_LEADERSHIP = SKILL_LEAD_TRAINED,
@@ -77,7 +77,7 @@ United States Colonial Marines
 	)
 
 /datum/skills/tl/recon
-	name = "Recon Group Leader"
+	name = "Recon Fireteam Leader"
 	skills = list(
 		SKILL_JTAC = SKILL_JTAC_TRAINED,
 		SKILL_LEADERSHIP = SKILL_LEAD_TRAINED,
@@ -87,7 +87,7 @@ United States Colonial Marines
 
 
 /datum/skills/SL
-	name = JOB_SQUAD_LEADER // SS220 EDIT: SL presentation reuses the canonical job title instead of a duplicated string
+	name = "Squad Leader"
 	skills = list(
 		SKILL_CQC = SKILL_CQC_TRAINED,
 		SKILL_LEADERSHIP = SKILL_LEAD_EXPERT,
@@ -468,7 +468,7 @@ SOLAR DEVILS (PvE Marines)
 	)
 
 /datum/skills/tl_pve
-	name = JOB_SQUAD_TEAM_LEADER // SS220 EDIT: PvE TL presentation reuses the canonical job title
+	name = "Fireteam Leader"
 	skills = list(
 		SKILL_ENGINEER = SKILL_ENGINEER_ENGI,
 		SKILL_CONSTRUCTION = SKILL_CONSTRUCTION_ENGI,
@@ -482,7 +482,7 @@ SOLAR DEVILS (PvE Marines)
 	)
 
 /datum/skills/sl_pve
-	name = JOB_SQUAD_LEADER // SS220 EDIT: PvE SL presentation reuses the canonical job title
+	name = "Squad Leader"
 	skills = list(
 		SKILL_ENGINEER = SKILL_ENGINEER_ENGI,
 		SKILL_CONSTRUCTION = SKILL_CONSTRUCTION_ENGI,

@@ -1,15 +1,7 @@
 import { useState } from 'react';
 
 import { useBackend } from '../backend';
-import {
-  Button,
-  Collapsible,
-  Divider,
-  LabeledList,
-  NumberInput,
-  Section,
-  Stack,
-} from '../components';
+import { Button, Collapsible, Divider, Section, Stack } from '../components';
 import { Window } from '../layouts';
 
 type Squad = {
@@ -26,10 +18,6 @@ type BackendContext = {
 export const HumanSquadSpawner = (props) => {
   const { data, act } = useBackend<BackendContext>();
   const [chosenSquad, setSquad] = useState<Squad | null>(null);
-  const [spawnRadius, setSpawnRadius] = useState(1);
-  const [onlyClearTiles, setOnlyClearTiles] = useState(true);
-  const [onlyReachableTiles, setOnlyReachableTiles] = useState(false);
-  const [treatWindowsAsBlockers, setTreatWindowsAsBlockers] = useState(true);
   const { squads } = data;
   return (
     <Window title="Human Squad Spawner" width={800} height={900}>
@@ -71,61 +59,12 @@ export const HumanSquadSpawner = (props) => {
                       ))}
                     </Stack.Item>
                     <Stack.Item>
-                      <LabeledList>
-                        <LabeledList.Item label="Spawn Radius">
-                          <NumberInput
-                            width="5em"
-                            step={1}
-                            minValue={1}
-                            maxValue={10}
-                            value={spawnRadius}
-                            onChange={(value) => setSpawnRadius(value)}
-                          />
-                        </LabeledList.Item>
-                      </LabeledList>
-                    </Stack.Item>
-                    <Stack.Item>
-                      <Button.Checkbox
-                        checked={onlyClearTiles}
-                        fluid
-                        onClick={() => setOnlyClearTiles(!onlyClearTiles)}
-                      >
-                        Only clear tiles
-                      </Button.Checkbox>
-                    </Stack.Item>
-                    <Stack.Item>
-                      <Button.Checkbox
-                        checked={onlyReachableTiles}
-                        fluid
-                        onClick={() =>
-                          setOnlyReachableTiles(!onlyReachableTiles)
-                        }
-                      >
-                        Only reachable tiles
-                      </Button.Checkbox>
-                    </Stack.Item>
-                    <Stack.Item>
-                      <Button.Checkbox
-                        checked={treatWindowsAsBlockers}
-                        fluid
-                        onClick={() =>
-                          setTreatWindowsAsBlockers(!treatWindowsAsBlockers)
-                        }
-                      >
-                        Treat windows as blockers
-                      </Button.Checkbox>
-                    </Stack.Item>
-                    <Stack.Item>
                       <Button
                         textAlign="center"
                         width="100%"
                         onClick={() =>
                           act('create_squad', {
                             path: chosenSquad.path,
-                            radius: spawnRadius,
-                            only_accessible: onlyClearTiles ? 1 : 0,
-                            only_reachable: onlyReachableTiles ? 1 : 0,
-                            windows_blockers: treatWindowsAsBlockers ? 1 : 0,
                           })
                         }
                       >
