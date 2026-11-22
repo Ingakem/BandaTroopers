@@ -400,8 +400,7 @@
 		return
 
 	if(dropped == primary_weapon)
-		var/datum/firearm_appraisal/current_gun_data = gun_data
-		if(!(current_gun_data?.disposable && !primary_weapon.ai_can_use(tied_human, src)))
+		if(!(gun_data.disposable && !primary_weapon.ai_can_use(tied_human, src)))
 			to_pickup |= dropped
 		set_primary_weapon(null)
 
@@ -448,7 +447,6 @@
 	set_primary_melee(null)*/
 
 /datum/human_ai_brain/proc/appraise_primary()
-	gun_data = null
 	if(!primary_weapon)
 		return
 	var/static/datum/firearm_appraisal/default = new()

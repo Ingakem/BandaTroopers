@@ -21,10 +21,10 @@
 
 
 /mob/living/carbon/human/proc/has_limb(org_name)
-	// SS220 EDIT - START: resolve limb presence through the canonical limb lookup instead of raw list iteration
-	var/obj/limb/target_limb = get_limb(org_name)
-	return istype(target_limb) && !(target_limb.status & LIMB_DESTROYED)
-	// SS220 EDIT - END
+	for(var/X in limbs)
+		var/obj/limb/E = X
+		if(E.name == org_name)
+			return !(E.status & LIMB_DESTROYED)
 
 /mob/living/carbon/human/proc/has_limb_for_slot(slot)
 	switch(slot)
