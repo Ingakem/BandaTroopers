@@ -199,6 +199,7 @@
 	icon_state = "rto_spawn_delta"
 	squad = SQUAD_MARINE_4
 
+
 /datum/job/marine/standard/ai/rmc
 	title = JOB_TWE_RMC_RIFLEMAN
 	total_positions = 2
