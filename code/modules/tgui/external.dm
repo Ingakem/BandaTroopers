@@ -196,12 +196,11 @@
 			context = context)
 	// Reload all tgui windows
 	if(type == "cacheReloaded")
-		if(!check_rights(R_ADMIN, FALSE))
+		if(!check_rights(R_ADMIN, FALSE) || usr.client.tgui_cache_reloaded)
 			return TRUE
-		if(!usr.client.tgui_cache_reloaded)
-			usr.client.allow_browser_inspect()
-			// Mark that dev reload was enabled for this client at least once.
-			usr.client.tgui_cache_reloaded = TRUE
+		usr.client.allow_browser_inspect()
+		// Mark as reloaded
+		usr.client.tgui_cache_reloaded = TRUE
 		// Notify windows
 		var/list/windows = usr.client.tgui_windows
 		for(var/window_id in windows)
