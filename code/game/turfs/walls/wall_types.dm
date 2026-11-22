@@ -1377,3 +1377,4 @@ INITIALIZE_IMMEDIATE(/turf/closed/wall/indestructible/splashscreen)
 	icon_state = "uppwall_hull"
 	desc = "A thick and chunky metal wall. The surface is barren and imposing."
 	hull = 1
+

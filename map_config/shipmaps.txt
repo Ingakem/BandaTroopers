@@ -52,7 +52,6 @@ map uscm_blue_ridge
 	# default
 endmap
 
-# SS220 EDIT - START: HALO ship map rotation
 map unsc_dark_was_the_night
 endmap
 
@@ -61,9 +60,6 @@ endmap
 
 map unsc_stalwart_frigate
 	default
-endmap
-
-map mackay_station_shipmap
 endmap
 
 # SS220 EDIT - END
