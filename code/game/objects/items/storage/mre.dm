@@ -162,12 +162,11 @@
 	qdel(src)
 
 /obj/item/storage/box/mre/proc/set_can_hold()
-	can_hold = list()
-	for(var/obj/item/item as anything in contents)
-		can_hold += item.type
+	for(var/item in contents)
+		can_hold += item
 		if(istype(item, /obj/item/mre_food_packet))
 			var/obj/item/mre_food_packet/food_packet = item
-			if(ispath(food_packet.contents_food, /obj/item))
+			if(food_packet.contents_food)
 				can_hold += food_packet.contents_food
 
 /obj/item/storage/box/mre/update_icon()

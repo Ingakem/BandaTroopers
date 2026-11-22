@@ -158,7 +158,7 @@ const VendableItemRow = (props: VenableItem) => {
           isRecommended={isRecommended}
           isMandatory={isMandatory}
           available={available}
-          onClick={() => act('vend', { prod_index: record.prod_index })}
+          onClick={() => act('vend', record)}
         >
           {record.prod_name}
         </VendButton>
@@ -210,7 +210,7 @@ const VendableClothingItemRow = (props: {
           isRecommended={isRecommended}
           isMandatory={isMandatory}
           available={available}
-          onClick={() => act('vend', { prod_index: record.prod_index })}
+          onClick={() => act('vend', record)}
         >
           {record.prod_name}
         </VendButton>

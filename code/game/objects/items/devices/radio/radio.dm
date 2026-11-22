@@ -50,8 +50,7 @@
 			if(!RF)
 				continue
 			RF.remove_listener(src)
-			secure_radio_connections[ch_name] = null
-		secure_radio_connections = null
+			secure_radio_connections -= RF
 
 	return ..()
 
