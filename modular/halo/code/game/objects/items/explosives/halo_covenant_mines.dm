@@ -3,7 +3,6 @@
 
 /obj/item/explosive/mine/covenant
 	icon = 'icons/obj/items/weapons/covenant_mines.dmi'
-	icon_state = "plasmamine"
 	angle = 360
 	has_tripwire = FALSE
 	var/disarmed = FALSE

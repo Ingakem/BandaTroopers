@@ -5,14 +5,9 @@
 	assignment = JOB_COV_MINOR
 	flags = EQUIPMENT_PRESET_EXTRA
 	paygrades = list(PAY_SHORT_COV_CIV = JOB_PLAYTIME_TIER_0)
-	faction = FACTION_UNGGOY
+	faction = FACTION_COVENANT
 	skills = /datum/skills/covenant/unggoy
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
-	var/halo_unggoy_role = "minor"
-	var/halo_unggoy_panic_health_pct = 0.55
-	var/halo_unggoy_panics_without_leader = TRUE
-	var/halo_unggoy_ignore_panic = FALSE
-	var/halo_unggoy_overheat_retreat = TRUE
 
 /datum/equipment_preset/covenant/unggoy/load_race(mob/living/carbon/human/new_human, client/mob_client)
 	new_human.set_species(SPECIES_UNGGOY)
@@ -49,48 +44,6 @@
 	if(new_human)
 		new_human.halo_apply_species_tts_seed()
 
-/datum/equipment_preset/covenant/unggoy/proc/equip_unggoy_basics(mob/living/carbon/human/new_human, suit_type, belt_type = null)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/covenant/unggoy(new_human), WEAR_BODY)
-	new_human.equip_to_slot_or_del(new suit_type(new_human), WEAR_JACKET)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/unggoy(new_human), WEAR_FACE)
-	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
-	if(belt_type)
-		new_human.equip_to_slot_or_del(new belt_type(new_human), WEAR_WAIST)
-
-/datum/equipment_preset/covenant/unggoy/proc/add_unggoy_needler_crystals(mob/living/carbon/human/new_human, count = 5)
-	for(var/i in 1 to count)
-		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal(new_human), WEAR_IN_BELT)
-
-/datum/equipment_preset/covenant/unggoy/proc/add_plasma_pistol_package(mob/living/carbon/human/new_human)
-	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_pistol(new_human), WEAR_J_STORE)
-
-/datum/equipment_preset/covenant/unggoy/proc/add_needler_package(mob/living/carbon/human/new_human)
-	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/smg/covenant_needler(new_human), WEAR_J_STORE)
-	add_unggoy_needler_crystals(new_human, 5)
-
-/datum/equipment_preset/covenant/unggoy/proc/add_plasma_rifle_package(mob/living/carbon/human/new_human)
-	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_rifle(new_human), WEAR_J_STORE)
-
-/datum/equipment_preset/covenant/unggoy/proc/apply_unggoy_ai_behavior(datum/human_ai_brain/brain)
-	if(!brain)
-		return
-
-	brain.halo_unggoy_runtime = TRUE
-	brain.halo_unggoy_role = halo_unggoy_role
-	brain.halo_unggoy_panic_health_pct = halo_unggoy_panic_health_pct
-	brain.halo_unggoy_panics_without_leader = halo_unggoy_panics_without_leader
-	brain.halo_unggoy_ignore_panic = halo_unggoy_ignore_panic
-	brain.halo_unggoy_overheat_retreat = halo_unggoy_overheat_retreat
-	brain.halo_apply_navigation_profile(4, 1, 1 SECONDS)
-
-/datum/equipment_preset/covenant/unggoy/proc/modular_apply_human_ai_brain_overrides(datum/human_ai_brain/brain, mob/living/carbon/human/new_human)
-	apply_unggoy_ai_behavior(brain)
-	var/datum/modpack/localization/localization_pack
-	if(SSmodpacks)
-		localization_pack = SSmodpacks.get_modpack(/datum/modpack/localization)
-	if(localization_pack)
-		localization_pack.halo_ai_apply_unggoy_speech_profile(brain, halo_unggoy_role)
-
 // BASIC ROLES
 
 // MINOR
@@ -105,35 +58,14 @@
 	role_comm_title = "Минор"
 	skills = /datum/skills/covenant/unggoy
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
-	halo_unggoy_role = "minor"
-	halo_unggoy_panic_health_pct = 0.55
-	halo_unggoy_panics_without_leader = TRUE
-	halo_unggoy_ignore_panic = FALSE
 
 /datum/equipment_preset/covenant/unggoy/minor/load_gear(mob/living/carbon/human/new_human)
-	add_grunt_minor(new_human)
-	add_plasma_pistol_package(new_human)
-
-/datum/equipment_preset/covenant/unggoy/minor/plasma_pistol
-	name = parent_type::name + " (Plasma Pistol)"
-
-/datum/equipment_preset/covenant/unggoy/minor/plasma_pistol/load_gear(mob/living/carbon/human/new_human)
-	equip_unggoy_basics(new_human, /obj/item/clothing/suit/marine/unggoy/minor, /obj/item/storage/belt/marine/covenant/unggoy/minor)
-	add_plasma_pistol_package(new_human)
-
-/datum/equipment_preset/covenant/unggoy/minor/needler
-	name = parent_type::name + " (Needler)"
-
-/datum/equipment_preset/covenant/unggoy/minor/needler/load_gear(mob/living/carbon/human/new_human)
-	equip_unggoy_basics(new_human, /obj/item/clothing/suit/marine/unggoy/minor, /obj/item/storage/belt/marine/covenant/unggoy/minor)
-	add_needler_package(new_human)
-
-/datum/equipment_preset/covenant/unggoy/minor/plasma_rifle
-	name = parent_type::name + " (Plasma Rifle)"
-
-/datum/equipment_preset/covenant/unggoy/minor/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
-	equip_unggoy_basics(new_human, /obj/item/clothing/suit/marine/unggoy/minor, /obj/item/storage/belt/marine/covenant/unggoy/minor)
-	add_plasma_rifle_package(new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/covenant/unggoy(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unggoy/minor(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/unggoy(new_human), WEAR_FACE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/minor(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_pistol(new_human), WEAR_J_STORE)
 
 // MAJOR
 /datum/equipment_preset/covenant/unggoy/major
@@ -147,35 +79,23 @@
 	role_comm_title = "Мажор"
 	skills = /datum/skills/covenant/unggoy
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
-	halo_unggoy_role = "major"
-	halo_unggoy_panic_health_pct = 0.4
-	halo_unggoy_panics_without_leader = TRUE
-	halo_unggoy_ignore_panic = FALSE
 
 /datum/equipment_preset/covenant/unggoy/major/load_gear(mob/living/carbon/human/new_human)
-	add_grunt_major(new_human)
-	add_plasma_pistol_package(new_human)
-
-/datum/equipment_preset/covenant/unggoy/major/plasma_pistol
-	name = parent_type::name + " (Plasma Pistol)"
-
-/datum/equipment_preset/covenant/unggoy/major/plasma_pistol/load_gear(mob/living/carbon/human/new_human)
-	equip_unggoy_basics(new_human, /obj/item/clothing/suit/marine/unggoy/major, /obj/item/storage/belt/marine/covenant/unggoy/major)
-	add_plasma_pistol_package(new_human)
-
-/datum/equipment_preset/covenant/unggoy/major/needler
-	name = parent_type::name + " (Needler)"
-
-/datum/equipment_preset/covenant/unggoy/major/needler/load_gear(mob/living/carbon/human/new_human)
-	equip_unggoy_basics(new_human, /obj/item/clothing/suit/marine/unggoy/major, /obj/item/storage/belt/marine/covenant/unggoy/major)
-	add_needler_package(new_human)
-
-/datum/equipment_preset/covenant/unggoy/major/plasma_rifle
-	name = parent_type::name + " (Plasma Rifle)"
-
-/datum/equipment_preset/covenant/unggoy/major/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
-	equip_unggoy_basics(new_human, /obj/item/clothing/suit/marine/unggoy/major, /obj/item/storage/belt/marine/covenant/unggoy/major)
-	add_plasma_rifle_package(new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/covenant/unggoy(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unggoy/major(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/unggoy(new_human), WEAR_FACE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
+	if(prob(20))
+		new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/major(new_human), WEAR_WAIST)
+		new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/smg/covenant_needler(new_human), WEAR_J_STORE)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal, WEAR_IN_BELT)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal, WEAR_IN_BELT)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal, WEAR_IN_BELT)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal, WEAR_IN_BELT)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal, WEAR_IN_BELT)
+	else
+		new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/major(new_human), WEAR_WAIST)
+		new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_pistol(new_human), WEAR_J_STORE)
 
 // HEAVY
 /datum/equipment_preset/covenant/unggoy/heavy
@@ -189,33 +109,23 @@
 	role_comm_title = "Тяжелый"
 	skills = /datum/skills/covenant/unggoy
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
-	halo_unggoy_role = "heavy"
-	halo_unggoy_ignore_panic = TRUE
 
 /datum/equipment_preset/covenant/unggoy/heavy/load_gear(mob/living/carbon/human/new_human)
-	add_grunt_heavy(new_human)
-	add_plasma_rifle_package(new_human)
-
-/datum/equipment_preset/covenant/unggoy/heavy/plasma_pistol
-	name = parent_type::name + " (Plasma Pistol)"
-
-/datum/equipment_preset/covenant/unggoy/heavy/plasma_pistol/load_gear(mob/living/carbon/human/new_human)
-	equip_unggoy_basics(new_human, /obj/item/clothing/suit/marine/unggoy/heavy, /obj/item/storage/belt/marine/covenant/unggoy/heavy)
-	add_plasma_pistol_package(new_human)
-
-/datum/equipment_preset/covenant/unggoy/heavy/needler
-	name = parent_type::name + " (Needler)"
-
-/datum/equipment_preset/covenant/unggoy/heavy/needler/load_gear(mob/living/carbon/human/new_human)
-	equip_unggoy_basics(new_human, /obj/item/clothing/suit/marine/unggoy/heavy, /obj/item/storage/belt/marine/covenant/unggoy/heavy)
-	add_needler_package(new_human)
-
-/datum/equipment_preset/covenant/unggoy/heavy/plasma_rifle
-	name = parent_type::name + " (Plasma Rifle)"
-
-/datum/equipment_preset/covenant/unggoy/heavy/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
-	equip_unggoy_basics(new_human, /obj/item/clothing/suit/marine/unggoy/heavy, /obj/item/storage/belt/marine/covenant/unggoy/heavy)
-	add_plasma_rifle_package(new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/covenant/unggoy(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unggoy/heavy(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/unggoy(new_human), WEAR_FACE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
+	if(prob(50))
+		new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/heavy(new_human), WEAR_WAIST)
+		new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/smg/covenant_needler(new_human), WEAR_J_STORE)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal, WEAR_IN_BELT)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal, WEAR_IN_BELT)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal, WEAR_IN_BELT)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal, WEAR_IN_BELT)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal, WEAR_IN_BELT)
+	else
+		new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/heavy(new_human), WEAR_WAIST)
+		new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_rifle(new_human), WEAR_J_STORE)
 
 // Ultra
 /datum/equipment_preset/covenant/unggoy/ultra
@@ -229,33 +139,14 @@
 	role_comm_title = "Ультра"
 	skills = /datum/skills/covenant/unggoy
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
-	halo_unggoy_role = "ultra"
-	halo_unggoy_ignore_panic = TRUE
 
 /datum/equipment_preset/covenant/unggoy/ultra/load_gear(mob/living/carbon/human/new_human)
-	add_grunt_ultra(new_human)
-	add_plasma_rifle_package(new_human)
-
-/datum/equipment_preset/covenant/unggoy/ultra/plasma_pistol
-	name = parent_type::name + " (Plasma Pistol)"
-
-/datum/equipment_preset/covenant/unggoy/ultra/plasma_pistol/load_gear(mob/living/carbon/human/new_human)
-	equip_unggoy_basics(new_human, /obj/item/clothing/suit/marine/unggoy/ultra, /obj/item/storage/belt/marine/covenant/unggoy/ultra)
-	add_plasma_pistol_package(new_human)
-
-/datum/equipment_preset/covenant/unggoy/ultra/needler
-	name = parent_type::name + " (Needler)"
-
-/datum/equipment_preset/covenant/unggoy/ultra/needler/load_gear(mob/living/carbon/human/new_human)
-	equip_unggoy_basics(new_human, /obj/item/clothing/suit/marine/unggoy/ultra, /obj/item/storage/belt/marine/covenant/unggoy/ultra)
-	add_needler_package(new_human)
-
-/datum/equipment_preset/covenant/unggoy/ultra/plasma_rifle
-	name = parent_type::name + " (Plasma Rifle)"
-
-/datum/equipment_preset/covenant/unggoy/ultra/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
-	equip_unggoy_basics(new_human, /obj/item/clothing/suit/marine/unggoy/ultra, /obj/item/storage/belt/marine/covenant/unggoy/ultra)
-	add_plasma_rifle_package(new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/covenant/unggoy(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unggoy/ultra(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/unggoy(new_human), WEAR_FACE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/ultra(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_rifle(new_human), WEAR_J_STORE)
 
 // SpecOps
 /datum/equipment_preset/covenant/unggoy/specops
@@ -269,41 +160,14 @@
 	role_comm_title = "SpecOps"
 	skills = /datum/skills/covenant/unggoy
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
-	faction = FACTION_SPECOPS_UNGGOY
-	halo_unggoy_role = "specops"
-	halo_unggoy_ignore_panic = TRUE
 
 /datum/equipment_preset/covenant/unggoy/specops/load_gear(mob/living/carbon/human/new_human)
-	add_grunt_specops(new_human)
-	add_plasma_rifle_package(new_human)
-
-/datum/equipment_preset/covenant/unggoy/specops/plasma_pistol
-	name = parent_type::name + " (Plasma Pistol)"
-
-/datum/equipment_preset/covenant/unggoy/specops/plasma_pistol/load_gear(mob/living/carbon/human/new_human)
-	equip_unggoy_basics(new_human, /obj/item/clothing/suit/marine/stealth/unggoy_specops, /obj/item/storage/belt/marine/covenant/unggoy/specops)
-	add_plasma_pistol_package(new_human)
-
-/datum/equipment_preset/covenant/unggoy/specops/needler
-	name = parent_type::name + " (Needler)"
-
-/datum/equipment_preset/covenant/unggoy/specops/needler/load_gear(mob/living/carbon/human/new_human)
-	equip_unggoy_basics(new_human, /obj/item/clothing/suit/marine/stealth/unggoy_specops, /obj/item/storage/belt/marine/covenant/unggoy/specops)
-	add_needler_package(new_human)
-
-/datum/equipment_preset/covenant/unggoy/specops/plasma_rifle
-	name = parent_type::name + " (Plasma Rifle)"
-
-/datum/equipment_preset/covenant/unggoy/specops/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
-	equip_unggoy_basics(new_human, /obj/item/clothing/suit/marine/stealth/unggoy_specops, /obj/item/storage/belt/marine/covenant/unggoy/specops)
-	add_plasma_rifle_package(new_human)
-
-/datum/equipment_preset/covenant/unggoy/specops/cloaking
-	name = parent_type::name + " (Plasma Rifle) !!CLOAKED!!"
-
-/datum/equipment_preset/covenant/unggoy/specops/cloaking/load_gear(mob/living/carbon/human/new_human)
-	equip_unggoy_basics(new_human, /obj/item/clothing/suit/marine/stealth/unggoy_specops, /obj/item/storage/belt/marine/covenant/unggoy/specops)
-	add_plasma_rifle_package(new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/covenant/unggoy(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/stealth/unggoy_specops(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/unggoy(new_human), WEAR_FACE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/specops(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_rifle(new_human), WEAR_J_STORE)
 
 /datum/equipment_preset/covenant/unggoy/specops/lesser
 	name = parent_type::name + " (пониженный ранг)"
@@ -318,8 +182,12 @@
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
 /datum/equipment_preset/covenant/unggoy/specops/lesser/load_gear(mob/living/carbon/human/new_human)
-	add_grunt_specops(new_human)
-	add_plasma_rifle_package(new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/covenant/unggoy(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/stealth/unggoy_specops(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/unggoy(new_human), WEAR_FACE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/specops(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_rifle(new_human), WEAR_J_STORE)
 
 // SpecOps Ultra
 /datum/equipment_preset/covenant/unggoy/specops_ultra
@@ -333,41 +201,14 @@
 	role_comm_title = "SpecOps-ультра"
 	skills = /datum/skills/covenant/unggoy
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
-	faction = FACTION_SPECOPS_UNGGOY
-	halo_unggoy_role = "specops_ultra"
-	halo_unggoy_ignore_panic = TRUE
 
 /datum/equipment_preset/covenant/unggoy/specops_ultra/load_gear(mob/living/carbon/human/new_human)
-	add_grunt_specops_ultra(new_human)
-	add_plasma_rifle_package(new_human)
-
-/datum/equipment_preset/covenant/unggoy/specops_ultra/plasma_pistol
-	name = parent_type::name + " (Plasma Pistol)"
-
-/datum/equipment_preset/covenant/unggoy/specops_ultra/plasma_pistol/load_gear(mob/living/carbon/human/new_human)
-	equip_unggoy_basics(new_human, /obj/item/clothing/suit/marine/stealth/unggoy_specops/ultra, /obj/item/storage/belt/marine/covenant/unggoy/specops_ultra)
-	add_plasma_pistol_package(new_human)
-
-/datum/equipment_preset/covenant/unggoy/specops_ultra/needler
-	name = parent_type::name + " (Needler)"
-
-/datum/equipment_preset/covenant/unggoy/specops_ultra/needler/load_gear(mob/living/carbon/human/new_human)
-	equip_unggoy_basics(new_human, /obj/item/clothing/suit/marine/stealth/unggoy_specops/ultra, /obj/item/storage/belt/marine/covenant/unggoy/specops_ultra)
-	add_needler_package(new_human)
-
-/datum/equipment_preset/covenant/unggoy/specops_ultra/plasma_rifle
-	name = parent_type::name + " (Plasma Rifle)"
-
-/datum/equipment_preset/covenant/unggoy/specops_ultra/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
-	equip_unggoy_basics(new_human, /obj/item/clothing/suit/marine/stealth/unggoy_specops/ultra, /obj/item/storage/belt/marine/covenant/unggoy/specops_ultra)
-	add_plasma_rifle_package(new_human)
-
-/datum/equipment_preset/covenant/unggoy/specops_ultra/cloaking
-	name = parent_type::name + " (Plasma Rifle) !!CLOAKED!!"
-
-/datum/equipment_preset/covenant/unggoy/specops_ultra/cloaking/load_gear(mob/living/carbon/human/new_human)
-	equip_unggoy_basics(new_human, /obj/item/clothing/suit/marine/stealth/unggoy_specops/ultra, /obj/item/storage/belt/marine/covenant/unggoy/specops_ultra)
-	add_plasma_rifle_package(new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/covenant/unggoy(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/stealth/unggoy_specops/ultra(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/unggoy(new_human), WEAR_FACE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/specops_ultra(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_rifle(new_human), WEAR_J_STORE)
 
 // Deacon
 /datum/equipment_preset/covenant/unggoy/deacon
@@ -381,35 +222,13 @@
 	role_comm_title = "Дьякон"
 	skills = /datum/skills/covenant/unggoy
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
-	halo_unggoy_role = "deacon"
-	halo_unggoy_panic_health_pct = 0.65
-	halo_unggoy_panics_without_leader = TRUE
-	halo_unggoy_ignore_panic = FALSE
 
 /datum/equipment_preset/covenant/unggoy/deacon/load_gear(mob/living/carbon/human/new_human)
-	add_grunt_deacon(new_human)
-	add_plasma_pistol_package(new_human)
-
-/datum/equipment_preset/covenant/unggoy/deacon/plasma_pistol
-	name = parent_type::name + " (Plasma Pistol)"
-
-/datum/equipment_preset/covenant/unggoy/deacon/plasma_pistol/load_gear(mob/living/carbon/human/new_human)
-	equip_unggoy_basics(new_human, /obj/item/clothing/suit/marine/unggoy/deacon, /obj/item/storage/belt/marine/covenant/unggoy/ultra)
-	add_plasma_pistol_package(new_human)
-
-/datum/equipment_preset/covenant/unggoy/deacon/needler
-	name = parent_type::name + " (Needler)"
-
-/datum/equipment_preset/covenant/unggoy/deacon/needler/load_gear(mob/living/carbon/human/new_human)
-	equip_unggoy_basics(new_human, /obj/item/clothing/suit/marine/unggoy/deacon, /obj/item/storage/belt/marine/covenant/unggoy/ultra)
-	add_needler_package(new_human)
-
-/datum/equipment_preset/covenant/unggoy/deacon/plasma_rifle
-	name = parent_type::name + " (Plasma Rifle)"
-
-/datum/equipment_preset/covenant/unggoy/deacon/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
-	equip_unggoy_basics(new_human, /obj/item/clothing/suit/marine/unggoy/deacon, /obj/item/storage/belt/marine/covenant/unggoy/ultra)
-	add_plasma_rifle_package(new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/covenant/unggoy(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unggoy/deacon(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/unggoy(new_human), WEAR_FACE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_pistol(new_human), WEAR_J_STORE)
 
 // AI-ONLY ROLES
 
@@ -420,12 +239,38 @@
 	access = list(ACCESS_MARINE_PREP)
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 	skills = /datum/skills/covenant/unggoy
+	var/halo_unggoy_role = "minor"
+	var/halo_unggoy_panic_health_pct = 0.55
+	var/halo_unggoy_panics_without_leader = TRUE
+	var/halo_unggoy_ignore_panic = FALSE
+	var/halo_unggoy_overheat_retreat = TRUE
+
 /datum/equipment_preset/covenant/unggoy/ai/proc/equip_unggoy_ai_basics(mob/living/carbon/human/new_human, suit_type, belt_type)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/covenant/unggoy(new_human), WEAR_BODY)
 	new_human.equip_to_slot_or_del(new suit_type(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/unggoy(new_human), WEAR_FACE)
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
 	new_human.equip_to_slot_or_del(new belt_type(new_human), WEAR_WAIST)
+
+/datum/equipment_preset/covenant/unggoy/ai/proc/apply_unggoy_ai_behavior(datum/human_ai_brain/brain)
+	if(!brain)
+		return
+
+	brain.halo_unggoy_runtime = TRUE
+	brain.halo_unggoy_role = halo_unggoy_role
+	brain.halo_unggoy_panic_health_pct = halo_unggoy_panic_health_pct
+	brain.halo_unggoy_panics_without_leader = halo_unggoy_panics_without_leader
+	brain.halo_unggoy_ignore_panic = halo_unggoy_ignore_panic
+	brain.halo_unggoy_overheat_retreat = halo_unggoy_overheat_retreat
+	brain.halo_apply_navigation_profile(4, 1, 1 SECONDS)
+
+/datum/equipment_preset/covenant/unggoy/ai/proc/modular_apply_human_ai_brain_overrides(datum/human_ai_brain/brain, mob/living/carbon/human/new_human)
+	apply_unggoy_ai_behavior(brain)
+	var/datum/modpack/localization/localization_pack
+	if(SSmodpacks)
+		localization_pack = SSmodpacks.get_modpack(/datum/modpack/localization)
+	if(localization_pack)
+		localization_pack.halo_ai_apply_unggoy_speech_profile(brain, halo_unggoy_role)
 
 /datum/equipment_preset/covenant/unggoy/ai/proc/add_needler_crystals(mob/living/carbon/human/new_human, count = 5)
 	for(var/i in 1 to count)
@@ -454,7 +299,7 @@
 	halo_unggoy_ignore_panic = FALSE
 
 /datum/equipment_preset/covenant/unggoy/ai/minor_plasma/load_gear(mob/living/carbon/human/new_human)
-	add_grunt_minor(new_human)
+	equip_unggoy_ai_basics(new_human, /obj/item/clothing/suit/marine/unggoy/minor, /obj/item/storage/belt/marine/covenant/unggoy/minor)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_pistol(new_human), WEAR_J_STORE)
 	add_ai_injectors(new_human, list(/obj/item/reagent_container/hypospray/autoinjector/bicaridine/halo))
 
@@ -470,7 +315,7 @@
 	halo_unggoy_ignore_panic = FALSE
 
 /datum/equipment_preset/covenant/unggoy/ai/minor_needler/load_gear(mob/living/carbon/human/new_human)
-	add_grunt_minor(new_human)
+	equip_unggoy_ai_basics(new_human, /obj/item/clothing/suit/marine/unggoy/minor, /obj/item/storage/belt/marine/covenant/unggoy/minor)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/smg/covenant_needler(new_human), WEAR_J_STORE)
 	add_needler_crystals(new_human, 4)
 	add_ai_injectors(new_human, list(/obj/item/reagent_container/hypospray/autoinjector/bicaridine/halo))
@@ -487,7 +332,7 @@
 	halo_unggoy_ignore_panic = FALSE
 
 /datum/equipment_preset/covenant/unggoy/ai/major_plasma/load_gear(mob/living/carbon/human/new_human)
-	add_grunt_major(new_human)
+	equip_unggoy_ai_basics(new_human, /obj/item/clothing/suit/marine/unggoy/major, /obj/item/storage/belt/marine/covenant/unggoy/major)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_pistol(new_human), WEAR_J_STORE)
 	add_ai_injectors(new_human, list(/obj/item/reagent_container/hypospray/autoinjector/bicaridine/halo, /obj/item/reagent_container/hypospray/autoinjector/oxycodone/halo))
 
@@ -503,7 +348,7 @@
 	halo_unggoy_ignore_panic = FALSE
 
 /datum/equipment_preset/covenant/unggoy/ai/major_needler/load_gear(mob/living/carbon/human/new_human)
-	add_grunt_major(new_human)
+	equip_unggoy_ai_basics(new_human, /obj/item/clothing/suit/marine/unggoy/major, /obj/item/storage/belt/marine/covenant/unggoy/major)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/smg/covenant_needler(new_human), WEAR_J_STORE)
 	add_needler_crystals(new_human, 5)
 	add_ai_injectors(new_human, list(/obj/item/reagent_container/hypospray/autoinjector/bicaridine/halo, /obj/item/reagent_container/hypospray/autoinjector/oxycodone/halo))
@@ -518,7 +363,7 @@
 	halo_unggoy_ignore_panic = TRUE
 
 /datum/equipment_preset/covenant/unggoy/ai/heavy_plasma/load_gear(mob/living/carbon/human/new_human)
-	add_grunt_heavy(new_human)
+	equip_unggoy_ai_basics(new_human, /obj/item/clothing/suit/marine/unggoy/heavy, /obj/item/storage/belt/marine/covenant/unggoy/heavy)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_rifle(new_human), WEAR_J_STORE)
 	add_ai_injectors(new_human, list(/obj/item/reagent_container/hypospray/autoinjector/bicaridine/halo, /obj/item/reagent_container/hypospray/autoinjector/kelotane/halo))
 
@@ -532,7 +377,7 @@
 	halo_unggoy_ignore_panic = TRUE
 
 /datum/equipment_preset/covenant/unggoy/ai/heavy_needler/load_gear(mob/living/carbon/human/new_human)
-	add_grunt_heavy(new_human)
+	equip_unggoy_ai_basics(new_human, /obj/item/clothing/suit/marine/unggoy/heavy, /obj/item/storage/belt/marine/covenant/unggoy/heavy)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/smg/covenant_needler(new_human), WEAR_J_STORE)
 	add_needler_crystals(new_human, 5)
 	add_ai_injectors(new_human, list(/obj/item/reagent_container/hypospray/autoinjector/kelotane/halo, /obj/item/reagent_container/hypospray/autoinjector/oxycodone/halo))
@@ -547,7 +392,7 @@
 	halo_unggoy_ignore_panic = TRUE
 
 /datum/equipment_preset/covenant/unggoy/ai/ultra/load_gear(mob/living/carbon/human/new_human)
-	add_grunt_ultra(new_human)
+	equip_unggoy_ai_basics(new_human, /obj/item/clothing/suit/marine/unggoy/ultra, /obj/item/storage/belt/marine/covenant/unggoy/ultra)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_rifle(new_human), WEAR_J_STORE)
 	add_ai_injectors(new_human, list(/obj/item/reagent_container/hypospray/autoinjector/bicaridine/halo, /obj/item/reagent_container/hypospray/autoinjector/oxycodone/halo))
 
@@ -563,7 +408,7 @@
 	halo_unggoy_ignore_panic = FALSE
 
 /datum/equipment_preset/covenant/unggoy/ai/support_medical/load_gear(mob/living/carbon/human/new_human)
-	add_grunt_major(new_human)
+	equip_unggoy_ai_basics(new_human, /obj/item/clothing/suit/marine/unggoy/major, /obj/item/storage/belt/marine/covenant/unggoy/major)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_pistol(new_human), WEAR_J_STORE)
 	add_ai_injectors(new_human, list(/obj/item/reagent_container/hypospray/autoinjector/bicaridine/halo, /obj/item/reagent_container/hypospray/autoinjector/kelotane/halo))
 
@@ -575,10 +420,9 @@
 	role_comm_title = "SpecOps"
 	halo_unggoy_role = "specops"
 	halo_unggoy_ignore_panic = TRUE
-	faction = FACTION_SPECOPS_UNGGOY
 
 /datum/equipment_preset/covenant/unggoy/ai/specops_plasma/load_gear(mob/living/carbon/human/new_human)
-	add_grunt_specops(new_human)
+	equip_unggoy_ai_basics(new_human, /obj/item/clothing/suit/marine/stealth/unggoy_specops, /obj/item/storage/belt/marine/covenant/unggoy/specops)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_rifle(new_human), WEAR_J_STORE)
 	add_ai_injectors(new_human, list(/obj/item/reagent_container/hypospray/autoinjector/bicaridine/halo, /obj/item/reagent_container/hypospray/autoinjector/oxycodone/halo))
 
@@ -590,10 +434,9 @@
 	role_comm_title = "SpecOps"
 	halo_unggoy_role = "specops"
 	halo_unggoy_ignore_panic = TRUE
-	faction = FACTION_SPECOPS_UNGGOY
 
 /datum/equipment_preset/covenant/unggoy/ai/specops_needler/load_gear(mob/living/carbon/human/new_human)
-	add_grunt_specops(new_human)
+	equip_unggoy_ai_basics(new_human, /obj/item/clothing/suit/marine/stealth/unggoy_specops, /obj/item/storage/belt/marine/covenant/unggoy/specops)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/smg/covenant_needler(new_human), WEAR_J_STORE)
 	add_needler_crystals(new_human, 5)
 	add_ai_injectors(new_human, list(/obj/item/reagent_container/hypospray/autoinjector/kelotane/halo, /obj/item/reagent_container/hypospray/autoinjector/oxycodone/halo))
@@ -606,10 +449,9 @@
 	role_comm_title = "SpecOps-ультра"
 	halo_unggoy_role = "specops_ultra"
 	halo_unggoy_ignore_panic = TRUE
-	faction = FACTION_SPECOPS_UNGGOY
 
 /datum/equipment_preset/covenant/unggoy/ai/specops_ultra/load_gear(mob/living/carbon/human/new_human)
-	add_grunt_specops_ultra(new_human)
+	equip_unggoy_ai_basics(new_human, /obj/item/clothing/suit/marine/stealth/unggoy_specops/ultra, /obj/item/storage/belt/marine/covenant/unggoy/specops_ultra)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_rifle(new_human), WEAR_J_STORE)
 	add_ai_injectors(new_human, list(/obj/item/reagent_container/hypospray/autoinjector/bicaridine/halo, /obj/item/reagent_container/hypospray/autoinjector/oxycodone/halo))
 
@@ -625,7 +467,7 @@
 	halo_unggoy_ignore_panic = FALSE
 
 /datum/equipment_preset/covenant/unggoy/ai/deacon_command/load_gear(mob/living/carbon/human/new_human)
-	add_grunt_deacon(new_human)
+	equip_unggoy_ai_basics(new_human, /obj/item/clothing/suit/marine/unggoy/deacon, /obj/item/storage/belt/marine/covenant/unggoy/ultra)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_pistol(new_human), WEAR_J_STORE)
 	add_ai_injectors(new_human, list(/obj/item/reagent_container/hypospray/autoinjector/bicaridine/halo, /obj/item/reagent_container/hypospray/autoinjector/oxycodone/halo))
 
@@ -640,7 +482,7 @@
 	halo_unggoy_overheat_retreat = FALSE
 
 /datum/equipment_preset/covenant/unggoy/ai/suicide_bomber/load_gear(mob/living/carbon/human/new_human)
-	add_grunt_minor(new_human)
+	equip_unggoy_ai_basics(new_human, /obj/item/clothing/suit/marine/unggoy/minor, /obj/item/storage/belt/marine/covenant/unggoy/minor)
 	add_plasma_grenades(new_human, 2)
 	add_ai_injectors(new_human, list(/obj/item/reagent_container/hypospray/autoinjector/bicaridine/halo, /obj/item/reagent_container/hypospray/autoinjector/kelotane/halo))
 

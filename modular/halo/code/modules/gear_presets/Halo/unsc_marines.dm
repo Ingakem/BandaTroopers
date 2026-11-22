@@ -535,7 +535,6 @@
 
 //rifleman
 /datum/equipment_preset/unsc/pfc/equipped
-	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	name = parent_type::name + " (снаряжен)"
 
 /datum/equipment_preset/unsc/pfc/equipped/load_gear(mob/living/carbon/human/new_human)
@@ -673,7 +672,7 @@
 	new_human.undershirt = "Marine Undershirt"
 	new_human.underwear = "Marine Boxers"
 	//back
-	new_human.equip_to_slot_or_del(new /obj/item/storage/large_holster/spnkr/filled/launcher(new_human), WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/halo_launcher/spnkr(new_human), WEAR_BACK)
 	//face
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc(new_human), WEAR_L_EAR)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/sunglasses/big/unsc(new_human), WEAR_EYES)
@@ -709,7 +708,7 @@
 	new_human.undershirt = "Marine Undershirt"
 	new_human.underwear = "Marine Boxers"
 	//back
-	new_human.equip_to_slot_or_del(new /obj/item/storage/large_holster/spnkr/filled/launcher(new_human), WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/halo_launcher/spnkr(new_human), WEAR_BACK)
 	//face
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc(new_human), WEAR_L_EAR)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/sunglasses/big/unsc(new_human), WEAR_EYES)
@@ -782,7 +781,6 @@
 
 //rto
 /datum/equipment_preset/unsc/rto/equipped
-	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	name = parent_type::name + " (снаряжен)"
 
 /datum/equipment_preset/unsc/rto/equipped/load_gear(mob/living/carbon/human/new_human)
@@ -925,7 +923,6 @@
 	new_human.nutrition = NUTRITION_HIGH
 
 /datum/equipment_preset/unsc/platco/equipped
-	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	name = parent_type::name + " (снаряжен)"
 
 /datum/equipment_preset/unsc/platco/equipped/load_gear(mob/living/carbon/human/new_human)
@@ -975,7 +972,6 @@
 
 /datum/equipment_preset/unsc/platco/odst/equipped
 	parent_type = /datum/equipment_preset/unsc/platco/equipped
-	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	name = "ODST Platoon Commander (Equipped)"
 	assignment = JOB_SO_ODST
 	rank = JOB_SO_ODST
@@ -1063,7 +1059,6 @@
 
 //rifleman
 /datum/equipment_preset/unsc/pfc/odst/equipped
-	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	name = parent_type::name + " (снаряжен)"
 	odst_visual_role = TRUE
 
@@ -1130,7 +1125,6 @@
 
 /datum/equipment_preset/unsc/rto/odst/equipped
 	parent_type = /datum/equipment_preset/unsc/rto/equipped
-	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	name = "Радиооператор ODST (Снаряжен)"
 	assignment = JOB_SQUAD_RTO_ODST
 	rank = JOB_SQUAD_RTO_ODST
@@ -1288,7 +1282,7 @@
 	new_human.undershirt = "Marine Undershirt"
 	new_human.underwear = "Marine Boxers"
 	//back
-	new_human.equip_to_slot_or_del(new /obj/item/storage/large_holster/spnkr/filled/launcher(new_human), WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/halo_launcher/spnkr(new_human), WEAR_BACK)
 	new_human.halo_equip_odst_visual_core("heavy")
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/halo/ma5c(new_human), WEAR_J_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/webbing/m52b/mag/ma5c(new_human), WEAR_ACCESSORY)

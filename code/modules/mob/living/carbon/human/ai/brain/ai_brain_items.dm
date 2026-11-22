@@ -271,11 +271,8 @@
 		add_secondary_weapon(tied_human.back)
 		return
 
-	// SS220 EDIT - START: HALO transport rigs such as the SPNKr pack sit on the back slot as storage,
-	// but they are not guaranteed to inherit backpack. AI still needs to appraise their contents.
-	if(!istype(tied_human.back, /obj/item/storage))
+	if(!istype(tied_human.back, /obj/item/storage/backpack))
 		return
-	// SS220 EDIT - END
 
 	for(var/id in equipment_map)
 		for(var/obj/item/item as anything in equipment_map[id])
