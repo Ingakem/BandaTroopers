@@ -358,9 +358,5 @@
 	return /datum/equipment_preset/uscm/private_equipped
 
 /datum/preferences/proc/clear_equipment()
-	if(!preview_dummy)
-		return
-
-	for(var/obj/item/I in preview_dummy.contents.Copy())
-		preview_dummy.temp_drop_inv_item(I, TRUE)
+	for(var/obj/item/I in preview_dummy)
 		qdel(I)
