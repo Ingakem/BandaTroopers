@@ -161,26 +161,7 @@
 	roundstart = TRUE
 	usable = FALSE
 	squad_type = "Section"
-	ready_players_usable = 8
-	platoon_associated_type = /datum/squad/marine/halo/unsc/alpha
-	max_riflemen = 4
-	max_engineers = 0
-	max_medics = 2
-	max_specialists = 2
-	max_tl = 2
-	max_smartgun = 0
-	max_leaders = 1
-	max_rto = 1
-
-/datum/squad/marine/halo/unsc/delta
-	parent_type = /datum/squad/marine/delta
-	faction = FACTION_UNSC
-	prepend_squad_name_to_assignment = FALSE
-	active = TRUE
-	roundstart = TRUE
-	usable = FALSE
-	squad_type = "Section"
-	ready_players_usable = 16
+	ready_players_usable = 12
 	platoon_associated_type = /datum/squad/marine/halo/unsc/alpha
 	max_riflemen = 4
 	max_engineers = 0
@@ -200,6 +181,25 @@
 	usable = FALSE
 	squad_type = "Section"
 	ready_players_usable = 24
+	platoon_associated_type = /datum/squad/marine/halo/unsc/alpha
+	max_riflemen = 4
+	max_engineers = 0
+	max_medics = 2
+	max_specialists = 2
+	max_tl = 2
+	max_smartgun = 0
+	max_leaders = 1
+	max_rto = 1
+
+/datum/squad/marine/halo/unsc/delta
+	parent_type = /datum/squad/marine/delta
+	faction = FACTION_UNSC
+	prepend_squad_name_to_assignment = FALSE
+	active = TRUE
+	roundstart = TRUE
+	usable = FALSE
+	squad_type = "Section"
+	ready_players_usable = 36
 	platoon_associated_type = /datum/squad/marine/halo/unsc/alpha
 	max_riflemen = 4
 	max_engineers = 0
@@ -231,27 +231,7 @@
 	roundstart = TRUE
 	usable = FALSE
 	squad_type = "Section"
-	ready_players_usable = 8
-	platoon_associated_type = /datum/squad/marine/halo/odst/alpha
-	max_riflemen = 4
-	max_engineers = 0
-	max_medics = 2
-	max_specialists = 2
-	max_tl = 2
-	max_smartgun = 0
-	max_leaders = 1
-	max_rto = 1
-
-
-/datum/squad/marine/halo/odst/delta
-	parent_type = /datum/squad/marine/delta
-	faction = FACTION_UNSC
-	prepend_squad_name_to_assignment = FALSE
-	active = TRUE
-	roundstart = TRUE
-	usable = FALSE
-	squad_type = "Section"
-	ready_players_usable = 16
+	ready_players_usable = 12
 	platoon_associated_type = /datum/squad/marine/halo/odst/alpha
 	max_riflemen = 4
 	max_engineers = 0
@@ -271,6 +251,25 @@
 	usable = FALSE
 	squad_type = "Section"
 	ready_players_usable = 24
+	platoon_associated_type = /datum/squad/marine/halo/odst/alpha
+	max_riflemen = 4
+	max_engineers = 0
+	max_medics = 2
+	max_specialists = 2
+	max_tl = 2
+	max_smartgun = 0
+	max_leaders = 1
+	max_rto = 1
+
+/datum/squad/marine/halo/odst/delta
+	parent_type = /datum/squad/marine/delta
+	faction = FACTION_UNSC
+	prepend_squad_name_to_assignment = FALSE
+	active = TRUE
+	roundstart = TRUE
+	usable = FALSE
+	squad_type = "Section"
+	ready_players_usable = 36
 	platoon_associated_type = /datum/squad/marine/halo/odst/alpha
 	max_riflemen = 4
 	max_engineers = 0
