@@ -23,14 +23,6 @@ type BackendContext = {
   squads: { [key: string]: Squad[] };
 };
 
-const normalizeRadius = (value: number) => {
-  if (typeof value !== 'number' || !Number.isFinite(value)) {
-    return 1;
-  }
-
-  return Math.max(1, Math.min(10, Math.round(value)));
-};
-
 export const HumanSquadSpawner = (props) => {
   const { data, act } = useBackend<BackendContext>();
   const [chosenSquad, setSquad] = useState<Squad | null>(null);
@@ -87,9 +79,7 @@ export const HumanSquadSpawner = (props) => {
                             minValue={1}
                             maxValue={10}
                             value={spawnRadius}
-                            onChange={(value) =>
-                              setSpawnRadius(normalizeRadius(value))
-                            }
+                            onChange={(value) => setSpawnRadius(value)}
                           />
                         </LabeledList.Item>
                       </LabeledList>

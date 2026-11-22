@@ -8,7 +8,6 @@
 
 /datum/equipment_preset/covenant/sangheili
 	name = "Sangheili"
-	expected_species = SPECIES_SANGHEILI
 	rank = JOB_COV_CIV
 	assignment = JOB_COV_CIV
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
