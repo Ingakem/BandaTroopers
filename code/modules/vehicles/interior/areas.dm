@@ -92,7 +92,3 @@
 /area/interior/vehicle/uppvan/prisoner
 	name = "\improper UPP van prisoner interior"
 	icon_state = "upp_van_prisoner"
-
-/area/interior/vehicle/uppvan/ridgeway
-	name = "\improper интерьер Ridgeway"
-	icon_state = "ridgeway"
