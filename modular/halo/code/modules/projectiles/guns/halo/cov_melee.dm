@@ -1,5 +1,5 @@
 /obj/item/weapon/covenant
-	name = "Covenant weapon holder"
+	name = "держатель оружия Ковенанта"
 	desc = "Вы не должны это видеть. Если всё же видите, сообщите сопровождающему проекта."
 	icon = 'icons/halo/obj/items/weapons/melee_by_faction/covenant/covenant_melee.dmi'
 	embeddable = FALSE
@@ -44,7 +44,7 @@
 		update_mouse_pointer(user, TRUE)
 
 /obj/item/weapon/covenant/energy_sword
-	name = "energy sword"
+	name = "энергетический меч"
 	desc = null
 	icon_state = "energy_sword"
 	item_state = "energy_sword"
@@ -238,8 +238,7 @@
 			if(activated)
 				set_activation_state(FALSE)
 			playsound(src, break_sound, 50)
-			name = "nonfunctional [initial(name)]"
-			ru_names_rename(ru_names_toml(name))
+			name = "неработающий [initial(name)]"
 		else
 			if(activated)
 				set_activation_state(FALSE)
@@ -274,7 +273,7 @@
 
 
 /obj/item/weapon/twohanded/covenant
-	name = "Covenant weapon holder"
+	name = "держатель оружия Ковенанта"
 	desc = "Вы не должны это видеть. Если всё же видите, сообщите сопровождающему проекта."
 	icon = 'icons/halo/obj/items/weapons/melee_by_faction/covenant/covenant_melee.dmi'
 	embeddable = FALSE

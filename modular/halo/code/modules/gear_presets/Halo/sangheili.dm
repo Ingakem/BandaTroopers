@@ -1,5 +1,5 @@
 /datum/equipment_preset/covenant
-	name = "КОВЕНАНТ"
+	name = "COVENANT"
 	faction = FACTION_COVENANT
 	languages = list(LANGUAGE_SANGHEILI)
 	idtype = /obj/item/card/id/covenant
@@ -7,7 +7,7 @@
 	var/eye_color
 
 /datum/equipment_preset/covenant/sangheili
-	name = "Сангхейли"
+	name = "Sangheili"
 	expected_species = SPECIES_SANGHEILI
 	rank = JOB_COV_CIV
 	assignment = JOB_COV_CIV
@@ -131,14 +131,14 @@
 // =================================
 
 /datum/equipment_preset/covenant/sangheili/minor
-	name = parent_type::name + " минор"
+	name = parent_type::name + " Minor"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	idtype = /obj/item/card/id/covenant
 	access = list(ACCESS_MARINE_PREP)
 	assignment = JOB_COV_MINOR
 	rank = JOB_COV_MINOR
 	paygrades = list(PAY_SHORT_SANG_MINOR = JOB_PLAYTIME_TIER_0)
-	role_comm_title = "Минор"
+	role_comm_title = "Minor"
 	skills = /datum/skills/covenant/sangheili
 	languages = list(LANGUAGE_SANGHEILI)
 
@@ -155,14 +155,14 @@
 // =================================
 
 /datum/equipment_preset/covenant/sangheili/major
-	name = parent_type::name + " мажор"
+	name = parent_type::name + " Major"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	idtype = /obj/item/card/id/covenant
 	access = list(ACCESS_MARINE_PREP)
 	assignment = JOB_COV_MAJOR
 	rank = JOB_COV_MAJOR
 	paygrades = list(PAY_SHORT_SANG_MAJOR = JOB_PLAYTIME_TIER_0)
-	role_comm_title = "Мажор"
+	role_comm_title = "Major"
 	skills = /datum/skills/covenant/sangheili
 	languages = list(LANGUAGE_SANGHEILI)
 
@@ -180,14 +180,14 @@
 // =================================
 
 /datum/equipment_preset/covenant/sangheili/ultra
-	name = parent_type::name + " ультра"
+	name = parent_type::name + " Ultra"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	idtype = /obj/item/card/id/covenant
 	access = list(ACCESS_MARINE_PREP)
 	assignment = JOB_COV_ULTRA
 	rank = JOB_COV_ULTRA
 	paygrades = list(PAY_SHORT_SANG_ULTRA = JOB_PLAYTIME_TIER_0)
-	role_comm_title = "Ультра"
+	role_comm_title = "Ultra"
 	skills = /datum/skills/covenant/sangheili
 	languages = list(LANGUAGE_SANGHEILI)
 
@@ -205,14 +205,14 @@
 // =================================
 
 /datum/equipment_preset/covenant/sangheili/zealot
-	name = parent_type::name + " зилот"
+	name = parent_type::name + " Zealot"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	idtype = /obj/item/card/id/covenant
 	access = list(ACCESS_MARINE_PREP)
 	assignment = JOB_COV_ZEALOT
 	rank = JOB_COV_ZEALOT
 	paygrades = list(PAY_SHORT_SANG_ZEALOT = JOB_PLAYTIME_TIER_0)
-	role_comm_title = "Зилот"
+	role_comm_title = "Zealot"
 	skills = /datum/skills/covenant/sangheili
 	languages = list(LANGUAGE_SANGHEILI)
 
@@ -228,7 +228,7 @@
 // AI-ONLY ROLES
 
 /datum/equipment_preset/covenant/sangheili/ai
-	name = "Сангхейли AI"
+	name = "Sangheili AI"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	idtype = /obj/item/card/id/covenant
 	access = list(ACCESS_MARINE_PREP)
@@ -236,22 +236,22 @@
 	skills = /datum/skills/covenant/sangheili
 
 /datum/equipment_preset/covenant/sangheili/ai/minor_plasma
-	name = "Сангхейли-минор (плазма)"
+	name = "Sangheili Minor (Plasma)"
 	assignment = JOB_COV_MINOR
 	rank = JOB_COV_MINOR
 	paygrades = list(PAY_SHORT_SANG_MINOR = JOB_PLAYTIME_TIER_0)
-	role_comm_title = "Минор"
+	role_comm_title = "Minor"
 
 /datum/equipment_preset/covenant/sangheili/ai/minor_plasma/load_gear(mob/living/carbon/human/new_human)
 	equip_sangheili_basics(new_human, /obj/item/clothing/head/helmet/marine/sangheili/minor, /obj/item/clothing/suit/marine/shielded/sangheili/minor, /obj/item/clothing/gloves/marine/sangheili/minor, /obj/item/clothing/shoes/sangheili/minor, /obj/item/storage/belt/marine/covenant/sangheili/minor)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_rifle(new_human), WEAR_J_STORE)
 
 /datum/equipment_preset/covenant/sangheili/ai/major_carbine
-	name = "Сангхейли-мажор (карабин)"
+	name = "Sangheili Major (Carbine)"
 	assignment = JOB_COV_MAJOR
 	rank = JOB_COV_MAJOR
 	paygrades = list(PAY_SHORT_SANG_MAJOR = JOB_PLAYTIME_TIER_0)
-	role_comm_title = "Мажор"
+	role_comm_title = "Major"
 
 /datum/equipment_preset/covenant/sangheili/ai/major_carbine/load_gear(mob/living/carbon/human/new_human)
 	equip_sangheili_basics(new_human, /obj/item/clothing/head/helmet/marine/sangheili/major, /obj/item/clothing/suit/marine/shielded/sangheili/major, /obj/item/clothing/gloves/marine/sangheili/major, /obj/item/clothing/shoes/sangheili/major, /obj/item/storage/belt/marine/covenant/sangheili/major)
@@ -260,11 +260,11 @@
 	add_rank_utility(new_human, "major")
 
 /datum/equipment_preset/covenant/sangheili/ai/ultra_plasma
-	name = "Сангхейли-ультра (плазма)"
+	name = "Sangheili Ultra (Plasma)"
 	assignment = JOB_COV_ULTRA
 	rank = JOB_COV_ULTRA
 	paygrades = list(PAY_SHORT_SANG_ULTRA = JOB_PLAYTIME_TIER_0)
-	role_comm_title = "Ультра"
+	role_comm_title = "Ultra"
 
 /datum/equipment_preset/covenant/sangheili/ai/ultra_plasma/load_gear(mob/living/carbon/human/new_human)
 	equip_sangheili_basics(new_human, /obj/item/clothing/head/helmet/marine/sangheili/ultra, /obj/item/clothing/suit/marine/shielded/sangheili/ultra, /obj/item/clothing/gloves/marine/sangheili/ultra, /obj/item/clothing/shoes/sangheili/ultra, /obj/item/storage/belt/marine/covenant/sangheili/ultra)
@@ -272,11 +272,11 @@
 	add_rank_utility(new_human, "ultra")
 
 /datum/equipment_preset/covenant/sangheili/ai/zealot_command
-	name = "Сангхейли-зилот (командный)"
+	name = "Sangheili Zealot (Command)"
 	assignment = JOB_COV_ZEALOT
 	rank = JOB_COV_ZEALOT
 	paygrades = list(PAY_SHORT_SANG_ZEALOT = JOB_PLAYTIME_TIER_0)
-	role_comm_title = "Зилот"
+	role_comm_title = "Zealot"
 
 /datum/equipment_preset/covenant/sangheili/ai/zealot_command/load_gear(mob/living/carbon/human/new_human)
 	equip_sangheili_basics(new_human, /obj/item/clothing/head/helmet/marine/sangheili/zealot, /obj/item/clothing/suit/marine/shielded/sangheili/zealot, /obj/item/clothing/gloves/marine/sangheili/zealot, /obj/item/clothing/shoes/sangheili/zealot, /obj/item/storage/belt/marine/covenant/sangheili/zealot)
@@ -284,11 +284,11 @@
 	add_rank_utility(new_human, "zealot")
 
 /datum/equipment_preset/covenant/sangheili/ai/ultra_sword
-	name = "Сангхейли-ультра (меч)"
+	name = "Sangheili Ultra (Sword)"
 	assignment = JOB_COV_ULTRA
 	rank = JOB_COV_ULTRA
 	paygrades = list(PAY_SHORT_SANG_ULTRA = JOB_PLAYTIME_TIER_0)
-	role_comm_title = "Ультра"
+	role_comm_title = "Ultra"
 	halo_sangheili_sword_only = TRUE
 
 /datum/equipment_preset/covenant/sangheili/ai/ultra_sword/load_gear(mob/living/carbon/human/new_human)
@@ -296,11 +296,11 @@
 	add_rank_utility(new_human, "ultra")
 
 /datum/equipment_preset/covenant/sangheili/ai/zealot_sword
-	name = "Сангхейли-зилот (меч)"
+	name = "Sangheili Zealot (Sword)"
 	assignment = JOB_COV_ZEALOT
 	rank = JOB_COV_ZEALOT
 	paygrades = list(PAY_SHORT_SANG_ZEALOT = JOB_PLAYTIME_TIER_0)
-	role_comm_title = "Зилот"
+	role_comm_title = "Zealot"
 	halo_sangheili_sword_only = TRUE
 
 /datum/equipment_preset/covenant/sangheili/ai/zealot_sword/load_gear(mob/living/carbon/human/new_human)

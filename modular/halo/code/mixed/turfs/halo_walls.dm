@@ -1,12 +1,12 @@
 /turf/closed/wall/unsc
-	name = "внутренняя переборка корабля"
-	desc = "Обычная корабельная переборка. Не Titanium-A, но всё равно довольно прочная."
+	name = "interior ship wall"
+	desc = "A bog-standard wall. It's not titanium-A, but it's pretty strong."
 	icon = 'icons/halo/turf/walls/unsc.dmi'
 	icon_state = "unsc"
 	walltype = WALL_UNSC
 
 /turf/closed/wall/unsc/reinforced
-	name = "усиленная внутренняя переборка корабля"
+	name = "reinforced interior ship wall"
 	icon_state = "unsc_reinforced"
 	damage_cap = HEALTH_WALL_REINFORCED
 
@@ -15,51 +15,51 @@
 	icon_state = "unsc_hull"
 
 /turf/closed/wall/unsc/reinforced/hull/titanium_a
-	name = "обшивка корпуса из Titanium-A"
-	desc = "Лучшая боевая обшивка, которую ККОН может поставить на свои корабли."
+	name = "Titanium-A hull plating"
+	desc = "The best battle plating the UNSC has to offer to its fleet of ships."
 	icon_state = "unsc_hull_ext"
 
 /turf/closed/wall/voi
-	name = "панельная стена"
-	desc = "Дешёвая и легко заменяемая обшивка для обычных промышленных нужд."
+	name = "paneled wall"
+	desc = "Cheap and replaceable paneling for average industrial needs."
 	icon_state = "voiwall"
 	walltype = WALL_VOI
 	icon = 'icons/halo/turf/walls/voi_wall.dmi'
 
 /turf/closed/wall/voi/reinforced
-	name = "усиленная панельная стена"
-	desc = "Под декоративными панелями эта стена дополнительно усилена."
+	name = "reinforced paneled wall"
+	desc = "This wall is reinforced beneath cosmetic paneling."
 	icon_state = "voiwall_r"
 	damage_cap = HEALTH_WALL_REINFORCED
 
 /turf/closed/wall/voi/reinforced/hull
-	name = "сверхусиленная панельная стена"
-	desc = "Панельная стена с особенно мощным усилением."
+	name = "ultra-reinforced paneled wall"
+	desc = "A heavily reinforced panel wall."
 	icon_state = "voiwall_h"
 	hull = TRUE
 
 /turf/closed/wall/covenant
-	name = "облегчённая наноламинатная стена"
-	desc = "Более лёгкая разновидность наноламината."
+	name = "weak nanolaminate wall"
+	desc = "A lighter variation of nanolaminate."
 	icon_state = "covwall"
 	walltype = WALL_COV
 	damage_cap = HEALTH_WALL_REINFORCED
 	icon = 'icons/halo/turf/walls/cov_standard.dmi'
 
 /turf/closed/wall/covenant/hull
-	name = "наноламинатная стена"
-	desc = "Стандартная наноламинатная конструкция, распространённая по всему Ковенанту."
+	name = "nanolaminate wall"
+	desc = "Standard nanolaminate structure throughout the Covenant."
 	icon_state = "covwall_h"
 	hull = TRUE
 
 /turf/closed/wall/covenant/hull/ship
-	name = "корабельный наноламинат"
-	desc = "Самый прочный стеновой материал Ковенанта."
+	name = "starship-grade nanolaminate"
+	desc = "The strongest Covenant wall material."
 	icon_state = "covwall_h_ext"
 
 /turf/closed/wall/covenant/lights
-	name = "облегчённая наноламинатная стена"
-	desc = "Облегчённый наноламинат со встроенной маломощной подсветкой."
+	name = "weak nanolaminate wall"
+	desc = "Lighter nanolaminate with low-power lights."
 	icon_state = "l_covwall"
 	walltype = WALL_COV_LIGHTS
 	damage_cap = HEALTH_WALL_REINFORCED
@@ -73,8 +73,8 @@
 	light_power = 0.5
 
 /turf/closed/wall/covenant/lights/hull
-	name = "наноламинатная стена"
-	desc = "Стандартная наноламинатная стена со встроенной маломощной подсветкой."
+	name = "nanolaminate wall"
+	desc = "Standard nanolaminate wall with low-power lights."
 	icon_state = "l_covwall_h"
 	hull = TRUE
 

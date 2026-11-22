@@ -41,7 +41,7 @@
 		playsound(loc, prime_sound, 25, 1)
 
 /obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam
-	name = "biofoam canister"
+	name = "канистра биопены"
 	chemname = "biofoam"
 	desc = "Оливковая канистра, полная стабилизирующей биомедицинской полимерной пены, более известной как биопена. Разложите инъекционный стержень для подготовки и затем введите средство в раны цели."
 	icon_state = "biofoam"
@@ -81,7 +81,7 @@
 	target.pain.recalculate_pain()
 
 /obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam/small
-	name = "biofoam pen"
+	name = "ручка с биопеной"
 	chemname = "biofoam_ext"
 	desc = "Небольшая серебристая ручка с легко наносимым распылителем биопены. Предназначена для нанесения на поверхность раны, а не для введения внутрь."
 	icon_state = "syrette"
@@ -98,7 +98,7 @@
 	instructions = "Передозировка при 20 ед. Лучше всего использовать на критически раненых до передачи обученному медику. По эффекту сопоставима с трикордразином, но дополнительно стабилизирует пациента и снимает боль."
 
 /obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam/antidote
-	name = "biofoam dissolvent injector"
+	name = "инжектор-растворитель биопены"
 	chemname = "biofoam_dissolvent"
 	desc = "Небольшая серебристая ручка с умеренно кислотным составом для растворения биопены, введённой в организм. Это может быть очень больно... но всё же лучше, чем умереть от избытка пены."
 	icon_state = "antidote"
@@ -115,7 +115,7 @@
 	instructions = "Передозировка при 15 ед. Используется при тяжёлой передозировке биопеной, но в качестве побочного эффекта наносит ожоги. Обычно такой у вас один - постарайтесь не тратить его впустую."
 
 /obj/item/reagent_container/hypospray/autoinjector/primeable/morphine
-	name = "morphine syrette"
+	name = "сиретта морфина"
 	chemname = "morphine"
 	desc = "Бежевая сиретта с 10 единицами морфина. Не совсем достаточно, чтобы вырубить человека, но уже близко. Большинство пациентов выдерживают две дозы."
 	icon_state = "morphine"
@@ -130,7 +130,7 @@
 	instructions = "Передозировка при 20 ед. По силе находится где-то между трамадолом и оксикодоном, то есть это вполне хорошее обезболивающее."
 
 /obj/item/reagent_container/hypospray/autoinjector/primeable/burnguard
-	name = "Optican BurnGuard package"
+	name = "упаковка Optican BurnGuard"
 	chemname = "burnguard"
 	desc = "Эффективный и простой в применении порошок для экстренной помощи при ожогах. Раньше встречался лишь в узких промышленных сферах, где персонал работал с экстремальным жаром или опасной химией, а теперь адаптирован для ККОН как сравнительно надёжное средство первой помощи при плазменных ожогах."
 	desc_lore = "Нанесение мучительно болезненно: порошок образует над раной затвердевшую антибактериальную \"корку\", ускоряющую заживление."
@@ -149,7 +149,7 @@
 // ----------------------------- Other -----------------------------
 
 /obj/item/reagent_container/syringe/halo // I HATE SYRINGESTAB. FUCKING SHITCODE but i dont want to override it :>
-	name = "milspec syringe"
+	name = "армейский шприц"
 	icon = 'icons/halo/obj/items/chemistry.dmi'
 	icon_state = "0"
 
@@ -351,7 +351,7 @@
 	volume = (REAGENTS_OVERDOSE * INJECTOR_PERCENTAGE_OF_OD) * INJECTOR_USES
 
 /obj/item/reagent_container/hypospray/autoinjector/halo_peridaxon
-	name = "\improper peridaxon autoinjector"
+	name = "\improper автоинъектор перидаксона"
 	icon = 'icons/halo/obj/items/chemistry.dmi'
 	chemname = "peridaxon"
 	desc = "Автоинъектор с тремя дозами перидаксона - новой смеси препаратов, которая ВРЕМЕННО сдерживает симптомы повреждения органов."

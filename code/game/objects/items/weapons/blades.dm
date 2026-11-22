@@ -688,7 +688,7 @@
 	icon = 'icons/obj/items/weapons/weapons.dmi'
 	icon_state = "knife_gerber"
 	item_state = "knife_gerber"
-	desc = "Штатное холодное оружие ККОН. Клинок длиной 20 см выполнен из высокоуглеродистой стали с антибликовым карбидным покрытием. Нож сбалансирован под бросок и ближний бой, хотя чаще всего работает универсальным инструментом. Особенно в наши дни." // SS220 EDIT: HALO flavor migrated from modular late override
+	desc = "A standard issue USCMC fighting knife developed by the Kershaw-Gerber company, a subsidiary of Armat Battlefield Systems. Neatly fits into boot-mounted holsters, and can - in emergencies - be utilized to dig out shrapnel."
 	flags_atom = FPRINT|QUICK_DRAWABLE|CONDUCT
 	flags_equip_slot = SLOT_WAIST|SLOT_FACE
 	flags_armor_protection = SLOT_FACE

@@ -1,14 +1,14 @@
 /turf/open/floor/corrugated
-	name = "рифлёный настил"
+	name = "corrugated paneling"
 	icon = 'icons/halo/turf/floors/floor.dmi'
 	icon_state = "corrugated"
 
 /turf/open/floor/corrugated/alt
-	name = "рифлёный настил"
+	name = "corrugated paneling"
 	icon_state = "corrugated2"
 
 /turf/open/floor/covenant
-	name = "наноламинатный настил"
+	name = "nanolaminate flooring"
 	icon = 'icons/halo/turf/floors/covenant.dmi'
 	icon_state = "pattern"
 	hull_floor = TRUE

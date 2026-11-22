@@ -1,7 +1,7 @@
 //===========================//MAIN UNSC PREP\\================================\\
 
 /obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/unsc
-	name = "\improper Uniform Vendor"
+	name = "\improper автомат формы ККОН"
 
 /obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/unsc/populate_product_list(scale)
 	listed_products = list(
@@ -84,7 +84,7 @@
 		)
 
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/unsc
-	name = "\improper Squad Utilities Vendor"
+	name = "\improper автомат взводного снаряжения ККОН"
 
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/unsc/populate_product_list(scale)
 	listed_products = list(
@@ -137,7 +137,7 @@
 //===========================//ODST PREP\\================================\\
 
 /obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/unsc/odst
-	name = "\improper ODST Uniform Vendor"
+	name = "\improper автомат формы ODST ККОН"
 
 /obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/unsc/odst/populate_product_list(scale)
 	listed_products = list(
@@ -204,7 +204,7 @@
 		)
 
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/unsc/odst
-	name = "\improper ODST Squad Utilities Vendor"
+	name = "\improper автомат взводного снаряжения ODST ККОН"
 
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/unsc/odst/populate_product_list(scale)
 	listed_products = list(
@@ -291,7 +291,7 @@ GLOBAL_LIST_INIT(cm_vending_clothing_medic_unsc, list(
 	))
 
 /obj/structure/machinery/cm_vending/clothing/medic/unsc
-	name = "\improper UNSC Squad Medical Equipment Rack"
+	name = "\improper стойка медицинского снаряжения взвода ККОН"
 
 /obj/structure/machinery/cm_vending/clothing/medic/unsc/get_listed_products(mob/user)
 	return GLOB.cm_vending_clothing_medic_unsc
@@ -314,7 +314,7 @@ GLOBAL_LIST_INIT(cm_vending_clothing_medic_unsc, list(
 	)
 
 /obj/item/storage/box/guncase/m52barmor //forgive me, father
-	name = "\improper M52B Body Armor case"
+	name = "\improper кейс брони M52B"
 	desc = "Кейс со штатными компонентами комплекта бронезащиты M52B для ККОН. Отдельно части не выдаются."
 	can_hold = list(/obj/item/clothing/suit/marine/unsc, /obj/item/clothing/accessory/pads/unsc, /obj/item/clothing/accessory/pads/unsc/greaves)
 	storage_slots = 3
@@ -325,7 +325,7 @@ GLOBAL_LIST_INIT(cm_vending_clothing_medic_unsc, list(
 	new /obj/item/clothing/accessory/pads/unsc/greaves(src)
 
 /obj/item/storage/box/guncase/odstarmor //forgive me, father, SECOND edition
-	name = "\improper M70DT ODST BDU case"
+	name = "\improper кейс комплекта M70DT ODST BDU"
 	desc = "Кейс со штатными компонентами комплекта M70DT ODST BDU для ККОН. Отдельно части не выдаются."
 	can_hold = list(/obj/item/clothing/suit/marine/unsc/odst, /obj/item/clothing/accessory/pads/unsc/odst, /obj/item/clothing/accessory/pads/unsc/greaves/odst, /obj/item/clothing/accessory/pads/unsc/groin/odst, /obj/item/clothing/accessory/pads/unsc/bracers/odst)
 	storage_slots = 5

@@ -13,12 +13,12 @@
 
 /obj/item/prop/helmetgarb/gunoil
 	name = "gun oil"
-	desc = "Флакон специализированного масла. С темпом стрельбы серии MA5 и количеством пуль, нужных для уверенного поражения цели, морпехи расходуют это почти как магазины." // SS220 EDIT: HALO flavor migrated from modular late override
+	desc = "It is a bottle of oil, for your gun. Don't fall for the rumors, the M41A is NOT a self-cleaning firearm."
 	icon_state = "gunoil"
 
 /obj/item/prop/helmetgarb/netting
 	name = "combat netting"
-	desc = "Сетка, которую можно закрепить на шлеме для маскировки или переноски мелочей." // SS220 EDIT: HALO flavor migrated from modular late override
+	desc = "Probably combat netting for a helmet. Probably just an extra hairnet that got ordered for the phantom Almayer cooking staff. Probably useless."
 	icon_state = "netting"
 
 /obj/item/prop/helmetgarb/spent_buckshot
@@ -49,12 +49,12 @@
 
 /obj/item/prop/helmetgarb/raincover
 	name = "raincover"
-	desc = "Водонепроницаемая накидка, отводящая дождь от головы и позволяющая владельцу промокнуть чуть меньше." // SS220 EDIT: HALO flavor migrated from modular late override
+	desc = "The standard M10 combat helmet is already water-resistant at depths of up to 10 meters. This makes the top potentially water-proof. At least it's something."
 	icon_state = "raincover"
 
 /obj/item/prop/helmetgarb/camocover
 	name = "jungle helmet cover"
-	desc = "Эластичный чехол на шлем, помогающий подогнать его под палитру местности." // SS220 EDIT: HALO flavor migrated from modular late override
+	desc = "A cover that goes over the top of an M10 pattern helmet to camoflauge it without needing the use of paints."
 	icon_state = "camocover"
 
 /obj/item/prop/helmetgarb/camocover/snow
@@ -93,7 +93,7 @@
 
 /obj/item/prop/helmetgarb/lucky_feather/yellow
 	name = "\improper Yellow Lucky Feather"
-	desc = "Ярко-жёлтое перо. Возможно, канарейки. Если бы оно не было поддельным." // SS220 EDIT: HALO flavor migrated from modular late override
+	desc = "It is an unyielding yellow color. They say the New Kansas colony produces more carpenters per capita than any other colony in all of UA controlled space."
 	color = "yellow"
 
 #define NVG_SHAPE_COSMETIC 1
@@ -103,7 +103,7 @@
 
 /obj/item/prop/helmetgarb/helmet_nvg
 	name = "\improper M2 night vision goggles"
-	desc = "Улучшенная визуальная система для ночных операций." // SS220 EDIT: HALO flavor migrated from modular late override
+	desc = "USCM standard M2 Night vision goggles for military operations. Requires a battery in order to work"
 	icon_state = "nvg"
 	gender = PLURAL
 	garbage = FALSE
@@ -462,7 +462,7 @@
 
 /obj/item/prop/helmetgarb/helmet_nvg/cosmetic //for "custom loadout", purely cosmetic
 	name = "old M2 night vision goggles"
-	desc = "Старая оболочка без начинки. Странный талисман, но и не самый странный." // SS220 EDIT: HALO flavor migrated from modular late override
+	desc = "This pair has been gutted of all electronics and therefore not working. But hey, they make you feel tacticool, and that's all that matters, right?"
 	shape = NVG_SHAPE_COSMETIC
 	garbage = TRUE
 

@@ -1,5 +1,5 @@
 /obj/item/device/radio/headset/almayer/marine/solardevils/unsc
-	name = "UNSC headset"
+	name = "гарнитура ККОН"
 	desc = "Специальная гарнитура, используемая Космическим Командованием Объединённых Наций во всех родах войск."
 	frequency = UNSC_FREQ
 	has_hud = TRUE
@@ -25,7 +25,7 @@
 	initial_keys = list(/obj/item/device/encryptionkey/mcom/alt/squads, /obj/item/device/encryptionkey/squadlead)
 
 /obj/item/device/radio/headset/distress/oni
-	name = "ONI security headset"
+	name = "гарнитура охраны ONI"
 	desc = "Гарнитура, используемая силами безопасности ONI."
 	frequency = ONI_FREQ
 	initial_keys = list(/obj/item/device/encryptionkey/oni)

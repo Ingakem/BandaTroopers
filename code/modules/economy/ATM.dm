@@ -16,7 +16,7 @@ log transactions
 
 /obj/structure/machinery/atm
 	name = "Wey-Yu Automatic Teller Machine"
-	desc = "Автоматизированная точка обслуживания для экспедиционных банковских операций." // SS220 EDIT: HALO flavor migrated from modular late override
+	desc = "For all your monetary needs!"
 	icon = 'icons/obj/structures/machinery/terminals.dmi'
 	icon_state = "atm"
 	anchored = TRUE

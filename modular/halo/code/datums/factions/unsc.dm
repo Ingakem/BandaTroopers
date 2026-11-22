@@ -1,5 +1,5 @@
 /datum/faction/unsc
-	name = "Космическое командование ООН"
+	name = "United Nations Space Command"
 	faction_tag = FACTION_UNSC
 
 /datum/faction/unsc/modify_hud_holder(image/holder, mob/living/carbon/human/current_human)
@@ -233,9 +233,9 @@
 
 
 /datum/faction/unscn
-	name = "Военно-космический флот ООН"
+	name = "United Nations Space Command Navy"
 	faction_tag = FACTION_UNSCN
 
 /datum/faction/oni
-	name = "Управление военно-морской разведки"
+	name = "Office of Naval Intelligence"
 	faction_tag = FACTION_ONI

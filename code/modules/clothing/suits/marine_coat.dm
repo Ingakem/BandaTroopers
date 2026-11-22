@@ -74,7 +74,7 @@
 //Marine service & tanker jacket + MP themed variants
 /obj/item/clothing/suit/storage/jacket/marine/service
 	name = "marine service jacket"
-	desc = "Служебный китель ККОН. Благодаря качественному пошиву он на удивление прочен." // SS220 EDIT: HALO flavor migrated from modular late override
+	desc = "A USCMC service jacket, usually officer issue. While technically armored to frag/handgun ammunition, it's best if you don't try your luck."
 	has_buttons = TRUE
 	flags_atom = NO_SNOW_TYPE
 	icon_state = "coat_officer"
