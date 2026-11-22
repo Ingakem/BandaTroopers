@@ -2,7 +2,7 @@
 
 /obj/item/ammo_magazine/rifle/halo
 	name = "halo magazine"
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_magazines.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_magazines.dmi'
 	icon_state = null
 	ammo_band_icon = null
 	ammo_band_icon_empty = null
@@ -94,7 +94,7 @@
 // smg magazines
 /obj/item/ammo_magazine/smg/halo
 	name = "halo smg magazine"
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_magazines.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_magazines.dmi'
 	icon_state = null
 	ammo_band_icon = null
 	ammo_band_icon_empty = null
@@ -148,30 +148,19 @@
 /obj/item/ammo_magazine/shotgun/buckshot/unsc
 	name = "UNSC 8-gauge shotgun shell box"
 	desc = "Коробка, заполненная дробовыми патронами MAG 15P-00B 8-го калибра."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_magazines.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_magazines.dmi'
 	icon_state = "8g"
 	default_ammo = /datum/ammo/bullet/shotgun/buckshot/unsc
 	transfer_handful_amount = 6
 	max_rounds = 24
 	caliber = "8g"
 
-/obj/item/ammo_magazine/handful/shotgun/slug_unsc
-	name = "handful of MAG 15P-SL (8g)"
-	icon = 'modular/halo/icons/obj/items/weapons/guns/handful.dmi'
-	icon_state = "8g_slug_6"
-	handful_state = "8g_slug"
-	caliber = "8g"
-	default_ammo = /datum/ammo/bullet/shotgun/slug/unsc
-	max_rounds = 6
-	current_rounds = 6
-	transfer_handful_amount = 6
-
 /obj/item/ammo_magazine/shotgun/slug/unsc
 	name = "UNSC 8-gauge shotgun slug box"
 	desc = "Коробка, заполненная пулевыми патронами MAG 15P-SL 8-го калибра."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_magazines.dmi'
-	icon_state = "8g_slug"
-	default_ammo = /datum/ammo/bullet/shotgun/slug/unsc
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_magazines.dmi'
+	icon_state = "8g"
+	default_ammo = /datum/ammo/bullet/shotgun/slug
 	transfer_handful_amount = 6
 	max_rounds = 24
 	caliber = "8g"
@@ -179,7 +168,7 @@
 /obj/item/ammo_magazine/shotgun/beanbag/unsc
 	name = "UNSC 8-gauge shotgun beanbag box"
 	desc = "Коробка, заполненная травматическими патронами MAG LLHB 8-го калибра."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_magazines.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_magazines.dmi'
 	icon_state = "8g_beanbag"
 	default_ammo = /datum/ammo/bullet/shotgun/beanbag/unsc
 	transfer_handful_amount = 6
@@ -192,7 +181,7 @@
 	name = "\improper M19 SSM tube assembly"
 	desc = "Двухтрубный ракетный блок калибра 102 мм, предназначенный для загрузки в M41 SPNKR."
 	caliber = "102mm"
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/special.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/special.dmi'
 	icon_state = "spnkr_rockets"
 	w_class = SIZE_LARGE
 	max_rounds = 2
@@ -259,7 +248,7 @@
 
 /obj/item/ammo_magazine/pistol/halo
 	name = "halo magazine"
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_magazines.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_magazines.dmi'
 	icon_state = null
 	ammo_band_icon = null
 	ammo_band_icon_empty = null

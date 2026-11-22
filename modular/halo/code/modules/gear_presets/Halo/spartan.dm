@@ -109,7 +109,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/large_holster/spnkr/filled/launcher(new_human), WEAR_BACK)
 
 /datum/equipment_preset/unsc/spartan/spnkr/ai_man
-	name = "Spartan SPNKR Specialist"
+	name = parent_type::name + " (AI)"
 
 /datum/equipment_preset/unsc/spartan/spnkr/ai_man/load_gear(mob/living/carbon/human/new_human)
 	equip_spartan_basics(new_human)

@@ -3,7 +3,7 @@
 /obj/item/attachable/ma5c_muzzle
 	name = "\improper MA5C shroud"
 	desc = "Эта деталь не должна отделяться от оружия. Как это вообще произошло?"
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "ma5c_muzzle"
 	attach_icon = "ma5c_muzzle"
 	slot = "special"
@@ -16,7 +16,7 @@
 /obj/item/attachable/attached_gun/grenade/ma5
 	name = "\improper M301 40mm grenade launcher"
 	desc = "Подствольный 40-мм гранатомёт. Заменяет штатный фонарь у штурмовых винтовок серии MA5 и подходит как для MA5C, так и для MA5B."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "ma5c_gl"
 	attach_icon = "ma5c_gl"
 	current_rounds = 0
@@ -51,10 +51,15 @@
 		return ..()
 	return FALSE
 
+/obj/item/attachable/attached_gun/grenade/ma5c
+	parent_type = /obj/item/attachable/attached_gun/grenade/ma5
+	name = "\improper M301C 40mm grenade launcher"
+	desc = "Подствольный 40-мм гранатомёт. Вариант M301C специально разработан для платформы MA5C ICWS и одновременно служит передней рукоятью, подобно штатному фонарю MA5C."
+
 /obj/item/attachable/ma3a_shroud
 	name = "\improper MA3A shroud"
 	desc = "Эта деталь не должна отделяться от оружия. Как это вообще произошло?"
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "ma3a_shroud"
 	attach_icon = "ma3a_shroud"
 	slot = "special"
@@ -67,7 +72,7 @@
 /obj/item/attachable/vk78_front
 	name = "\improper VK78 fore"
 	desc = "Эта деталь не должна отделяться от оружия. Как это вообще произошло?"
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "vk78_front"
 	attach_icon = "vk78_front"
 	slot = "special"
@@ -84,7 +89,7 @@
 /obj/item/attachable/br55_muzzle
 	name = "\improper BR55 muzzle"
 	desc = "Эта деталь не должна отделяться от оружия. Как это вообще произошло?"
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "br55_muzzle"
 	attach_icon = "br55_muzzle"
 	slot = "special"
@@ -97,7 +102,7 @@
 /obj/item/attachable/ma5b_muzzle
 	name = "\improper MA5B muzzle"
 	desc = "Эта деталь не должна отделяться от оружия. Как это вообще произошло?"
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "ma5b_muzzle"
 	attach_icon = "ma5b_muzzle"
 	slot = "special"
@@ -110,7 +115,7 @@
 /obj/item/attachable/m90_muzzle
 	name = "\improper M90 CAWS muzzle"
 	desc = "Эта деталь не должна отделяться от оружия. Как это вообще произошло?"
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "m90_muzzle"
 	attach_icon = "m90_muzzle"
 	slot = "special"
@@ -123,7 +128,7 @@
 /obj/item/attachable/dmr_front
 	name = "\improper M392 DMR fore"
 	desc = "Эта деталь не должна отделяться от оружия. Как это вообще произошло?"
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "dmr_front"
 	attach_icon = "dmr_front"
 	slot = "special"
@@ -136,17 +141,27 @@
 /obj/item/attachable/flashlight/ma5
 	name = "\improper MA5 integrated flashlight"
 	desc = "Встроенный фонарь серии MA5, штатно устанавливаемый на любую штурмовую винтовку этой линейки."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "ma5_flashlight"
 	attach_icon = "ma5_flashlight"
 	original_state = "ma5_flashlight"
 	original_attach = "ma5_flashlight"
 	slot = "under"
 
+/obj/item/attachable/flashlight/ma5c
+	parent_type = /obj/item/attachable/flashlight/ma5
+	name = "\improper MA5C integrated flashlight"
+	desc = "Встроенный фонарь MA5C, штатно устанавливаемый на любую штурмовую винтовку серии MA5."
+
+/obj/item/attachable/flashlight/ma5b
+	parent_type = /obj/item/attachable/flashlight/ma5
+	name = "\improper MA5B integrated flashlight"
+	desc = "Встроенный фонарь MA5B, штатно устанавливаемый на любую штурмовую винтовку серии MA5 и фактически необходимый для нормального хвата."
+
 /obj/item/attachable/flashlight/ma5/ma3a
 	name = "\improper MA3A integrated flashlight"
 	desc = "Подствольная рукоять для MA3A, совмещённая с фонарём."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "ma3a_flashlight"
 	attach_icon = "ma3a_flashlight"
 	original_state = "ma3a_flashlight"
@@ -157,10 +172,13 @@
 	..()
 	recoil_mod = -RECOIL_AMOUNT_TIER_4
 
+/obj/item/attachable/flashlight/ma5c/ma3a
+	parent_type = /obj/item/attachable/flashlight/ma5/ma3a
+
 /obj/item/attachable/flashlight/m90
 	name = "\improper M90 integrated flashlight"
 	desc = "Встроенный фонарь M90, штатный для любого дробовика серии M90 и встроенный в цевьё. Вообще вы не должны видеть его отдельно."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "m90_flashlight"
 	attach_icon = "m90_flashlight_a"
 	original_state = "m90_flashlight"
@@ -176,7 +194,7 @@
 /obj/item/attachable/vk78_barrel
 	name = "\improper VK78 barrel"
 	desc = "Ствол винтовки VK78 Commando. Лучше без него не уходить."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "vk78_barrel"
 	attach_icon = "vk78_barrel"
 	slot = "muzzle"
@@ -190,7 +208,7 @@
 /obj/item/attachable/ma3a_barrel
 	name = "\improper MA3A barrel"
 	desc = "Ствол штурмовой винтовки MA3A ICWS. Лучше без него не уходить."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "ma3a_barrel"
 	attach_icon = "ma3a_barrel"
 	slot = "muzzle"
@@ -199,7 +217,7 @@
 /obj/item/attachable/br55_barrel
 	name = "\improper BR55 barrel"
 	desc = "Ствол боевой винтовки BR55. Лучше без него не уходить."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "br55_barrel"
 	attach_icon = "br55_barrel"
 	slot = "muzzle"
@@ -213,7 +231,7 @@
 /obj/item/attachable/dmr_barrel
 	name = "\improper M392 DMR barrel"
 	desc = "Ствол M392 DMR. Лучше без него не уходить."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "dmr_barrel"
 	attach_icon = "dmr_barrel"
 	slot = "muzzle"
@@ -227,7 +245,7 @@
 /obj/item/attachable/scope/spnkr
 	name = "\improper spnkr scope"
 	desc = "Эта деталь вообще не должна сниматься со SPNKr..."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "spnkr_scope"
 	attach_icon = null
 	size_mod = 0
@@ -236,7 +254,7 @@
 /obj/item/attachable/scope/mini/br55
 	name = "\improper A2 scope"
 	desc = "Телескопический прицел с двукратным увеличением. Обычно он надёжен, но для идеальной точности нередко требует юстировки и тонкой настройки."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "br55_scope"
 	attach_icon = "br55_scope"
 	size_mod = 0
@@ -244,7 +262,7 @@
 /obj/item/attachable/scope/mini/vk78
 	name = "\improper VK78 scope"
 	desc = "Старый телескопический прицел, часто идущий в паре с VK78 Commando."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "vk78_scope"
 	attach_icon = "vk78_scope"
 	size_mod = 0
@@ -252,7 +270,7 @@
 /obj/item/attachable/scope/mini/dmr
 	name = "\improper M392 DMR scope"
 	desc = "Трёхкратный прицел для M392 DMR, который на эту винтовку ставят чаще всего. По общему мнению, вполне надёжен."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "dmr_scope"
 	attach_icon = "dmr_scope"
 	size_mod = 0
@@ -260,7 +278,7 @@
 /obj/item/attachable/scope/mini/ma3a
 	name = "\improper MA3A scope"
 	desc = "Прицел для MA3A. Он не интегрирован в платформу, но его часто ставят ради прибавки к точности."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "ma3a_scope"
 	attach_icon = "ma3a_scope"
 	size_mod = 0
@@ -274,7 +292,7 @@
 /obj/item/attachable/srs_barrel
 	name = "\improper SRS99-AM sniper rifle barrel"
 	desc = "Съёмный ствол снайперской винтовки SRS99-AM с крупным дульным тормозом на конце. Критически важен для работы винтовки. Благодаря съёмной конструкции может заменяться другими стволами с альтернативными интегрированными модулями."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "srs_barrel"
 	attach_icon = "srs_barrel"
 	slot = "muzzle"
@@ -288,7 +306,7 @@
 /obj/item/attachable/scope/variable_zoom/oracle
 	name = "\improper N-Variant oracle scope"
 	desc = "Одна из самых распространённых снайперских оптических систем ККОН. Позволяет переключаться между разными режимами увеличения. Некоторые версии даже оснащены приборами ночного видения."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "oracle_scope"
 	attach_icon = "oracle_scope"
 	slot = "rail"
@@ -301,7 +319,7 @@
 /obj/item/attachable/srs_assembly
 	name = "\improper SRS99-AM assembly"
 	desc = "Эта часть не должна сниматься. Пожалуй, стоит сообщить об этом начальству..."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "srs_assembly"
 	attach_icon = "srs_assembly"
 	slot = "special"
@@ -310,14 +328,14 @@
 /obj/item/attachable/bipod/srs_bipod
 	name = "\improper SRS99-AM bipod"
 	desc = "Съёмная система сошек для снайперской винтовки SRS99-AM. Зачем вообще снимать их с такой громоздкой винтовки - отдельная загадка."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "srs_bipod"
 	attach_icon = "srs_bipod"
 	flags_attach_features = NO_FLAGS
 
 /obj/item/attachable/scope/mini/smartscope
 	name = "\improper KFA-2 x2 smart-linked scope"
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = null
 	slot = "rail"
 	zoom_offset = 3
@@ -337,7 +355,7 @@
 /obj/item/attachable/flashlight/m6
 	name = "\improper M6 flashlight"
 	desc = "Фонарь M6. О нём особенно нечего сказать: он просто включается и выключается."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "flashlight"
 	attach_icon = "m6g_light"
 	original_state = "flashlight"
@@ -362,7 +380,7 @@
 /obj/item/attachable/flashlight/m6c_socom
 	name = "\improper M6C/SOCOM flashlight/laser-sight"
 	desc = "Штатный модуль для всех моделей M6C/SOCOM, сочетающий фонарь и лазерный целеуказатель. Может устанавливаться только на пистолеты серии M6C/SOCOM из-за изменённых точек крепления."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "socom_under"
 	attach_icon = "socom_under"
 	original_state = "socom_under"
@@ -380,7 +398,7 @@
 /obj/item/attachable/suppressor/m6c_socom
 	name = "\improper M6C/SOCOM suppressor"
 	desc = "Съёмный глушитель, который можно установить только на пистолеты серии M6C/SOCOM из-за изменённых точек крепления."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "socom_barrel"
 	attach_icon = "socom_barrel"
 	hud_offset_mod = -3
@@ -392,7 +410,7 @@
 /obj/item/attachable/suppressor/m7
 	name = "\improper M7/SOCOM suppressor"
 	desc = "Съёмный глушитель для комплекта модернизации M7/SOCOM."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "m7_suppressor"
 	attach_icon = "m7_suppressor"
 	hud_offset_mod = -3
@@ -404,14 +422,14 @@
 /obj/item/attachable/reddot/m7
 	name = "\improper M7/SOCOM red-dot sight"
 	desc = "Коллиматорный прицел для комплекта модернизации M7/SOCOM."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "m7_red_dot"
 	attach_icon = "m7_red_dot"
 
 /obj/item/attachable/flashlight/m7
 	name = "\improper M7 flashlight"
 	desc = "Боковой фонарь для установки на пистолет-пулемёт M7."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "m7_flashlight"
 	attach_icon = "m7_flashlight"
 	original_state = "m7_flashlight"
@@ -422,7 +440,7 @@
 /obj/item/attachable/stock/m7
 	name = "M7 SMG collapsable stock"
 	desc = "Складной приклад для M7 SMG. В разложенном виде он мешает стрельбе одной рукой и уже не помещается в ремни, зато заметно улучшает точность и разброс оружия."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "m7_stock"
 	attach_icon = "m7_stock"
 	w_class = SIZE_TINY
@@ -478,7 +496,7 @@
 /obj/item/attachable/stock/m7/grip
 	name = "M7 SMG folding grip"
 	desc = "Складная рукоять, штатно устанавливаемая на M7 SMG. В сложенном виде делает оружие компактнее и быстрее в приведении, но немного ухудшает точность и разброс."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "m7_grip"
 	attach_icon = "m7_grip-on"
 	flags_attach_features = ATTACH_ACTIVATION
@@ -549,3 +567,15 @@
 	attach_icon = "m7_grip"
 	wield_delay_mod = WIELD_DELAY_NONE
 	size_mod = 1
+
+/obj/item/attachable/spnkr_handle
+	name = "\improper spnkr handle"
+	desc = "Эта деталь не должна отделяться от оружия. Как это вообще произошло?"
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "spnkr_scope"
+	attach_icon = "spnkr_scope"
+	slot = "under"
+	wield_delay_mod = WIELD_DELAY_NONE
+	flags_attach_features = NO_FLAGS
+	melee_mod = 0 //Integrated attachment for visuals, stats handled on main gun.
+	size_mod = 0

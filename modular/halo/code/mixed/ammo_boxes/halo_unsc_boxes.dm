@@ -1,14 +1,14 @@
 /obj/structure/magazine_box/unsc
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns/ammo_boxes/boxes_and_lids.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/boxes_and_lids.dmi'
 	icon_state = "base"
-	text_markings_icon = 'modular/halo/icons/halo/obj/items/weapons/guns/ammo_boxes/text.dmi'
-	magazines_icon = 'modular/halo/icons/halo/obj/items/weapons/guns/ammo_boxes/magazines.dmi'
+	text_markings_icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/text.dmi'
+	magazines_icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/magazines.dmi'
 
 /obj/item/ammo_box/magazine/misc/unsc
 	name = "\improper UNSC storage crate"
 	desc = "Типовой ящик снабжения ККОН. Похоже, сейчас он пуст... и вы вообще не должны были этого видеть."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns/ammo_boxes/boxes_and_lids.dmi'
-	magazines_icon = 'modular/halo/icons/halo/obj/items/weapons/guns/ammo_boxes/magazines.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/boxes_and_lids.dmi'
+	magazines_icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/magazines.dmi'
 	deployed_object = /obj/structure/magazine_box/unsc
 	icon_state = "base"
 	magazine_type = null
@@ -95,10 +95,10 @@
 /obj/item/ammo_box/magazine/unsc
 	name = "UNSC magazine box"
 	desc = "Типовой ящик с боеприпасами для оружия ККОН."
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns/ammo_boxes/boxes_and_lids.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/boxes_and_lids.dmi'
 	icon_state = "base_ammo"
-	magazines_icon = 'modular/halo/icons/halo/obj/items/weapons/guns/ammo_boxes/magazines.dmi'
-	text_markings_icon = 'modular/halo/icons/halo/obj/items/weapons/guns/ammo_boxes/text.dmi'
+	magazines_icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/magazines.dmi'
+	text_markings_icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/text.dmi'
 	limit_per_tile = 1
 	deployed_object = /obj/structure/magazine_box/unsc
 
@@ -181,50 +181,3 @@
 	icon_state = "base_ammosmall2"
 	magazine_type = /obj/item/ammo_magazine/pistol/halo/m6g
 	num_of_magazines = 22
-
-/obj/item/ammo_box/magazine/unsc/small/m6d
-	name = "UNSC magazine box (M6D x 22)"
-	desc = "Ящик с 22 магазинами для M6D."
-	icon_state = "base_ammosmall3"
-	magazine_type = /obj/item/ammo_magazine/pistol/halo/m6d
-	num_of_magazines = 22
-
-/obj/item/ammo_box/magazine/unsc/shotgun
-	name = "\improper UNSC shotgun shell box"
-	desc = "Типовой ящик с боеприпасами для оружия ККОН, однако этот ящик не должен находится тут, да и вообще, где вы его достали?"
-	icon = 'modular/halo/icons/halo/obj/items/weapons/guns/ammo_boxes/boxes_and_lids.dmi'
-	icon_state = "base_buck"
-	magazines_icon = 'modular/halo/icons/halo/obj/items/weapons/guns/ammo_boxes/magazines.dmi'
-	text_markings_icon = 'modular/halo/icons/halo/obj/items/weapons/guns/ammo_boxes/text.dmi'
-	num_of_magazines = 96
-	handfuls = TRUE
-	flags_equip_slot = SLOT_BACK
-	overlay_content = null
-
-/obj/item/ammo_box/magazine/unsc/shotgun/update_icon()
-	if(overlays)
-		overlays.Cut()
-	if(overlay_ammo_type)
-		overlays += image(text_markings_icon, icon_state = "base_type[overlay_ammo_type]") //adding base color stripes
-	if(!icon_state_deployed) // The lid is on the sprite already.
-		overlays += image(icon, icon_state = "[icon_state]_lid") //adding lid
-	if(overlay_gun_type)
-		overlays += image(text_markings_icon, icon_state = "text[overlay_gun_type]") //adding text
-	if(overlay_ammo_type!="_reg" && overlay_ammo_type!="_blank" && (!icon_state_deployed) )
-		overlays += image(text_markings_icon, icon_state = "lid_type[overlay_ammo_type]") //adding base color stripes
-
-/obj/item/ammo_box/magazine/unsc/shotgun/buckshot
-	name = "\improper shotgun 8g shell box (Buckshot x 96)"
-	desc = "Ящик с дробью для дробовиков ККОН 8-го калибра"
-	overlay_content = "_buck"
-	overlay_ammo_type = "_buck"
-	magazine_type = /obj/item/ammo_magazine/shotgun/buckshot/unsc
-	num_of_magazines = 96
-
-/obj/item/ammo_box/magazine/unsc/shotgun/slug
-	name = "\improper shotgun 8g shell box (Slug x 96)"
-	desc = "Ящик с пулями для дробовиков ККОН 8-го калибра"
-	overlay_content = "_slug"
-	overlay_ammo_type = "_slug"
-	magazine_type = /obj/item/ammo_magazine/shotgun/slug/unsc
-	num_of_magazines = 96

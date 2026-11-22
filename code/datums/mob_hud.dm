@@ -59,7 +59,7 @@ GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, flatten_numeric_alist(alist(
 // Always invoked on every 'user'
 // Removes target from user's client's images.
 /datum/mob_hud/proc/remove_from_single_hud(mob/user, mob/target)
-	if(!user || !target || !user.client) // SS220 EDIT: tolerate missing HUD participants during cleanup
+	if(!user.client)
 		return
 	for(var/i in hud_icons)
 		if(i in target.hud_list)
@@ -69,9 +69,6 @@ GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, flatten_numeric_alist(alist(
 
 // Allow user to view a HUD (putting on medical glasses)
 /datum/mob_hud/proc/add_hud_to(mob/user, source)
-	if(QDELETED(user)) // SS220 EDIT: do not enroll qdel'd HUD viewers
-		hudusers -= user
-		return FALSE
 	hudusers |= user
 	if(hudusers[user])
 		hudusers[user] |= list(source)
@@ -83,9 +80,6 @@ GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, flatten_numeric_alist(alist(
 
 /// Refreshes the HUD, adding user and sources if missing and then calls to add the HUD
 /datum/mob_hud/proc/refresh_hud(mob/user, list/source)
-	if(QDELETED(user)) // SS220 EDIT: do not refresh qdel'd HUD viewers
-		hudusers -= user
-		return FALSE
 	hudusers |= user
 	if(hudusers[user])
 		hudusers[user] |= source
@@ -97,9 +91,6 @@ GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, flatten_numeric_alist(alist(
 
 // "Enroll" a target into the HUD. (let others see the HUD on target)
 /datum/mob_hud/proc/add_to_hud(mob/target)
-	if(QDELETED(target)) // SS220 EDIT: do not enroll qdel'd HUD targets
-		hudmobs -= target
-		return FALSE
 	hudmobs |= target
 	for(var/mob/user in hudusers)
 		add_to_single_hud(user, target)
@@ -109,7 +100,7 @@ GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, flatten_numeric_alist(alist(
 // makes the client able to 'see' them whenever they're offscreen
 // somewhat confusingly
 /datum/mob_hud/proc/add_to_single_hud(mob/user, mob/target)
-	if(QDELETED(user) || QDELETED(target) || !user.client) // SS220 EDIT: ignore qdel'd HUD participants during cleanup
+	if(!user.client)
 		return
 	for(var/i in hud_icons)
 		if(i in target.hud_list)

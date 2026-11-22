@@ -1,7 +1,7 @@
 /turf/closed/wall/unsc
 	name = "внутренняя переборка корабля"
 	desc = "Обычная корабельная переборка. Не Titanium-A, но всё равно довольно прочная."
-	icon = 'modular/halo/icons/halo/turf/walls/unsc.dmi'
+	icon = 'icons/halo/turf/walls/unsc.dmi'
 	icon_state = "unsc"
 	walltype = WALL_UNSC
 
@@ -24,7 +24,7 @@
 	desc = "Дешёвая и легко заменяемая обшивка для обычных промышленных нужд."
 	icon_state = "voiwall"
 	walltype = WALL_VOI
-	icon = 'modular/halo/icons/halo/turf/walls/voi_wall.dmi'
+	icon = 'icons/halo/turf/walls/voi_wall.dmi'
 
 /turf/closed/wall/voi/reinforced
 	name = "усиленная панельная стена"
@@ -44,7 +44,7 @@
 	icon_state = "covwall"
 	walltype = WALL_COV
 	damage_cap = HEALTH_WALL_REINFORCED
-	icon = 'modular/halo/icons/halo/turf/walls/cov_standard.dmi'
+	icon = 'icons/halo/turf/walls/cov_standard.dmi'
 
 /turf/closed/wall/covenant/hull
 	name = "наноламинатная стена"

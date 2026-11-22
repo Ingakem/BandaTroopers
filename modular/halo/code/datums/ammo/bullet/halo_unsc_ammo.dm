@@ -180,7 +180,7 @@
 
 /datum/ammo/rocket/spnkr
 	name = "M19 missile"
-	icon = 'modular/halo/icons/halo/obj/items/weapons/halo_projectiles.dmi'
+	icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
 	icon_state = "spnkr_missile"
 	damage = 300
 	shell_speed = AMMO_SPEED_TIER_3
